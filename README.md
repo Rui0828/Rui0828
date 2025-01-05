@@ -47,6 +47,7 @@ pache.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.z
 
 <p align="center"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=rui0828" alt="rui0828" /></a> </p>
 
+<hr>
 
 ## 👾 Personal Stats 👀
 <!--START_SECTION:waka-->
@@ -96,8 +97,8 @@ Bash                     6 mins              █░░░░░░░░░░�
 ## 💼 Github Stats 📊
 
 <p align="center">
-    <img src="https://github-readme-streak-stats.herokuapp.com/?user=rui0828" alt="GitHub Streak"/>
     <img src="https://github-readme-stats.vercel.app/api/top-langs?username=rui0828&show_icons=true&locale=en&layout=compact" alt="Top Languages"/>
+    <img src="https://github-readme-streak-stats.herokuapp.com/?user=rui0828" alt="GitHub Streak"/>
 </p>
 
 <!-- <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=rui0828&show_icons=true&locale=en" alt="rui0828" /></p> -->

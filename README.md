@@ -22,14 +22,12 @@
         <img src="img/orcid.png" alt="ORCID" width="20" height="20"/>
     </a>
 </p>
+
 <p align="center">
     <img src="https://komarev.com/ghpvc/?username=rui0828&label=Profile%20views&color=0e75b6&style=flat" alt="Profile Views" />
 </p>
 
-<!-- <p align="left"> <img src="https://komarev.com/ghpvc/?username=rui0828&label=Profile%20views&color=0e75b6&style=flat" alt="rui0828" /> </p>
-
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=rui0828" alt="rui0828" /></a> </p> -->
-
+<p align="center"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=rui0828" alt="rui0828" /></a> </p>
 
 ### 🔭 About Me
 

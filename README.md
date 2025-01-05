@@ -42,4 +42,82 @@
 <!-- <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=rui0828&show_icons=true&locale=en" alt="rui0828" /></p> -->
 
 <!--START_SECTION:waka-->
+![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-457.4%20thousand%20lines%20of%20code-blue)
+
+**🐱 My GitHub Data** 
+
+> 📦 132.1 kB Used in GitHub's Storage 
+ > 
+> 🏆 9 Contributions in the Year 2025
+ > 
+> 💼 Opted to Hire
+ > 
+> 📜 8 Public Repositories 
+ > 
+> 🔑 7 Private Repositories 
+ > 
+**I'm an Early 🐤** 
+
+```text
+🌞 Morning                10 commits          █░░░░░░░░░░░░░░░░░░░░░░░░   03.48 % 
+🌆 Daytime                152 commits         █████████████░░░░░░░░░░░░   52.96 % 
+🌃 Evening                75 commits          ███████░░░░░░░░░░░░░░░░░░   26.13 % 
+🌙 Night                  50 commits          ████░░░░░░░░░░░░░░░░░░░░░   17.42 % 
+```
+📅 **I'm Most Productive on Friday** 
+
+```text
+Monday                   21 commits          ██░░░░░░░░░░░░░░░░░░░░░░░   07.32 % 
+Tuesday                  46 commits          ████░░░░░░░░░░░░░░░░░░░░░   16.03 % 
+Wednesday                51 commits          ████░░░░░░░░░░░░░░░░░░░░░   17.77 % 
+Thursday                 34 commits          ███░░░░░░░░░░░░░░░░░░░░░░   11.85 % 
+Friday                   81 commits          ███████░░░░░░░░░░░░░░░░░░   28.22 % 
+Saturday                 18 commits          ██░░░░░░░░░░░░░░░░░░░░░░░   06.27 % 
+Sunday                   36 commits          ███░░░░░░░░░░░░░░░░░░░░░░   12.54 % 
+```
+
+
+📊 **This Week I Spent My Time On** 
+
+```text
+🕑︎ Time Zone: Asia/Taipei
+
+💬 Programming Languages: 
+Markdown                 1 hr 8 mins         ███████████░░░░░░░░░░░░░░   44.38 % 
+Other                    40 mins             ███████░░░░░░░░░░░░░░░░░░   26.07 % 
+YAML                     22 mins             ████░░░░░░░░░░░░░░░░░░░░░   14.51 % 
+CSS                      13 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   08.79 % 
+Bash                     6 mins              █░░░░░░░░░░░░░░░░░░░░░░░░   04.44 % 
+
+🔥 Editors: 
+VS Code                  1 hr 46 mins        █████████████████░░░░░░░░   69.49 % 
+Discord                  14 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   09.28 % 
+Windows檔案總管              13 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   08.84 % 
+Unknown Editor           6 mins              █░░░░░░░░░░░░░░░░░░░░░░░░   04.44 % 
+ChatGPT                  3 mins              ░░░░░░░░░░░░░░░░░░░░░░░░░   01.97 % 
+
+🐱‍💻 Projects: 
+Rui0828                  1 hr 30 mins        ███████████████░░░░░░░░░░   58.89 % 
+Unknown Project          46 mins             ████████░░░░░░░░░░░░░░░░░   30.51 % 
+HACKMD_test              16 mins             ███░░░░░░░░░░░░░░░░░░░░░░   10.60 % 
+```
+
+**I Mostly Code in Python** 
+
+```text
+Python                   7 repos             ████████████░░░░░░░░░░░░░   46.67 % 
+Jupyter Notebook         3 repos             █████░░░░░░░░░░░░░░░░░░░░   20.00 % 
+Dockerfile               2 repos             ███░░░░░░░░░░░░░░░░░░░░░░   13.33 % 
+CSS                      1 repo              ██░░░░░░░░░░░░░░░░░░░░░░░   06.67 % 
+Shell                    1 repo              ██░░░░░░░░░░░░░░░░░░░░░░░   06.67 % 
+```
+
+
+
+**Timeline**
+
+![Lines of Code chart](https://raw.githubusercontent.com/Rui0828/Rui0828/main/assets/bar_graph.png)
+
+
+ Last Updated on 05/01/2025 19:16:08 UTC
 <!--END_SECTION:waka-->

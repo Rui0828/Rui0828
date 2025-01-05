@@ -24,7 +24,7 @@
 </p>
 
 <p align="center">
-    <img src="https://komarev.com/ghpvc/?username=rui0828&label=Profile%20views&color=0e75b6&abbreviated=true&style=flat-square" alt="Profile Views" />
+    <img src="https://komarev.com/ghpvc/?username=rui0828&label=Profile%20views&color=lightgrey&abbreviated=true&style=plastic" alt="Profile Views" />
 </p>
 
 ### 🔭 About Me

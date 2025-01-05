@@ -27,4 +27,4 @@ jobs:
                 SHOW_LANGUAGE_PER_REPO: False
                 SHOW_DAYS_OF_WEEK: False
                 UPDATED_DATE_FORMAT: "%Y/%m/%d %H:%M:%S"
-                SYMBOL_VERSION: 2
+                

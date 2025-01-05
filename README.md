@@ -33,14 +33,15 @@
 
 ### 🔭 About Me
 
-I am **Chen-Jui**, a dedicated and enthusiastic Master's student specializing in **Computer Science Engineering** at **NCHU**, Taiwan. My academic journey is deeply rooted in **Natural Language Processing (NLP)** and **Machine Learning (ML)**. Currently, I am an active researcher at the **[NCHU NLP Lab](https://nlpnchu.org)**. Welcome to explore our projects and publications on our [GitHub](https://github.com/NCHU-NLP-Lab).  
+I am **Chen-Jui**, a dedicated and enthusiastic Master's student specializing in **Computer Science Engineering** at **NCHU**, Taiwan. My academic journey is deeply focused on **Natural Language Processing (NLP)** and **Machine Learning (ML)**. Currently, I am an active researcher at the **[NCHU NLP Lab](https://nlpnchu.org)**, where you can explore our projects and publications on our [GitHub](https://github.com/NCHU-NLP-Lab).
 
-In addition to my technical expertise, I am passionate about building scalable and efficient systems, exploring innovative solutions, and constantly learning new skills in **backend**, **frontend**, and **full-stack development**. Outside the lab, I enjoy collaborating with like-minded individuals, contributing to open-source projects, and staying at the forefront of technological advancements.
+Beyond my technical expertise, I am passionate about developing scalable and efficient systems, exploring innovative solutions, and continuously learning new skills in **backend**, **frontend**, and **full-stack development**. Outside the lab, I enjoy collaborating with like-minded individuals, contributing to open-source projects, and keeping up with the latest technological advancements.
 
 ### 🌟 Interests
-- **Research:** Exploring the intersection of NLP, bridging the gap between human language and machines.
-- **Development:** Building robust applications with a full-stack approach.
-- **Learning:** Staying curious and expanding my horizons in AI, ML, and software engineering.
+- **Research:** Exploring the intersection of NLP to bridge the gap between human language and machines.  
+- **Development:** Creating robust applications with a full-stack approach.  
+- **Learning:** Remaining curious and expanding my knowledge in AI, ML, and software engineering.
+
 
 ### 🔧 Languages and Tools
 <p align="left"> <a href="https://www.gnu.org/software/bash/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg" alt="bash" width="30" height="30"/> </a> <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="30" height="30"/> </a> <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="30" height="30"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="30" height="30"/> </a> <a href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="30" height="30"/> </a> <a href="https://www.figma.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="30" height="30"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="30" height="30"/> </a> <a href="https://hadoop.a

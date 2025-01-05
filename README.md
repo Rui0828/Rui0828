@@ -42,13 +42,13 @@
 <!-- <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=rui0828&show_icons=true&locale=en" alt="rui0828" /></p> -->
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-3%20hrs%2050%20mins-blue)
+![Code Time](http://img.shields.io/badge/Code%20Time-3%20hrs%2058%20mins-blue)
 
 **🐱 My GitHub Data** 
 
 > 📦 132.1 kB Used in GitHub's Storage 
  > 
-> 🏆 11 Contributions in the Year 2025
+> 🏆 9 Contributions in the Year 2025
  > 
 > 💼 Opted to Hire
  > 
@@ -80,5 +80,5 @@ Bash                     6 mins              █░░░░░░░░░░�
 ```
 
 
- Last Updated on 05/01/2025 20:57:56 UTC
+ Last Updated on 05/01/2025 21:10:03 UTC
 <!--END_SECTION:waka-->

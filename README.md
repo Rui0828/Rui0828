@@ -49,7 +49,7 @@ pache.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.z
 
 <hr>
 
-## 👾 Personal Stats 👀
+## 👾 Personal Stats 👀 <sub>`Tracked since 2025/01/05`</sub>
 
 <!--START_SECTION:waka-->
 ![Code Time](http://img.shields.io/badge/Code%20Time-2%20hrs%2034%20mins-blue)

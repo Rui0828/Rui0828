@@ -1,4 +1,4 @@
-name: Update WakaTime Metrics
+name: Sync WakaTime Metrics to Gist
 
 on:
     schedule:

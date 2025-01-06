@@ -27,14 +27,3 @@ jobs:
                 SHOW_LANGUAGE_PER_REPO: False
                 SHOW_DAYS_OF_WEEK: False
                 UPDATED_DATE_FORMAT: "%Y/%m/%d %H:%M:%S"
-                
-    update-gist:
-        runs-on: ubuntu-latest
-        steps:
-            - name: wakatime-sync
-              uses: superman66/wakatime-sync@v1.0.0
-              with:
-                GH_TOKEN: ${{ secrets.GH_TOKEN }}
-                GIST_ID: ${{ secrets.GIST_ID}}
-                WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
-                SCU_KEY: ${{ secrets.SCU_KEY }}

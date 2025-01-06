@@ -52,9 +52,33 @@ pache.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.z
 ## 👾 Personal Stats 👀
 
 #### 📊 **This Week I Spent My Time On**   
-<img src="https://wakatime.com/share/@rui0828/d764c0f1-ce38-412d-96f4-c2ff9aaffe07.svg" alt="WakaTime Report"  width="500">
+<img src="https://wakatime.com/share/@rui0828/34ad6584-b758-45e6-b397-03f54830831f.svg" alt="WakaTime Report"  width="500">
 
 <!--START_SECTION:waka-->
+![Code Time](http://img.shields.io/badge/Code%20Time-6%20hrs%2051%20mins-blue)
+
+#### **🐱 My GitHub Data** 
+
+> 📦 132.1 kB Used in GitHub's Storage 
+ > 
+> 🏆 18 Contributions in the Year 2025
+ > 
+> 💼 Opted to Hire
+ > 
+> 📜 10 Public Repositories 
+ > 
+> 🔑 6 Private Repositories 
+ > 
+ #### **I'm an Early 🐤** 
+
+```text
+🌞 Morning                26 commits          ██░░░░░░░░░░░░░░░░░░░░░░░   08.50 % 
+🌆 Daytime                152 commits         ████████████░░░░░░░░░░░░░   49.67 % 
+🌃 Evening                75 commits          ██████░░░░░░░░░░░░░░░░░░░   24.51 % 
+🌙 Night                  53 commits          ████░░░░░░░░░░░░░░░░░░░░░   17.32 % 
+```
+
+ Last Updated on 2025/01/06 00:19:50 UTC
 <!--END_SECTION:waka-->
 
 

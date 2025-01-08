@@ -113,9 +113,50 @@ C                        1 hr 14 mins        ██░░░░░░░░░�
 ## 💼 Github Stats 📊
 
 <p align="center">
-    <!-- <img src="https://github-readme-streak-stats.herokuapp.com/?user=rui0828" alt="GitHub Streak" /> -->
-    <img src="https://github-readme-stats.vercel.app/api?username=Rui0828&title_color=ff6e96&icon_color=9580ff&hide_border=true&hide_title=true&rank_icon=github&show_icons=true%22%20%20%20%20%20%20%20%20%20%20%20%20%20%20media=%22(prefers-color-scheme:%20light),%20(prefers-color-scheme:%20no-preference)" alt="GitHub stats" />
-    <img src="https://github-readme-stats.vercel.app/api/top-langs?username=rui0828&show_icons=true&locale=en&layout=compact" alt="Top Languages"/>
+    <picture>
+        <source
+            srcset="https://github-readme-streak-stats.herokuapp.com/?user=rui0828&hide_border=true&ring=ff95ca&fire=ff95ca&currStreakNum=9590FF&sideNums=ff95ca&currStreakLabel=9590FF&sideLabels=ff95ca" height=160
+            media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
+        />
+        <source 
+            srcset="https://github-readme-streak-stats.herokuapp.com/?user=rui0828&hide_border=true&theme=dracula" height=160
+            media="(prefers-color-scheme: dark)"
+        />
+        <img src="https://github-readme-streak-stats.herokuapp.com/?user=rui0828&hide_border=true&ring=ff95ca&fire=ff95ca& currStreakNum=9590FF&sideNums=ff95ca&currStreakLabel=9590FF&sideLabels=ff95ca" height=160 alt="GitHub streak stats" />
+    </picture>
+    <!-- <picture>
+        <source
+            srcset="https://github-readme-stats.vercel.app/api?username=Rui0828&title_color=ff95ca&icon_color=9590ff&hide_border=true&hide_title=true&rank_icon=percentile&show_icons=true"
+            media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
+        />
+        <source 
+            srcset="https://github-readme-stats.vercel.app/api?username=Rui0828&hide_border=true&theme=dracula&hide_title=true&rank_icon=percentile&show_icons=true"
+            media="(prefers-color-scheme: dark)"
+        />
+        <img src="https://github-readme-stats.vercel.app/api?username=Rui0828&title_color=ff95ca&icon_color=9590ff&hide_border=true&hide_title=true&rank_icon=percentile&show_icons=true" alt="GitHub stats" />
+    </picture> -->
+    <picture>
+        <source
+            srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&layout=compact&title_color=ff95ca" height=160
+            media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
+        />
+        <source 
+            srcset="https://github-readme-stats.vercel.app/api/top-langs?username=rui0828&layout=compact&title_color=ff95ca&theme=dracula" height=160
+            media="(prefers-color-scheme: dark)"
+        />
+        <img src="https://github-readme-stats.vercel.app/api/top-langs?username=rui0828&layout=compact&title_color=ff95ca" height=160 alt="GitHub streak stats" />
+    </picture>
 </p>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Rui0828&hide_border=true&bg_color=ffffff&color=9580ff&title_color=ff6e96&line=ff6e96&point=9580ff">
+<picture>
+            <source
+              srcset="https://github-readme-activity-graph.vercel.app/graph?username=Rui0828&hide_border=true&bg_color=ffffff&color=9590ff&title_color=ff95ca&line=ff95ca&point=9590ff"
+              media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
+            />
+            <source 
+              srcset="https://github-readme-activity-graph.vercel.app/graph?username=tomy0000000&hide_border=true&bg_color=282a36&color=f8f8f2&title_color=ff95ca&line=ff95ca&point=79dafa"
+              media="(prefers-color-scheme: dark)"
+            />
+            <img src="https://github-readme-activity-graph.vercel.app/graph?username=tomy0000000&hide_border=true&bg_color=ffffff&color=9590ff&title_color=ff95ca&line=ff95ca&point=9590ff" alt="GitHub stats" />
+        </picture>
+

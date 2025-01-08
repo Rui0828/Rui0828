@@ -51,7 +51,7 @@ pache.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.z
 
 ## 👾 Personal Stats 👀 <sub>`Tracked since 2025/01/05`</sub>
 
-<img align='right' src="https://i.giphy.com/cmCEsJZHYBPels360q.webp" width="350">
+<img align='right' src="https://i.giphy.com/cmCEsJZHYBPels360q.webp" width="300">
 
 <!--START_SECTION:waka-->
 ![Code Time](http://img.shields.io/badge/Code%20Time-11%20hrs%2021%20mins-blue)
@@ -122,7 +122,7 @@ C                        1 hr 14 mins        ██░░░░░░░░░�
             srcset="https://github-readme-stats.vercel.app/api/top-langs?username=rui0828&layout=compact&title_color=ff95ca&theme=dracula" 
             media="(prefers-color-scheme: dark)"
         />
-        <img src="https://github-readme-stats.vercel.app/api/top-langs?username=rui0828&layout=compact&title_color=ff95ca"  alt="GitHub streak stats" />
+        <img src="https://github-readme-stats.vercel.app/api/top-langs?username=rui0828&layout=compact&title_color=ff95ca"  alt="GitHub streak stats" />&nbsp;
     </picture>
     <!-- <picture>
         <source
@@ -141,7 +141,7 @@ C                        1 hr 14 mins        ██░░░░░░░░░�
             media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
         />
         <source 
-            srcset="https://github-readme-stats.vercel.app/api?username=Rui0828&hide_border=true&theme=dracula&hide_title=true&rank_icon=default&show_icons=true"
+            srcset="https://github-readme-stats.vercel.app/api?username=Rui0828&hide_border=true&theme=omni&hide_title=true&rank_icon=default&show_icons=true"
             media="(prefers-color-scheme: dark)"
         />
         <img src="https://github-readme-stats.vercel.app/api?username=Rui0828&title_color=ff95ca&icon_color=9590ff&hide_border=true&hide_title=true&rank_icon=default&show_icons=true" alt="GitHub stats" />

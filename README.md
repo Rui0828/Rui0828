@@ -3,23 +3,23 @@
 
 <p align="center">
     <a href="mailto:rui@rui0828.onmicrosoft.com" target="_blank"> 
-        <img src="img/gmail.png" alt="Gmail" width="20" height="15"/>
-    </a>
-    &nbsp;
-    <a href="https://github.com/Rui0828" target="_blank"> 
-        <img src="img/github.svg" alt="GitHub" width="20" height="20"/>
+        <img src="img/gmail.png" alt="Gmail" height="18"/>
     </a>
     &nbsp;
     <a href="https://www.linkedin.com/in/rui0828/" target="_blank"> 
-        <img src="img/linkedin.png" alt="LinkedIn" width="20" height="20"/>
+        <img src="img/linkedin.png" alt="LinkedIn" height="20"/>
+    </a>
+    &nbsp;
+    <a href="https://github.com/Rui0828" target="_blank"> 
+        <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExbDB0YTZoeWtnNW16M2FraXF2NDRvMHF2a3hzamYzc2pkYmZnc2VzcCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/du3J3cXyzhj75IOgvA/giphy.webp" alt="GitHub" height="30"/>
     </a>
     &nbsp;
     <a href="https://scholar.google.com/citations?user=a_hkgY8AAAAJ&hl=en" target="_blank"> 
-        <img src="img/Google_Scholar.png" alt="Google Scholar" width="20" height="20"/>
+        <img src="img/Google_Scholar.png" alt="Google Scholar" height="20"/>
     </a>
     &nbsp;
     <a href="https://orcid.org/0009-0000-6679-3670" target="_blank"> 
-        <img src="img/orcid.png" alt="ORCID" width="20" height="20"/>
+        <img src="img/orcid.png" alt="ORCID" height="20"/>
     </a>
 </p>
 

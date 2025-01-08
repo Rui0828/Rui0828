@@ -149,15 +149,16 @@ C                        1 hr 14 mins        ██░░░░░░░░░�
     
 </p>
 
-<picture>
-            <source
-              srcset="https://github-readme-activity-graph.vercel.app/graph?username=Rui0828&bg_color=ffffff&color=9590ff&title_color=ff95ca&line=ff95ca&point=9590ff"
-              media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
-            />
-            <source 
-              srcset="https://github-readme-activity-graph.vercel.app/graph?username=Rui0828&bg_color=282a36&color=f8f8f2&title_color=ff95ca&line=ff95ca&point=79dafa"
-              media="(prefers-color-scheme: dark)"
-            />
-            <img src="https://github-readme-activity-graph.vercel.app/graph?username=Rui0828&bg_color=ffffff&color=9590ff&title_color=ff95ca&line=ff95ca&point=9590ff" alt="GitHub stats" />
-        </picture>
-
+<p align="center">
+    <picture>
+        <source
+            srcset="https://github-readme-activity-graph.vercel.app/graph?username=Rui0828&bg_color=ffffff&color=9590ff&title_color=ff95ca&line=ff95ca&point=9590ff"
+            media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
+        />
+        <source 
+            srcset="https://github-readme-activity-graph.vercel.app/graph?username=Rui0828&bg_color=282a36&color=f8f8f2&title_color=ff95ca&line=ff95ca&point=79dafa"
+            media="(prefers-color-scheme: dark)"
+        />
+        <img src="https://github-readme-activity-graph.vercel.app/graph?username=Rui0828&bg_color=ffffff&color=9590ff&title_color=ff95ca&line=ff95ca&point=9590ff" alt="GitHub stats" />
+    </picture>
+</p>

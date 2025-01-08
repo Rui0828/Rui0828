@@ -115,7 +115,7 @@ C                        1 hr 14 mins        ██░░░░░░░░░�
 <p align="center">
     <picture>
         <source
-            srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&layout=compact&title_color=ff95ca" 
+            srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=rui0828&layout=compact&title_color=ff95ca" 
             media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
         />
         <source 

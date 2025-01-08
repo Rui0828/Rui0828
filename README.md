@@ -51,7 +51,7 @@ pache.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.z
 
 ## 👾 Personal Stats 👀 <sub>`Tracked since 2025/01/05`</sub>
 
-<img align='right' src="https://i.giphy.com/cmCEsJZHYBPels360q.webp" width="300">
+<img align='right' src="https://i.giphy.com/cmCEsJZHYBPels360q.webp" width="400">
 
 <!--START_SECTION:waka-->
 ![Code Time](http://img.shields.io/badge/Code%20Time-11%20hrs%2021%20mins-blue)
@@ -155,9 +155,9 @@ C                        1 hr 14 mins        ██░░░░░░░░░�
               media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
             />
             <source 
-              srcset="https://github-readme-activity-graph.vercel.app/graph?username=tomy0000000&hide_border=true&bg_color=282a36&color=f8f8f2&title_color=ff95ca&line=ff95ca&point=79dafa"
+              srcset="https://github-readme-activity-graph.vercel.app/graph?username=Rui0828&hide_border=true&bg_color=282a36&color=f8f8f2&title_color=ff95ca&line=ff95ca&point=79dafa"
               media="(prefers-color-scheme: dark)"
             />
-            <img src="https://github-readme-activity-graph.vercel.app/graph?username=tomy0000000&hide_border=true&bg_color=ffffff&color=9590ff&title_color=ff95ca&line=ff95ca&point=9590ff" alt="GitHub stats" />
+            <img src="https://github-readme-activity-graph.vercel.app/graph?username=Rui0828&hide_border=true&bg_color=ffffff&color=9590ff&title_color=ff95ca&line=ff95ca&point=9590ff" alt="GitHub stats" />
         </picture>
 

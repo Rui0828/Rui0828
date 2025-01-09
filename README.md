@@ -115,26 +115,26 @@ C                        1 hr 14 mins        █░░░░░░░░░░�
 <p align="center">
     <picture>
         <source
-            srcset="https://github-stats-alpha.vercel.app/api?username=rui0828&ic=ff95ca" height=170
+            srcset="https://github-stats-alpha.vercel.app/api?username=rui0828&ic=ff95ca"
             media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
         />
         <source 
-            srcset="https://github-stats-alpha.vercel.app/api?username=rui0828&cc=22272e&tc=ff95ca&ic=79dafa" height=170
+            srcset="https://github-stats-alpha.vercel.app/api?username=rui0828&cc=22272e&tc=ff95ca&ic=79dafa"
             media="(prefers-color-scheme: dark)"
         />
-        <img src="https://github-stats-alpha.vercel.app/api?username=rui0828&ic=ff95ca" height=170 alt="GitHub stats" />
+        <img src="https://github-stats-alpha.vercel.app/api?username=rui0828&ic=ff95ca" alt="GitHub stats" />
     </picture>
     &nbsp;
     <picture>
         <source
-            srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=rui0828&layout=compact&title_color=ff95ca" height=170
+            srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=rui0828&layout=compact&title_color=ff95ca"
             media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
         />
         <source 
-            srcset="https://github-readme-stats.vercel.app/api/top-langs?username=rui0828&layout=compact&title_color=ff95ca&theme=dracula" height=170
+            srcset="https://github-readme-stats.vercel.app/api/top-langs?username=rui0828&layout=compact&title_color=ff95ca&theme=dracula"
             media="(prefers-color-scheme: dark)"
         />
-        <img src="https://github-readme-stats.vercel.app/api/top-langs?username=rui0828&layout=compact&title_color=ff95ca" height=170 alt="GitHub streak stats" />&nbsp;
+        <img src="https://github-readme-stats.vercel.app/api/top-langs?username=rui0828&layout=compact&title_color=ff95ca" alt="GitHub streak stats" />&nbsp;
     </picture>
     <!-- <picture>
         <source

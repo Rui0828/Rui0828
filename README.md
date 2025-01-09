@@ -115,14 +115,25 @@ C                        1 hr 14 mins        █░░░░░░░░░░�
 <p align="center">
     <picture>
         <source
-            srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=rui0828&layout=compact&title_color=ff95ca" 
+            srcset="https://github-stats-alpha.vercel.app/api?username=rui0828&ic=ff95ca" height=170
             media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
         />
         <source 
-            srcset="https://github-readme-stats.vercel.app/api/top-langs?username=rui0828&layout=compact&title_color=ff95ca&theme=dracula" 
+            srcset="https://github-stats-alpha.vercel.app/api?username=rui0828&cc=22272e&tc=ff95ca&ic=79dafa&bc=000000" height=170
             media="(prefers-color-scheme: dark)"
         />
-        <img src="https://github-readme-stats.vercel.app/api/top-langs?username=rui0828&layout=compact&title_color=ff95ca"  alt="GitHub streak stats" />&nbsp;
+        <img src="https://github-stats-alpha.vercel.app/api?username=rui0828&ic=ff95ca" height=170 alt="GitHub stats" />
+    </picture>
+    <picture>
+        <source
+            srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=rui0828&layout=compact&title_color=ff95ca" height=170
+            media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
+        />
+        <source 
+            srcset="https://github-readme-stats.vercel.app/api/top-langs?username=rui0828&layout=compact&title_color=ff95ca&theme=dracula" height=170
+            media="(prefers-color-scheme: dark)"
+        />
+        <img src="https://github-readme-stats.vercel.app/api/top-langs?username=rui0828&layout=compact&title_color=ff95ca" height=170 alt="GitHub streak stats" />&nbsp;
     </picture>
     <!-- <picture>
         <source
@@ -135,7 +146,7 @@ C                        1 hr 14 mins        █░░░░░░░░░░�
         />
         <img src="https://github-readme-streak-stats.herokuapp.com/?user=rui0828&ring=ff95ca&fire=ff95ca& currStreakNum=9590FF&sideNums=ff95ca&currStreakLabel=9590FF&sideLabels=ff95ca"  alt="GitHub streak stats" />
     </picture> -->
-    <picture>
+    <!-- <picture>
         <source
             srcset="https://github-readme-stats.vercel.app/api?username=Rui0828&title_color=ff95ca&icon_color=9590ff&hide_title=true&rank_icon=default&show_icons=true"
             media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
@@ -145,7 +156,7 @@ C                        1 hr 14 mins        █░░░░░░░░░░�
             media="(prefers-color-scheme: dark)"
         />
         <img src="https://github-readme-stats.vercel.app/api?username=Rui0828&title_color=ff95ca&icon_color=9590ff&hide_title=true&rank_icon=default&show_icons=true" alt="GitHub stats" />
-    </picture>
+    </picture> -->
     
 </p>
 

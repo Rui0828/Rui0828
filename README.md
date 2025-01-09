@@ -119,7 +119,7 @@ C                        1 hr 14 mins        █░░░░░░░░░░�
             media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
         />
         <source 
-            srcset="https://github-stats-alpha.vercel.app/api?username=rui0828&cc=22272e&tc=ff95ca&ic=79dafa&bc=000000" height=170
+            srcset="https://github-stats-alpha.vercel.app/api?username=rui0828&cc=22272e&tc=ff95ca&ic=79dafa" height=170
             media="(prefers-color-scheme: dark)"
         />
         <img src="https://github-stats-alpha.vercel.app/api?username=rui0828&ic=ff95ca" height=170 alt="GitHub stats" />

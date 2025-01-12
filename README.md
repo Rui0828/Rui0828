@@ -54,15 +54,15 @@ pache.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.z
 <img align='right' src="https://i.giphy.com/cmCEsJZHYBPels360q.webp" width="300">
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-29%20hrs%2022%20mins-blue)
+![Code Time](http://img.shields.io/badge/Code%20Time-36%20hrs%2020%20mins-blue)
 
-![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-607.7%20thousand%20lines%20of%20code-blue)
+![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-607.8%20thousand%20lines%20of%20code-blue)
 
 **🐱 My GitHub Data** 
 
 > 📦 132.1 kB Used in GitHub's Storage 
  > 
-> 🏆 78 Contributions in the Year 2025
+> 🏆 79 Contributions in the Year 2025
  > 
 > 💼 Opted to Hire
  > 
@@ -70,42 +70,8 @@ pache.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.z
  > 
 > 🔑 6 Private Repositories 
  > 
-**I'm an Early 🐤** 
 
-```text
-🌞 Morning                31 commits          ██░░░░░░░░░░░░░░░░░░░░░░░   08.73 % 
-🌆 Daytime                161 commits         ███████████░░░░░░░░░░░░░░   45.35 % 
-🌃 Evening                82 commits          ██████░░░░░░░░░░░░░░░░░░░   23.10 % 
-🌙 Night                  81 commits          ██████░░░░░░░░░░░░░░░░░░░   22.82 % 
-```
-📅 **I'm Most Productive on Friday** 
-
-```text
-Monday                   48 commits          ███░░░░░░░░░░░░░░░░░░░░░░   13.52 % 
-Tuesday                  50 commits          ████░░░░░░░░░░░░░░░░░░░░░   14.08 % 
-Wednesday                57 commits          ████░░░░░░░░░░░░░░░░░░░░░   16.06 % 
-Thursday                 55 commits          ████░░░░░░░░░░░░░░░░░░░░░   15.49 % 
-Friday                   90 commits          ██████░░░░░░░░░░░░░░░░░░░   25.35 % 
-Saturday                 19 commits          █░░░░░░░░░░░░░░░░░░░░░░░░   05.35 % 
-Sunday                   36 commits          ███░░░░░░░░░░░░░░░░░░░░░░   10.14 % 
-```
-
-
-📊 **This Week I Spent My Time On** 
-
-```text
-🕑︎ Time Zone: Asia/Taipei
-
-💬 Programming Languages: 
-Other                    13 hrs 29 mins      █████████░░░░░░░░░░░░░░░░   37.14 % 
-Python                   9 hrs 12 mins       ██████░░░░░░░░░░░░░░░░░░░   25.37 % 
-Markdown                 7 hrs 19 mins       █████░░░░░░░░░░░░░░░░░░░░   20.14 % 
-YAML                     3 hrs 13 mins       ██░░░░░░░░░░░░░░░░░░░░░░░   08.89 % 
-C                        1 hr 14 mins        █░░░░░░░░░░░░░░░░░░░░░░░░   03.41 % 
-```
-
-
- Last Updated on 2025/01/11 16:23:53 UTC
+ Last Updated on 2025/01/12 16:23:27 UTC
 <!--END_SECTION:waka-->
 
 <hr>

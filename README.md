@@ -54,15 +54,15 @@ pache.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.z
 <img align='right' src="https://i.giphy.com/cmCEsJZHYBPels360q.webp" width="300">
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-44%20hrs%2022%20mins-blue)
+![Code Time](http://img.shields.io/badge/Code%20Time-49%20hrs%207%20mins-blue)
 
-![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-646.9%20thousand%20lines%20of%20code-blue)
+![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-647.2%20thousand%20lines%20of%20code-blue)
 
 **🐱 My GitHub Data** 
 
 > 📦 134.3 kB Used in GitHub's Storage 
  > 
-> 🏆 93 Contributions in the Year 2025
+> 🏆 94 Contributions in the Year 2025
  > 
 > 💼 Opted to Hire
  > 
@@ -70,42 +70,8 @@ pache.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.z
  > 
 > 🔑 8 Private Repositories 
  > 
-**I'm an Early 🐤** 
 
-```text
-🌞 Morning                32 commits          ██░░░░░░░░░░░░░░░░░░░░░░░   08.63 % 
-🌆 Daytime                170 commits         ███████████░░░░░░░░░░░░░░   45.82 % 
-🌃 Evening                88 commits          ██████░░░░░░░░░░░░░░░░░░░   23.72 % 
-🌙 Night                  81 commits          █████░░░░░░░░░░░░░░░░░░░░   21.83 % 
-```
-📅 **I'm Most Productive on Friday** 
-
-```text
-Monday                   52 commits          ████░░░░░░░░░░░░░░░░░░░░░   14.02 % 
-Tuesday                  52 commits          ████░░░░░░░░░░░░░░░░░░░░░   14.02 % 
-Wednesday                59 commits          ████░░░░░░░░░░░░░░░░░░░░░   15.90 % 
-Thursday                 59 commits          ████░░░░░░░░░░░░░░░░░░░░░   15.90 % 
-Friday                   93 commits          ██████░░░░░░░░░░░░░░░░░░░   25.07 % 
-Saturday                 19 commits          █░░░░░░░░░░░░░░░░░░░░░░░░   05.12 % 
-Sunday                   37 commits          ██░░░░░░░░░░░░░░░░░░░░░░░   09.97 % 
-```
-
-
-📊 **This Week I Spent My Time On** 
-
-```text
-🕑︎ Time Zone: Asia/Taipei
-
-💬 Programming Languages: 
-Other                    13 hrs 18 mins      █████████████████░░░░░░░░   67.40 % 
-Python                   4 hrs 55 mins       ██████░░░░░░░░░░░░░░░░░░░   24.96 % 
-Bash                     32 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   02.77 % 
-YAML                     16 mins             ░░░░░░░░░░░░░░░░░░░░░░░░░   01.42 % 
-SSH Config               15 mins             ░░░░░░░░░░░░░░░░░░░░░░░░░   01.35 % 
-```
-
-
- Last Updated on 2025/01/17 16:25:09 UTC
+ Last Updated on 2025/01/18 16:22:43 UTC
 <!--END_SECTION:waka-->
 
 <hr>

@@ -54,15 +54,13 @@ pache.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.z
 <img align='right' src="https://i.giphy.com/cmCEsJZHYBPels360q.webp" width="300">
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-49%20hrs%207%20mins-blue)
+![Code Time](http://img.shields.io/badge/Code%20Time-51%20hrs-blue)
 
-![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-647.2%20thousand%20lines%20of%20code-blue)
+![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-647.3%20thousand%20lines%20of%20code-blue)
 
 **🐱 My GitHub Data** 
 
 > 📦 134.3 kB Used in GitHub's Storage 
- > 
-> 🏆 94 Contributions in the Year 2025
  > 
 > 💼 Opted to Hire
  > 
@@ -70,8 +68,42 @@ pache.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.z
  > 
 > 🔑 8 Private Repositories 
  > 
+**I'm an Early 🐤** 
 
- Last Updated on 2025/01/18 16:22:43 UTC
+```text
+🌞 Morning                32 commits          ██░░░░░░░░░░░░░░░░░░░░░░░   08.56 % 
+🌆 Daytime                171 commits         ███████████░░░░░░░░░░░░░░   45.72 % 
+🌃 Evening                90 commits          ██████░░░░░░░░░░░░░░░░░░░   24.06 % 
+🌙 Night                  81 commits          █████░░░░░░░░░░░░░░░░░░░░   21.66 % 
+```
+📅 **I'm Most Productive on Friday** 
+
+```text
+Monday                   52 commits          ███░░░░░░░░░░░░░░░░░░░░░░   13.90 % 
+Tuesday                  52 commits          ███░░░░░░░░░░░░░░░░░░░░░░   13.90 % 
+Wednesday                59 commits          ████░░░░░░░░░░░░░░░░░░░░░   15.78 % 
+Thursday                 59 commits          ████░░░░░░░░░░░░░░░░░░░░░   15.78 % 
+Friday                   93 commits          ██████░░░░░░░░░░░░░░░░░░░   24.87 % 
+Saturday                 20 commits          █░░░░░░░░░░░░░░░░░░░░░░░░   05.35 % 
+Sunday                   39 commits          ███░░░░░░░░░░░░░░░░░░░░░░   10.43 % 
+```
+
+
+📊 **This Week I Spent My Time On** 
+
+```text
+🕑︎ Time Zone: Asia/Taipei
+
+💬 Programming Languages: 
+Python                   8 hrs 10 mins       ███████████░░░░░░░░░░░░░░   45.61 % 
+Other                    7 hrs 8 mins        ██████████░░░░░░░░░░░░░░░   39.84 % 
+Markdown                 1 hr 35 mins        ██░░░░░░░░░░░░░░░░░░░░░░░   08.90 % 
+Bash                     33 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   03.09 % 
+SSH Config               10 mins             ░░░░░░░░░░░░░░░░░░░░░░░░░   00.99 % 
+```
+
+
+ Last Updated on 2025/01/19 16:22:38 UTC
 <!--END_SECTION:waka-->
 
 <hr>

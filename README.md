@@ -56,13 +56,13 @@ pache.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.z
 <!--START_SECTION:waka-->
 ![Code Time](http://img.shields.io/badge/Code%20Time-112%20hrs%2038%20mins-blue)
 
-![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-682.5%20thousand%20lines%20of%20code-blue)
+![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-683.8%20thousand%20lines%20of%20code-blue)
 
 **🐱 My GitHub Data** 
 
-> 📦 137.0 kB Used in GitHub's Storage 
+> 📦 137.1 kB Used in GitHub's Storage 
  > 
-> 🏆 169 Contributions in the Year 2025
+> 🏆 176 Contributions in the Year 2025
  > 
 > 💼 Opted to Hire
  > 
@@ -70,8 +70,42 @@ pache.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.z
  > 
 > 🔑 8 Private Repositories 
  > 
+**I'm an Early 🐤** 
 
- Last Updated on 2025/01/31 16:25:19 UTC
+```text
+🌞 Morning                38 commits          ██░░░░░░░░░░░░░░░░░░░░░░░   07.66 % 
+🌆 Daytime                221 commits         ███████████░░░░░░░░░░░░░░   44.56 % 
+🌃 Evening                125 commits         ██████░░░░░░░░░░░░░░░░░░░   25.20 % 
+🌙 Night                  112 commits         ██████░░░░░░░░░░░░░░░░░░░   22.58 % 
+```
+📅 **I'm Most Productive on Friday** 
+
+```text
+Monday                   59 commits          ███░░░░░░░░░░░░░░░░░░░░░░   11.90 % 
+Tuesday                  79 commits          ████░░░░░░░░░░░░░░░░░░░░░   15.93 % 
+Wednesday                72 commits          ████░░░░░░░░░░░░░░░░░░░░░   14.52 % 
+Thursday                 86 commits          ████░░░░░░░░░░░░░░░░░░░░░   17.34 % 
+Friday                   118 commits         ██████░░░░░░░░░░░░░░░░░░░   23.79 % 
+Saturday                 31 commits          ██░░░░░░░░░░░░░░░░░░░░░░░   06.25 % 
+Sunday                   51 commits          ███░░░░░░░░░░░░░░░░░░░░░░   10.28 % 
+```
+
+
+📊 **This Week I Spent My Time On** 
+
+```text
+🕑︎ Time Zone: Asia/Taipei
+
+💬 Programming Languages: 
+Python                   10 hrs 6 mins       ███████████░░░░░░░░░░░░░░   45.83 % 
+Other                    5 hrs 53 mins       ███████░░░░░░░░░░░░░░░░░░   26.66 % 
+JSON                     5 hrs 44 mins       ██████░░░░░░░░░░░░░░░░░░░   25.98 % 
+INI                      10 mins             ░░░░░░░░░░░░░░░░░░░░░░░░░   00.81 % 
+Git Config               9 mins              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.71 % 
+```
+
+
+ Last Updated on 2025/02/01 16:22:52 UTC
 <!--END_SECTION:waka-->
 
 <hr>

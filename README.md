@@ -54,15 +54,13 @@ pache.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.z
 <img align='right' src="https://i.giphy.com/cmCEsJZHYBPels360q.webp" width="300">
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-160%20hrs%206%20mins-blue)
+![Code Time](http://img.shields.io/badge/Code%20Time-166%20hrs%2017%20mins-blue)
 
-![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-733.8%20thousand%20lines%20of%20code-blue)
+![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-734.2%20thousand%20lines%20of%20code-blue)
 
 **🐱 My GitHub Data** 
 
-> 📦 138.2 kB Used in GitHub's Storage 
- > 
-> 🏆 224 Contributions in the Year 2025
+> 📦 138.0 kB Used in GitHub's Storage 
  > 
 > 💼 Opted to Hire
  > 
@@ -70,8 +68,42 @@ pache.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.z
  > 
 > 🔑 8 Private Repositories 
  > 
+**I'm an Early 🐤** 
 
- Last Updated on 2025/02/12 16:27:32 UTC
+```text
+🌞 Morning                41 commits          ██░░░░░░░░░░░░░░░░░░░░░░░   07.48 % 
+🌆 Daytime                236 commits         ███████████░░░░░░░░░░░░░░   43.07 % 
+🌃 Evening                155 commits         ███████░░░░░░░░░░░░░░░░░░   28.28 % 
+🌙 Night                  116 commits         █████░░░░░░░░░░░░░░░░░░░░   21.17 % 
+```
+📅 **I'm Most Productive on Friday** 
+
+```text
+Monday                   61 commits          ███░░░░░░░░░░░░░░░░░░░░░░   11.13 % 
+Tuesday                  84 commits          ████░░░░░░░░░░░░░░░░░░░░░   15.33 % 
+Wednesday                84 commits          ████░░░░░░░░░░░░░░░░░░░░░   15.33 % 
+Thursday                 93 commits          ████░░░░░░░░░░░░░░░░░░░░░   16.97 % 
+Friday                   120 commits         █████░░░░░░░░░░░░░░░░░░░░   21.90 % 
+Saturday                 34 commits          ██░░░░░░░░░░░░░░░░░░░░░░░   06.20 % 
+Sunday                   72 commits          ███░░░░░░░░░░░░░░░░░░░░░░   13.14 % 
+```
+
+
+📊 **This Week I Spent My Time On** 
+
+```text
+🕑︎ Time Zone: Asia/Taipei
+
+💬 Programming Languages: 
+Other                    17 hrs 19 mins      ███████████████░░░░░░░░░░   61.55 % 
+Python                   10 hrs 9 mins       █████████░░░░░░░░░░░░░░░░   36.10 % 
+JSON                     29 mins             ░░░░░░░░░░░░░░░░░░░░░░░░░   01.73 % 
+Text                     7 mins              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.42 % 
+Bash                     1 min               ░░░░░░░░░░░░░░░░░░░░░░░░░   00.10 % 
+```
+
+
+ Last Updated on 2025/02/13 16:27:33 UTC
 <!--END_SECTION:waka-->
 
 <hr>

@@ -54,13 +54,15 @@ pache.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.z
 <img align='right' src="https://i.giphy.com/cmCEsJZHYBPels360q.webp" width="300">
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-183%20hrs%2015%20mins-blue)
+![Code Time](http://img.shields.io/badge/Code%20Time-195%20hrs%202%20mins-blue)
 
-![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-795.7%20thousand%20lines%20of%20code-blue)
+![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-797.0%20thousand%20lines%20of%20code-blue)
 
 **🐱 My GitHub Data** 
 
-> 📦 138.0 kB Used in GitHub's Storage 
+> 📦 138.1 kB Used in GitHub's Storage 
+ > 
+> 🏆 234 Contributions in the Year 2025
  > 
 > 💼 Opted to Hire
  > 
@@ -68,42 +70,8 @@ pache.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.z
  > 
 > 🔑 8 Private Repositories 
  > 
-**I'm a Night 🦉** 
 
-```text
-🌞 Morning                47 commits          ██░░░░░░░░░░░░░░░░░░░░░░░   07.05 % 
-🌆 Daytime                263 commits         ██████████░░░░░░░░░░░░░░░   39.43 % 
-🌃 Evening                199 commits         ███████░░░░░░░░░░░░░░░░░░   29.84 % 
-🌙 Night                  158 commits         ██████░░░░░░░░░░░░░░░░░░░   23.69 % 
-```
-📅 **I'm Most Productive on Friday** 
-
-```text
-Monday                   69 commits          ███░░░░░░░░░░░░░░░░░░░░░░   10.34 % 
-Tuesday                  105 commits         ████░░░░░░░░░░░░░░░░░░░░░   15.74 % 
-Wednesday                94 commits          ████░░░░░░░░░░░░░░░░░░░░░   14.09 % 
-Thursday                 117 commits         ████░░░░░░░░░░░░░░░░░░░░░   17.54 % 
-Friday                   130 commits         █████░░░░░░░░░░░░░░░░░░░░   19.49 % 
-Saturday                 50 commits          ██░░░░░░░░░░░░░░░░░░░░░░░   07.50 % 
-Sunday                   102 commits         ████░░░░░░░░░░░░░░░░░░░░░   15.29 % 
-```
-
-
-📊 **This Week I Spent My Time On** 
-
-```text
-🕑︎ Time Zone: Asia/Taipei
-
-💬 Programming Languages: 
-Python                   19 hrs 43 mins      ██████████████░░░░░░░░░░░   56.46 % 
-Other                    11 hrs 40 mins      ████████░░░░░░░░░░░░░░░░░   33.41 % 
-JSON                     1 hr 22 mins        █░░░░░░░░░░░░░░░░░░░░░░░░   03.94 % 
-Text                     1 hr 12 mins        █░░░░░░░░░░░░░░░░░░░░░░░░   03.44 % 
-INI                      37 mins             ░░░░░░░░░░░░░░░░░░░░░░░░░   01.78 % 
-```
-
-
- Last Updated on 2025/02/18 16:27:34 UTC
+ Last Updated on 2025/02/19 16:25:54 UTC
 <!--END_SECTION:waka-->
 
 <hr>

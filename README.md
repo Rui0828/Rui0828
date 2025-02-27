@@ -54,7 +54,7 @@ pache.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.z
 <img align='right' src="https://i.giphy.com/cmCEsJZHYBPels360q.webp" width="300">
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-228%20hrs%2050%20mins-blue)
+![Code Time](http://img.shields.io/badge/Code%20Time-231%20hrs%2047%20mins-blue)
 
 ![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-868.0%20thousand%20lines%20of%20code-blue)
 
@@ -70,42 +70,8 @@ pache.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.z
  > 
 > 🔑 8 Private Repositories 
  > 
-**I'm a Night 🦉** 
 
-```text
-🌞 Morning                55 commits          ██░░░░░░░░░░░░░░░░░░░░░░░   06.10 % 
-🌆 Daytime                297 commits         ████████░░░░░░░░░░░░░░░░░   32.93 % 
-🌃 Evening                258 commits         ███████░░░░░░░░░░░░░░░░░░   28.60 % 
-🌙 Night                  292 commits         ████████░░░░░░░░░░░░░░░░░   32.37 % 
-```
-📅 **I'm Most Productive on Thursday** 
-
-```text
-Monday                   101 commits         ███░░░░░░░░░░░░░░░░░░░░░░   11.20 % 
-Tuesday                  129 commits         ████░░░░░░░░░░░░░░░░░░░░░   14.30 % 
-Wednesday                135 commits         ████░░░░░░░░░░░░░░░░░░░░░   14.97 % 
-Thursday                 174 commits         █████░░░░░░░░░░░░░░░░░░░░   19.29 % 
-Friday                   158 commits         ████░░░░░░░░░░░░░░░░░░░░░   17.52 % 
-Saturday                 64 commits          ██░░░░░░░░░░░░░░░░░░░░░░░   07.10 % 
-Sunday                   141 commits         ████░░░░░░░░░░░░░░░░░░░░░   15.63 % 
-```
-
-
-📊 **This Week I Spent My Time On** 
-
-```text
-🕑︎ Time Zone: Asia/Taipei
-
-💬 Programming Languages: 
-Other                    14 hrs 6 mins       ████████████░░░░░░░░░░░░░   48.89 % 
-Python                   9 hrs 55 mins       █████████░░░░░░░░░░░░░░░░   34.40 % 
-CSV                      1 hr 48 mins        ██░░░░░░░░░░░░░░░░░░░░░░░   06.25 % 
-JSON                     51 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   03.00 % 
-Text                     50 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   02.92 % 
-```
-
-
- Last Updated on 2025/02/26 16:27:56 UTC
+ Last Updated on 2025/02/27 16:28:26 UTC
 <!--END_SECTION:waka-->
 
 <hr>

@@ -54,7 +54,7 @@ pache.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.z
 <img align='right' src="https://i.giphy.com/cmCEsJZHYBPels360q.webp" width="300">
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-231%20hrs%2047%20mins-blue)
+![Code Time](http://img.shields.io/badge/Code%20Time-232%20hrs%2051%20mins-blue)
 
 ![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-868.0%20thousand%20lines%20of%20code-blue)
 
@@ -70,8 +70,42 @@ pache.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.z
  > 
 > 🔑 8 Private Repositories 
  > 
+**I'm a Night 🦉** 
 
- Last Updated on 2025/02/27 16:28:26 UTC
+```text
+🌞 Morning                55 commits          ██░░░░░░░░░░░░░░░░░░░░░░░   06.08 % 
+🌆 Daytime                298 commits         ████████░░░░░░░░░░░░░░░░░   32.96 % 
+🌃 Evening                258 commits         ███████░░░░░░░░░░░░░░░░░░   28.54 % 
+🌙 Night                  293 commits         ████████░░░░░░░░░░░░░░░░░   32.41 % 
+```
+📅 **I'm Most Productive on Thursday** 
+
+```text
+Monday                   101 commits         ███░░░░░░░░░░░░░░░░░░░░░░   11.17 % 
+Tuesday                  129 commits         ████░░░░░░░░░░░░░░░░░░░░░   14.27 % 
+Wednesday                135 commits         ████░░░░░░░░░░░░░░░░░░░░░   14.93 % 
+Thursday                 174 commits         █████░░░░░░░░░░░░░░░░░░░░   19.25 % 
+Friday                   160 commits         ████░░░░░░░░░░░░░░░░░░░░░   17.70 % 
+Saturday                 64 commits          ██░░░░░░░░░░░░░░░░░░░░░░░   07.08 % 
+Sunday                   141 commits         ████░░░░░░░░░░░░░░░░░░░░░   15.60 % 
+```
+
+
+📊 **This Week I Spent My Time On** 
+
+```text
+🕑︎ Time Zone: Asia/Taipei
+
+💬 Programming Languages: 
+Other                    13 hrs 48 mins      ███████████████░░░░░░░░░░   58.10 % 
+Python                   6 hrs 28 mins       ███████░░░░░░░░░░░░░░░░░░   27.26 % 
+CSV                      1 hr 50 mins        ██░░░░░░░░░░░░░░░░░░░░░░░   07.75 % 
+Java                     47 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   03.33 % 
+YAML                     22 mins             ░░░░░░░░░░░░░░░░░░░░░░░░░   01.55 % 
+```
+
+
+ Last Updated on 2025/02/28 16:27:33 UTC
 <!--END_SECTION:waka-->
 
 <hr>

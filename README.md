@@ -54,7 +54,7 @@ pache.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.z
 <img align='right' src="https://i.giphy.com/cmCEsJZHYBPels360q.webp" width="300">
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-249%20hrs%2022%20mins-blue)
+![Code Time](http://img.shields.io/badge/Code%20Time-256%20hrs%206%20mins-blue)
 
 ![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-1.0%20million%20lines%20of%20code-blue)
 
@@ -62,7 +62,7 @@ pache.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.z
 
 > 📦 138.7 kB Used in GitHub's Storage 
  > 
-> 🏆 308 Contributions in the Year 2025
+> 🏆 309 Contributions in the Year 2025
  > 
 > 💼 Opted to Hire
  > 
@@ -70,42 +70,8 @@ pache.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.z
  > 
 > 🔑 8 Private Repositories 
  > 
-**I'm a Night 🦉** 
 
-```text
-🌞 Morning                55 commits          ██░░░░░░░░░░░░░░░░░░░░░░░   06.03 % 
-🌆 Daytime                303 commits         ████████░░░░░░░░░░░░░░░░░   33.22 % 
-🌃 Evening                260 commits         ███████░░░░░░░░░░░░░░░░░░   28.51 % 
-🌙 Night                  294 commits         ████████░░░░░░░░░░░░░░░░░   32.24 % 
-```
-📅 **I'm Most Productive on Thursday** 
-
-```text
-Monday                   104 commits         ███░░░░░░░░░░░░░░░░░░░░░░   11.40 % 
-Tuesday                  130 commits         ████░░░░░░░░░░░░░░░░░░░░░   14.25 % 
-Wednesday                137 commits         ████░░░░░░░░░░░░░░░░░░░░░   15.02 % 
-Thursday                 174 commits         █████░░░░░░░░░░░░░░░░░░░░   19.08 % 
-Friday                   160 commits         ████░░░░░░░░░░░░░░░░░░░░░   17.54 % 
-Saturday                 66 commits          ██░░░░░░░░░░░░░░░░░░░░░░░   07.24 % 
-Sunday                   141 commits         ████░░░░░░░░░░░░░░░░░░░░░   15.46 % 
-```
-
-
-📊 **This Week I Spent My Time On** 
-
-```text
-🕑︎ Time Zone: Asia/Taipei
-
-💬 Programming Languages: 
-Python                   11 hrs 3 mins       ███████████░░░░░░░░░░░░░░   45.49 % 
-Other                    7 hrs 53 mins       ████████░░░░░░░░░░░░░░░░░   32.47 % 
-Text                     4 hrs 7 mins        ████░░░░░░░░░░░░░░░░░░░░░   16.98 % 
-INI                      37 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   02.60 % 
-JSON                     28 mins             ░░░░░░░░░░░░░░░░░░░░░░░░░   01.98 % 
-```
-
-
- Last Updated on 2025/03/05 16:33:58 UTC
+ Last Updated on 2025/03/06 16:27:42 UTC
 <!--END_SECTION:waka-->
 
 <hr>

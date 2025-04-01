@@ -60,52 +60,18 @@ pache.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.z
 
 **🐱 My GitHub Data** 
 
-> 📦 137.0 kB Used in GitHub's Storage 
+> 📦 136.9 kB Used in GitHub's Storage 
  > 
-> 🏆 363 Contributions in the Year 2025
+> 🏆 370 Contributions in the Year 2025
  > 
 > 💼 Opted to Hire
  > 
-> 📜 14 Public Repositories 
+> 📜 15 Public Repositories 
  > 
 > 🔑 7 Private Repositories 
  > 
-**I'm a Night 🦉** 
 
-```text
-🌞 Morning                72 commits          ██░░░░░░░░░░░░░░░░░░░░░░░   06.14 % 
-🌆 Daytime                360 commits         ████████░░░░░░░░░░░░░░░░░   30.72 % 
-🌃 Evening                350 commits         ███████░░░░░░░░░░░░░░░░░░   29.86 % 
-🌙 Night                  390 commits         ████████░░░░░░░░░░░░░░░░░   33.28 % 
-```
-📅 **I'm Most Productive on Thursday** 
-
-```text
-Monday                   150 commits         ███░░░░░░░░░░░░░░░░░░░░░░   12.80 % 
-Tuesday                  154 commits         ███░░░░░░░░░░░░░░░░░░░░░░   13.14 % 
-Wednesday                172 commits         ████░░░░░░░░░░░░░░░░░░░░░   14.68 % 
-Thursday                 229 commits         █████░░░░░░░░░░░░░░░░░░░░   19.54 % 
-Friday                   195 commits         ████░░░░░░░░░░░░░░░░░░░░░   16.64 % 
-Saturday                 95 commits          ██░░░░░░░░░░░░░░░░░░░░░░░   08.11 % 
-Sunday                   177 commits         ████░░░░░░░░░░░░░░░░░░░░░   15.10 % 
-```
-
-
-📊 **This Week I Spent My Time On** 
-
-```text
-🕑︎ Time Zone: Asia/Taipei
-
-💬 Programming Languages: 
-Python                   9 hrs 17 mins       ██████████████████░░░░░░░   73.55 % 
-Other                    1 hr 25 mins        ███░░░░░░░░░░░░░░░░░░░░░░   11.35 % 
-TeX                      51 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   06.83 % 
-YAML                     38 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   05.09 % 
-HTTP Request             11 mins             ░░░░░░░░░░░░░░░░░░░░░░░░░   01.46 % 
-```
-
-
- Last Updated on 2025/03/31 16:28:59 UTC
+ Last Updated on 2025/04/01 16:27:55 UTC
 <!--END_SECTION:waka-->
 
 <hr>

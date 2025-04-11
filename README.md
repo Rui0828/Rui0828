@@ -54,7 +54,7 @@ pache.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.z
 <img align='right' src="https://i.giphy.com/cmCEsJZHYBPels360q.webp" width="300">
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-360%20hrs%2046%20mins-blue)
+![Code Time](http://img.shields.io/badge/Code%20Time-362%20hrs%2028%20mins-blue)
 
 ![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-1.1%20million%20lines%20of%20code-blue)
 
@@ -62,7 +62,7 @@ pache.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.z
 
 > 📦 137.0 kB Used in GitHub's Storage 
  > 
-> 🏆 395 Contributions in the Year 2025
+> 🏆 397 Contributions in the Year 2025
  > 
 > 💼 Opted to Hire
  > 
@@ -70,8 +70,42 @@ pache.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.z
  > 
 > 🔑 7 Private Repositories 
  > 
+**I'm a Night 🦉** 
 
- Last Updated on 2025/04/10 16:29:34 UTC
+```text
+🌞 Morning                72 commits          █░░░░░░░░░░░░░░░░░░░░░░░░   05.97 % 
+🌆 Daytime                384 commits         ████████░░░░░░░░░░░░░░░░░   31.84 % 
+🌃 Evening                359 commits         ███████░░░░░░░░░░░░░░░░░░   29.77 % 
+🌙 Night                  391 commits         ████████░░░░░░░░░░░░░░░░░   32.42 % 
+```
+📅 **I'm Most Productive on Thursday** 
+
+```text
+Monday                   151 commits         ███░░░░░░░░░░░░░░░░░░░░░░   12.52 % 
+Tuesday                  161 commits         ███░░░░░░░░░░░░░░░░░░░░░░   13.35 % 
+Wednesday                173 commits         ████░░░░░░░░░░░░░░░░░░░░░   14.34 % 
+Thursday                 234 commits         █████░░░░░░░░░░░░░░░░░░░░   19.40 % 
+Friday                   208 commits         ████░░░░░░░░░░░░░░░░░░░░░   17.25 % 
+Saturday                 101 commits         ██░░░░░░░░░░░░░░░░░░░░░░░   08.37 % 
+Sunday                   178 commits         ████░░░░░░░░░░░░░░░░░░░░░   14.76 % 
+```
+
+
+📊 **This Week I Spent My Time On** 
+
+```text
+🕑︎ Time Zone: Asia/Taipei
+
+💬 Programming Languages: 
+Python                   4 hrs 26 mins       ███████████████░░░░░░░░░░   59.40 % 
+Markdown                 1 hr 55 mins        ██████░░░░░░░░░░░░░░░░░░░   25.88 % 
+Other                    51 mins             ███░░░░░░░░░░░░░░░░░░░░░░   11.44 % 
+JSON                     6 mins              ░░░░░░░░░░░░░░░░░░░░░░░░░   01.50 % 
+Git Config               5 mins              ░░░░░░░░░░░░░░░░░░░░░░░░░   01.26 % 
+```
+
+
+ Last Updated on 2025/04/11 10:19:05 UTC
 <!--END_SECTION:waka-->
 
 <hr>

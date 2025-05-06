@@ -54,7 +54,7 @@ pache.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.z
 <img align='right' src="https://i.giphy.com/cmCEsJZHYBPels360q.webp" width="300">
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-390%20hrs%2038%20mins-blue)
+![Code Time](http://img.shields.io/badge/Code%20Time-393%20hrs%2026%20mins-blue)
 
 ![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-1.1%20million%20lines%20of%20code-blue)
 
@@ -62,7 +62,7 @@ pache.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.z
 
 > 📦 137.1 kB Used in GitHub's Storage 
  > 
-> 🏆 447 Contributions in the Year 2025
+> 🏆 448 Contributions in the Year 2025
  > 
 > 💼 Opted to Hire
  > 
@@ -70,42 +70,8 @@ pache.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.z
  > 
 > 🔑 9 Private Repositories 
  > 
-**I'm a Night 🦉** 
 
-```text
-🌞 Morning                74 commits          █░░░░░░░░░░░░░░░░░░░░░░░░   05.92 % 
-🌆 Daytime                422 commits         ████████░░░░░░░░░░░░░░░░░   33.76 % 
-🌃 Evening                363 commits         ███████░░░░░░░░░░░░░░░░░░   29.04 % 
-🌙 Night                  391 commits         ████████░░░░░░░░░░░░░░░░░   31.28 % 
-```
-📅 **I'm Most Productive on Thursday** 
-
-```text
-Monday                   154 commits         ███░░░░░░░░░░░░░░░░░░░░░░   12.32 % 
-Tuesday                  164 commits         ███░░░░░░░░░░░░░░░░░░░░░░   13.12 % 
-Wednesday                177 commits         ████░░░░░░░░░░░░░░░░░░░░░   14.16 % 
-Thursday                 257 commits         █████░░░░░░░░░░░░░░░░░░░░   20.56 % 
-Friday                   209 commits         ████░░░░░░░░░░░░░░░░░░░░░   16.72 % 
-Saturday                 108 commits         ██░░░░░░░░░░░░░░░░░░░░░░░   08.64 % 
-Sunday                   181 commits         ████░░░░░░░░░░░░░░░░░░░░░   14.48 % 
-```
-
-
-📊 **This Week I Spent My Time On** 
-
-```text
-🕑︎ Time Zone: Asia/Taipei
-
-💬 Programming Languages: 
-Other                    3 hrs 35 mins       █████████████████░░░░░░░░   69.96 % 
-Python                   1 hr 24 mins        ███████░░░░░░░░░░░░░░░░░░   27.45 % 
-Git Config               2 mins              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.88 % 
-Bash                     2 mins              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.78 % 
-SSH Config               1 min               ░░░░░░░░░░░░░░░░░░░░░░░░░   00.62 % 
-```
-
-
- Last Updated on 2025/05/05 16:30:17 UTC
+ Last Updated on 2025/05/06 16:28:51 UTC
 <!--END_SECTION:waka-->
 
 <hr>

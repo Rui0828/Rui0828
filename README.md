@@ -70,8 +70,42 @@ pache.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.z
  > 
 > 🔑 9 Private Repositories 
  > 
+**I'm a Night 🦉** 
 
- Last Updated on 2025/05/17 16:27:25 UTC
+```text
+🌞 Morning                82 commits          ██░░░░░░░░░░░░░░░░░░░░░░░   06.42 % 
+🌆 Daytime                439 commits         █████████░░░░░░░░░░░░░░░░   34.38 % 
+🌃 Evening                365 commits         ███████░░░░░░░░░░░░░░░░░░   28.58 % 
+🌙 Night                  391 commits         ████████░░░░░░░░░░░░░░░░░   30.62 % 
+```
+📅 **I'm Most Productive on Thursday** 
+
+```text
+Monday                   155 commits         ███░░░░░░░░░░░░░░░░░░░░░░   12.14 % 
+Tuesday                  175 commits         ███░░░░░░░░░░░░░░░░░░░░░░   13.70 % 
+Wednesday                179 commits         ████░░░░░░░░░░░░░░░░░░░░░   14.02 % 
+Thursday                 267 commits         █████░░░░░░░░░░░░░░░░░░░░   20.91 % 
+Friday                   210 commits         ████░░░░░░░░░░░░░░░░░░░░░   16.44 % 
+Saturday                 109 commits         ██░░░░░░░░░░░░░░░░░░░░░░░   08.54 % 
+Sunday                   182 commits         ████░░░░░░░░░░░░░░░░░░░░░   14.25 % 
+```
+
+
+📊 **This Week I Spent My Time On** 
+
+```text
+🕑︎ Time Zone: Asia/Taipei
+
+💬 Programming Languages: 
+Other                    6 hrs 12 mins       ███████████████░░░░░░░░░░   59.27 % 
+Batchfile                2 hrs 14 mins       █████░░░░░░░░░░░░░░░░░░░░   21.50 % 
+Python                   1 hr 21 mins        ███░░░░░░░░░░░░░░░░░░░░░░   12.96 % 
+Markdown                 18 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   02.88 % 
+YAML                     10 mins             ░░░░░░░░░░░░░░░░░░░░░░░░░   01.69 % 
+```
+
+
+ Last Updated on 2025/05/18 16:26:50 UTC
 <!--END_SECTION:waka-->
 
 <hr>

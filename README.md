@@ -54,7 +54,7 @@ pache.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.z
 <img align='right' src="https://i.giphy.com/cmCEsJZHYBPels360q.webp" width="300">
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-420%20hrs%2056%20mins-blue)
+![Code Time](http://img.shields.io/badge/Code%20Time-421%20hrs%2010%20mins-blue)
 
 ![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-1.1%20million%20lines%20of%20code-blue)
 
@@ -62,7 +62,7 @@ pache.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.z
 
 > 📦 137.1 kB Used in GitHub's Storage 
  > 
-> 🏆 477 Contributions in the Year 2025
+> 🏆 488 Contributions in the Year 2025
  > 
 > 💼 Opted to Hire
  > 
@@ -70,39 +70,8 @@ pache.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.z
  > 
 > 🔑 9 Private Repositories 
  > 
-**I'm a Night 🦉** 
 
-```text
-🌞 Morning                82 commits          ██░░░░░░░░░░░░░░░░░░░░░░░   06.39 % 
-🌆 Daytime                446 commits         █████████░░░░░░░░░░░░░░░░   34.74 % 
-🌃 Evening                365 commits         ███████░░░░░░░░░░░░░░░░░░   28.43 % 
-🌙 Night                  391 commits         ████████░░░░░░░░░░░░░░░░░   30.45 % 
-```
-📅 **I'm Most Productive on Thursday** 
-
-```text
-Monday                   157 commits         ███░░░░░░░░░░░░░░░░░░░░░░   12.23 % 
-Tuesday                  175 commits         ███░░░░░░░░░░░░░░░░░░░░░░   13.63 % 
-Wednesday                179 commits         ███░░░░░░░░░░░░░░░░░░░░░░   13.94 % 
-Thursday                 267 commits         █████░░░░░░░░░░░░░░░░░░░░   20.79 % 
-Friday                   213 commits         ████░░░░░░░░░░░░░░░░░░░░░   16.59 % 
-Saturday                 110 commits         ██░░░░░░░░░░░░░░░░░░░░░░░   08.57 % 
-Sunday                   183 commits         ████░░░░░░░░░░░░░░░░░░░░░   14.25 % 
-```
-
-
-📊 **This Week I Spent My Time On** 
-
-```text
-🕑︎ Time Zone: Asia/Taipei
-
-💬 Programming Languages: 
-Other                    10 hrs 19 mins      █████████████████████████   99.57 % 
-Python                   2 mins              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.43 % 
-```
-
-
- Last Updated on 2025/05/26 16:29:02 UTC
+ Last Updated on 2025/05/27 16:30:55 UTC
 <!--END_SECTION:waka-->
 
 <hr>

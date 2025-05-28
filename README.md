@@ -54,7 +54,7 @@ pache.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.z
 <img align='right' src="https://i.giphy.com/cmCEsJZHYBPels360q.webp" width="300">
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-421%20hrs%2010%20mins-blue)
+![Code Time](http://img.shields.io/badge/Code%20Time-425%20hrs%202%20mins-blue)
 
 ![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-1.1%20million%20lines%20of%20code-blue)
 
@@ -62,16 +62,48 @@ pache.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.z
 
 > 📦 137.1 kB Used in GitHub's Storage 
  > 
-> 🏆 488 Contributions in the Year 2025
- > 
 > 💼 Opted to Hire
  > 
 > 📜 17 Public Repositories 
  > 
 > 🔑 9 Private Repositories 
  > 
+**I'm a Night 🦉** 
 
- Last Updated on 2025/05/27 16:30:55 UTC
+```text
+🌞 Morning                83 commits          ██░░░░░░░░░░░░░░░░░░░░░░░   06.38 % 
+🌆 Daytime                457 commits         █████████░░░░░░░░░░░░░░░░   35.13 % 
+🌃 Evening                370 commits         ███████░░░░░░░░░░░░░░░░░░   28.44 % 
+🌙 Night                  391 commits         ████████░░░░░░░░░░░░░░░░░   30.05 % 
+```
+📅 **I'm Most Productive on Thursday** 
+
+```text
+Monday                   157 commits         ███░░░░░░░░░░░░░░░░░░░░░░   12.07 % 
+Tuesday                  186 commits         ████░░░░░░░░░░░░░░░░░░░░░   14.30 % 
+Wednesday                185 commits         ████░░░░░░░░░░░░░░░░░░░░░   14.22 % 
+Thursday                 267 commits         █████░░░░░░░░░░░░░░░░░░░░   20.52 % 
+Friday                   213 commits         ████░░░░░░░░░░░░░░░░░░░░░   16.37 % 
+Saturday                 110 commits         ██░░░░░░░░░░░░░░░░░░░░░░░   08.46 % 
+Sunday                   183 commits         ████░░░░░░░░░░░░░░░░░░░░░   14.07 % 
+```
+
+
+📊 **This Week I Spent My Time On** 
+
+```text
+🕑︎ Time Zone: Asia/Taipei
+
+💬 Programming Languages: 
+Other                    7 hrs 15 mins       ███████████████████░░░░░░   74.74 % 
+Python                   1 hr 8 mins         ███░░░░░░░░░░░░░░░░░░░░░░   11.75 % 
+Docker                   19 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   03.35 % 
+YAML                     19 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   03.30 % 
+Text                     15 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   02.69 % 
+```
+
+
+ Last Updated on 2025/05/28 16:29:31 UTC
 <!--END_SECTION:waka-->
 
 <hr>

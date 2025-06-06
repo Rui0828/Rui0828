@@ -54,7 +54,7 @@ pache.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.z
 <img align='right' src="https://i.giphy.com/cmCEsJZHYBPels360q.webp" width="300">
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-465%20hrs-blue)
+![Code Time](http://img.shields.io/badge/Code%20Time-471%20hrs%2022%20mins-blue)
 
 ![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-1.1%20million%20lines%20of%20code-blue)
 
@@ -70,42 +70,8 @@ pache.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.z
  > 
 > 🔑 9 Private Repositories 
  > 
-**I'm a Night 🦉** 
 
-```text
-🌞 Morning                87 commits          ██░░░░░░░░░░░░░░░░░░░░░░░   06.30 % 
-🌆 Daytime                499 commits         █████████░░░░░░░░░░░░░░░░   36.13 % 
-🌃 Evening                387 commits         ███████░░░░░░░░░░░░░░░░░░   28.02 % 
-🌙 Night                  408 commits         ███████░░░░░░░░░░░░░░░░░░   29.54 % 
-```
-📅 **I'm Most Productive on Thursday** 
-
-```text
-Monday                   174 commits         ███░░░░░░░░░░░░░░░░░░░░░░   12.60 % 
-Tuesday                  194 commits         ████░░░░░░░░░░░░░░░░░░░░░   14.05 % 
-Wednesday                212 commits         ████░░░░░░░░░░░░░░░░░░░░░   15.35 % 
-Thursday                 271 commits         █████░░░░░░░░░░░░░░░░░░░░   19.62 % 
-Friday                   226 commits         ████░░░░░░░░░░░░░░░░░░░░░   16.36 % 
-Saturday                 111 commits         ██░░░░░░░░░░░░░░░░░░░░░░░   08.04 % 
-Sunday                   193 commits         ███░░░░░░░░░░░░░░░░░░░░░░   13.98 % 
-```
-
-
-📊 **This Week I Spent My Time On** 
-
-```text
-🕑︎ Time Zone: Asia/Taipei
-
-💬 Programming Languages: 
-Python                   24 hrs 3 mins       ███████████████░░░░░░░░░░   58.02 % 
-Other                    8 hrs 52 mins       █████░░░░░░░░░░░░░░░░░░░░   21.42 % 
-Markdown                 2 hrs 15 mins       █░░░░░░░░░░░░░░░░░░░░░░░░   05.45 % 
-JavaScript               2 hrs 9 mins        █░░░░░░░░░░░░░░░░░░░░░░░░   05.22 % 
-JSON                     1 hr 54 mins        █░░░░░░░░░░░░░░░░░░░░░░░░   04.59 % 
-```
-
-
- Last Updated on 2025/06/05 16:31:07 UTC
+ Last Updated on 2025/06/06 16:31:24 UTC
 <!--END_SECTION:waka-->
 
 <hr>

@@ -3,11 +3,11 @@
 
 <p align="center">
     <a href="mailto:rui@rui0828.onmicrosoft.com" target="_blank"> 
-        <img src="img/gmail.png" alt="Gmail" style="height: 22px;" />
+        <img src="img/gmail.png" alt="Gmail" style="height: 18px;" />
     </a>
     &nbsp;
     <a href="https://www.linkedin.com/in/rui0828/" target="_blank"> 
-        <img src="img/linkedin.png" alt="LinkedIn" style="height: 25px;" />
+        <img src="img/linkedin.png" alt="LinkedIn" style="height: 20px;" />
     </a>
     &nbsp;
     <a href="https://github.com/Rui0828" target="_blank"> 
@@ -15,11 +15,11 @@
     </a>
     &nbsp;
     <a href="https://scholar.google.com/citations?user=a_hkgY8AAAAJ&hl=en" target="_blank"> 
-        <img src="img/Google_Scholar.png" alt="Google Scholar" style="height: 25px;" />
+        <img src="img/Google_Scholar.png" alt="Google Scholar" style="height: 20px;" />
     </a>
     &nbsp;
     <a href="https://orcid.org/0009-0000-6679-3670" target="_blank"> 
-        <img src="img/orcid.png" alt="ORCID" style="height: 25px;" />
+        <img src="img/orcid.png" alt="ORCID" style="height: 20px;" />
     </a>
 </p>
 

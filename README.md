@@ -62,8 +62,6 @@ pache.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.z
 
 > 📦 138.0 kB Used in GitHub's Storage 
  > 
-> 🏆 702 Contributions in the Year 2025
- > 
 > 💼 Opted to Hire
  > 
 > 📜 17 Public Repositories 
@@ -97,13 +95,12 @@ Sunday                   198 commits         ███░░░░░░░░�
 🕑︎ Time Zone: Asia/Taipei
 
 💬 Programming Languages: 
-Python                   30 mins             █████████████████████████   98.80 % 
-Other                    0 secs              ░░░░░░░░░░░░░░░░░░░░░░░░░   01.03 % 
-SSH Config               0 secs              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.16 % 
+Other                    2 mins              ████████████████████████░   97.93 % 
+SSH Config               0 secs              █░░░░░░░░░░░░░░░░░░░░░░░░   02.07 % 
 ```
 
 
- Last Updated on 2025/07/13 16:29:32 UTC
+ Last Updated on 2025/07/14 16:33:14 UTC
 <!--END_SECTION:waka-->
 
 <hr>

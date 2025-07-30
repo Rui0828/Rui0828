@@ -54,8 +54,6 @@ pache.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.z
 <img align='right' src="https://i.giphy.com/cmCEsJZHYBPels360q.webp" width="300">
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-562%20hrs%2029%20mins-blue)
-
 ![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-1.1%20million%20lines%20of%20code-blue)
 
 **🐱 My GitHub Data** 
@@ -97,12 +95,11 @@ Sunday                   197 commits         ███░░░░░░░░�
 🕑︎ Time Zone: Asia/Taipei
 
 💬 Programming Languages: 
-Python                   3 hrs 17 mins       █████████████████████████   98.61 % 
-CSV                      2 mins              ░░░░░░░░░░░░░░░░░░░░░░░░░   01.39 % 
+No Activity Tracked This Week
 ```
 
 
- Last Updated on 2025/07/28 16:35:20 UTC
+ Last Updated on 2025/07/30 16:32:42 UTC
 <!--END_SECTION:waka-->
 
 <hr>

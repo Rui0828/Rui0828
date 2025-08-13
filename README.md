@@ -54,7 +54,7 @@ pache.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.z
 <img align='right' src="https://i.giphy.com/cmCEsJZHYBPels360q.webp" width="300">
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-569%20hrs%202%20mins-blue)
+![Code Time](http://img.shields.io/badge/Code%20Time-571%20hrs%203%20mins-blue)
 
 ![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-1.1%20million%20lines%20of%20code-blue)
 
@@ -70,8 +70,42 @@ pache.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.z
  > 
 > 🔑 11 Private Repositories 
  > 
+**I'm a Night 🦉** 
 
- Last Updated on 2025/08/12 16:32:55 UTC
+```text
+🌞 Morning                102 commits         ██░░░░░░░░░░░░░░░░░░░░░░░   06.56 % 
+🌆 Daytime                594 commits         ██████████░░░░░░░░░░░░░░░   38.17 % 
+🌃 Evening                416 commits         ███████░░░░░░░░░░░░░░░░░░   26.74 % 
+🌙 Night                  444 commits         ███████░░░░░░░░░░░░░░░░░░   28.53 % 
+```
+📅 **I'm Most Productive on Thursday** 
+
+```text
+Monday                   219 commits         ████░░░░░░░░░░░░░░░░░░░░░   14.07 % 
+Tuesday                  252 commits         ████░░░░░░░░░░░░░░░░░░░░░   16.20 % 
+Wednesday                223 commits         ████░░░░░░░░░░░░░░░░░░░░░   14.33 % 
+Thursday                 280 commits         ████░░░░░░░░░░░░░░░░░░░░░   17.99 % 
+Friday                   239 commits         ████░░░░░░░░░░░░░░░░░░░░░   15.36 % 
+Saturday                 145 commits         ██░░░░░░░░░░░░░░░░░░░░░░░   09.32 % 
+Sunday                   198 commits         ███░░░░░░░░░░░░░░░░░░░░░░   12.72 % 
+```
+
+
+📊 **This Week I Spent My Time On** 
+
+```text
+🕑︎ Time Zone: Asia/Taipei
+
+💬 Programming Languages: 
+Python                   6 hrs 38 mins       █████████████████░░░░░░░░   66.85 % 
+JSON                     2 hrs 40 mins       ███████░░░░░░░░░░░░░░░░░░   26.88 % 
+CSV                      25 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   04.33 % 
+YAML                     5 mins              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.92 % 
+SSH Config               2 mins              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.44 % 
+```
+
+
+ Last Updated on 2025/08/13 16:28:04 UTC
 <!--END_SECTION:waka-->
 
 <hr>

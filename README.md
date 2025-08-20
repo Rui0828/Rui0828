@@ -54,7 +54,7 @@ pache.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.z
 <img align='right' src="https://i.giphy.com/cmCEsJZHYBPels360q.webp" width="300">
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-593%20hrs%2027%20mins-blue)
+![Code Time](http://img.shields.io/badge/Code%20Time-596%20hrs%2059%20mins-blue)
 
 ![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-1.1%20million%20lines%20of%20code-blue)
 
@@ -70,42 +70,8 @@ pache.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.z
  > 
 > 🔑 11 Private Repositories 
  > 
-**I'm a Night 🦉** 
 
-```text
-🌞 Morning                142 commits         ██░░░░░░░░░░░░░░░░░░░░░░░   08.22 % 
-🌆 Daytime                657 commits         ██████████░░░░░░░░░░░░░░░   38.02 % 
-🌃 Evening                457 commits         ███████░░░░░░░░░░░░░░░░░░   26.45 % 
-🌙 Night                  472 commits         ███████░░░░░░░░░░░░░░░░░░   27.31 % 
-```
-📅 **I'm Most Productive on Tuesday** 
-
-```text
-Monday                   245 commits         ████░░░░░░░░░░░░░░░░░░░░░   14.18 % 
-Tuesday                  307 commits         ████░░░░░░░░░░░░░░░░░░░░░   17.77 % 
-Wednesday                228 commits         ███░░░░░░░░░░░░░░░░░░░░░░   13.19 % 
-Thursday                 304 commits         ████░░░░░░░░░░░░░░░░░░░░░   17.59 % 
-Friday                   270 commits         ████░░░░░░░░░░░░░░░░░░░░░   15.62 % 
-Saturday                 173 commits         ███░░░░░░░░░░░░░░░░░░░░░░   10.01 % 
-Sunday                   201 commits         ███░░░░░░░░░░░░░░░░░░░░░░   11.63 % 
-```
-
-
-📊 **This Week I Spent My Time On** 
-
-```text
-🕑︎ Time Zone: Asia/Taipei
-
-💬 Programming Languages: 
-Python                   17 hrs 8 mins       █████████████████░░░░░░░░   66.12 % 
-JSON                     6 hrs 32 mins       ██████░░░░░░░░░░░░░░░░░░░   25.24 % 
-CSV                      50 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   03.23 % 
-Other                    41 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   02.69 % 
-Makefile                 23 mins             ░░░░░░░░░░░░░░░░░░░░░░░░░   01.53 % 
-```
-
-
- Last Updated on 2025/08/19 16:31:18 UTC
+ Last Updated on 2025/08/20 16:29:38 UTC
 <!--END_SECTION:waka-->
 
 <hr>

@@ -54,7 +54,7 @@ pache.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.z
 <img align='right' src="https://i.giphy.com/cmCEsJZHYBPels360q.webp" width="300">
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-596%20hrs%2059%20mins-blue)
+![Code Time](http://img.shields.io/badge/Code%20Time-602%20hrs%2046%20mins-blue)
 
 ![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-1.1%20million%20lines%20of%20code-blue)
 
@@ -70,8 +70,42 @@ pache.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.z
  > 
 > 🔑 11 Private Repositories 
  > 
+**I'm a Night 🦉** 
 
- Last Updated on 2025/08/20 16:29:38 UTC
+```text
+🌞 Morning                142 commits         ██░░░░░░░░░░░░░░░░░░░░░░░   08.22 % 
+🌆 Daytime                657 commits         ██████████░░░░░░░░░░░░░░░   38.02 % 
+🌃 Evening                457 commits         ███████░░░░░░░░░░░░░░░░░░   26.45 % 
+🌙 Night                  472 commits         ███████░░░░░░░░░░░░░░░░░░   27.31 % 
+```
+📅 **I'm Most Productive on Tuesday** 
+
+```text
+Monday                   245 commits         ████░░░░░░░░░░░░░░░░░░░░░   14.18 % 
+Tuesday                  307 commits         ████░░░░░░░░░░░░░░░░░░░░░   17.77 % 
+Wednesday                228 commits         ███░░░░░░░░░░░░░░░░░░░░░░   13.19 % 
+Thursday                 304 commits         ████░░░░░░░░░░░░░░░░░░░░░   17.59 % 
+Friday                   270 commits         ████░░░░░░░░░░░░░░░░░░░░░   15.62 % 
+Saturday                 173 commits         ███░░░░░░░░░░░░░░░░░░░░░░   10.01 % 
+Sunday                   201 commits         ███░░░░░░░░░░░░░░░░░░░░░░   11.63 % 
+```
+
+
+📊 **This Week I Spent My Time On** 
+
+```text
+🕑︎ Time Zone: Asia/Taipei
+
+💬 Programming Languages: 
+Python                   16 hrs 58 mins      █████████████████░░░░░░░░   66.58 % 
+JSON                     4 hrs 33 mins       ████░░░░░░░░░░░░░░░░░░░░░   17.85 % 
+CSV                      1 hr 19 mins        █░░░░░░░░░░░░░░░░░░░░░░░░   05.22 % 
+Markdown                 1 hr 9 mins         █░░░░░░░░░░░░░░░░░░░░░░░░   04.57 % 
+Other                    40 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   02.62 % 
+```
+
+
+ Last Updated on 2025/08/21 16:35:06 UTC
 <!--END_SECTION:waka-->
 
 <hr>

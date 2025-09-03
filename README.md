@@ -54,7 +54,7 @@ pache.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.z
 <img align='right' src="https://i.giphy.com/cmCEsJZHYBPels360q.webp" width="300">
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-627%20hrs%2011%20mins-blue)
+![Code Time](http://img.shields.io/badge/Code%20Time-628%20hrs%2039%20mins-blue)
 
 ![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-1.1%20million%20lines%20of%20code-blue)
 
@@ -70,42 +70,8 @@ pache.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.z
  > 
 > 🔑 12 Private Repositories 
  > 
-**I'm a Night 🦉** 
 
-```text
-🌞 Morning                146 commits         ██░░░░░░░░░░░░░░░░░░░░░░░   08.31 % 
-🌆 Daytime                673 commits         ██████████░░░░░░░░░░░░░░░   38.30 % 
-🌃 Evening                463 commits         ███████░░░░░░░░░░░░░░░░░░   26.35 % 
-🌙 Night                  475 commits         ███████░░░░░░░░░░░░░░░░░░   27.03 % 
-```
-📅 **I'm Most Productive on Tuesday** 
-
-```text
-Monday                   245 commits         ███░░░░░░░░░░░░░░░░░░░░░░   13.94 % 
-Tuesday                  312 commits         ████░░░░░░░░░░░░░░░░░░░░░   17.76 % 
-Wednesday                233 commits         ███░░░░░░░░░░░░░░░░░░░░░░   13.26 % 
-Thursday                 312 commits         ████░░░░░░░░░░░░░░░░░░░░░   17.76 % 
-Friday                   275 commits         ████░░░░░░░░░░░░░░░░░░░░░   15.65 % 
-Saturday                 176 commits         ███░░░░░░░░░░░░░░░░░░░░░░   10.02 % 
-Sunday                   204 commits         ███░░░░░░░░░░░░░░░░░░░░░░   11.61 % 
-```
-
-
-📊 **This Week I Spent My Time On** 
-
-```text
-🕑︎ Time Zone: Asia/Taipei
-
-💬 Programming Languages: 
-Python                   9 hrs 10 mins       ██████████████████████░░░   88.29 % 
-YAML                     29 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   04.70 % 
-JSON                     17 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   02.79 % 
-Markdown                 11 mins             ░░░░░░░░░░░░░░░░░░░░░░░░░   01.87 % 
-Docker                   3 mins              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.61 % 
-```
-
-
- Last Updated on 2025/09/02 16:29:54 UTC
+ Last Updated on 2025/09/03 16:29:37 UTC
 <!--END_SECTION:waka-->
 
 <hr>

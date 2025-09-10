@@ -54,7 +54,7 @@ pache.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.z
 <img align='right' src="https://i.giphy.com/cmCEsJZHYBPels360q.webp" width="300">
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-637%20hrs%2034%20mins-blue)
+![Code Time](http://img.shields.io/badge/Code%20Time-638%20hrs%2015%20mins-blue)
 
 ![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-1.1%20million%20lines%20of%20code-blue)
 
@@ -70,8 +70,42 @@ pache.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.z
  > 
 > 🔑 13 Private Repositories 
  > 
+**I'm a Night 🦉** 
 
- Last Updated on 2025/09/09 16:30:17 UTC
+```text
+🌞 Morning                171 commits         ██░░░░░░░░░░░░░░░░░░░░░░░   08.92 % 
+🌆 Daytime                746 commits         ██████████░░░░░░░░░░░░░░░   38.91 % 
+🌃 Evening                498 commits         ██████░░░░░░░░░░░░░░░░░░░   25.98 % 
+🌙 Night                  502 commits         ███████░░░░░░░░░░░░░░░░░░   26.19 % 
+```
+📅 **I'm Most Productive on Tuesday** 
+
+```text
+Monday                   269 commits         ████░░░░░░░░░░░░░░░░░░░░░   14.03 % 
+Tuesday                  374 commits         █████░░░░░░░░░░░░░░░░░░░░   19.51 % 
+Wednesday                240 commits         ███░░░░░░░░░░░░░░░░░░░░░░   12.52 % 
+Thursday                 328 commits         ████░░░░░░░░░░░░░░░░░░░░░   17.11 % 
+Friday                   292 commits         ████░░░░░░░░░░░░░░░░░░░░░   15.23 % 
+Saturday                 209 commits         ███░░░░░░░░░░░░░░░░░░░░░░   10.90 % 
+Sunday                   205 commits         ███░░░░░░░░░░░░░░░░░░░░░░   10.69 % 
+```
+
+
+📊 **This Week I Spent My Time On** 
+
+```text
+🕑︎ Time Zone: Asia/Taipei
+
+💬 Programming Languages: 
+Other                    3 hrs 2 mins        ████████░░░░░░░░░░░░░░░░░   31.65 % 
+Markdown                 2 hrs 24 mins       ██████░░░░░░░░░░░░░░░░░░░   25.13 % 
+Python                   1 hr 36 mins        ████░░░░░░░░░░░░░░░░░░░░░   16.82 % 
+Bash                     1 hr 12 mins        ███░░░░░░░░░░░░░░░░░░░░░░   12.58 % 
+PowerShell               33 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   05.75 % 
+```
+
+
+ Last Updated on 2025/09/10 16:30:03 UTC
 <!--END_SECTION:waka-->
 
 <hr>

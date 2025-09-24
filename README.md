@@ -54,6 +54,8 @@ pache.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.z
 <img align='right' src="https://i.giphy.com/cmCEsJZHYBPels360q.webp" width="300">
 
 <!--START_SECTION:waka-->
+![Code Time](http://img.shields.io/badge/Code%20Time-640%20hrs%2013%20mins-blue)
+
 ![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-1.1%20million%20lines%20of%20code-blue)
 
 **🐱 My GitHub Data** 
@@ -68,8 +70,38 @@ pache.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.z
  > 
 > 🔑 13 Private Repositories 
  > 
+**I'm a Night 🦉** 
 
- Last Updated on 2025/09/23 16:30:29 UTC
+```text
+🌞 Morning                171 commits         ██░░░░░░░░░░░░░░░░░░░░░░░   08.93 % 
+🌆 Daytime                744 commits         ██████████░░░░░░░░░░░░░░░   38.87 % 
+🌃 Evening                497 commits         ██████░░░░░░░░░░░░░░░░░░░   25.97 % 
+🌙 Night                  502 commits         ███████░░░░░░░░░░░░░░░░░░   26.23 % 
+```
+📅 **I'm Most Productive on Tuesday** 
+
+```text
+Monday                   269 commits         ████░░░░░░░░░░░░░░░░░░░░░   14.05 % 
+Tuesday                  374 commits         █████░░░░░░░░░░░░░░░░░░░░   19.54 % 
+Wednesday                237 commits         ███░░░░░░░░░░░░░░░░░░░░░░   12.38 % 
+Thursday                 328 commits         ████░░░░░░░░░░░░░░░░░░░░░   17.14 % 
+Friday                   292 commits         ████░░░░░░░░░░░░░░░░░░░░░   15.26 % 
+Saturday                 209 commits         ███░░░░░░░░░░░░░░░░░░░░░░   10.92 % 
+Sunday                   205 commits         ███░░░░░░░░░░░░░░░░░░░░░░   10.71 % 
+```
+
+
+📊 **This Week I Spent My Time On** 
+
+```text
+🕑︎ Time Zone: Asia/Taipei
+
+💬 Programming Languages: 
+Other                    34 mins             █████████████████████████   100.00 % 
+```
+
+
+ Last Updated on 2025/09/24 16:30:54 UTC
 <!--END_SECTION:waka-->
 
 <hr>

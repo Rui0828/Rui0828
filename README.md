@@ -60,7 +60,7 @@ pache.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.z
 
 > 📦 141.5 kB Used in GitHub's Storage 
  > 
-> 🏆 842 Contributions in the Year 2025
+> 🏆 857 Contributions in the Year 2025
  > 
 > 💼 Opted to Hire
  > 
@@ -68,42 +68,8 @@ pache.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.z
  > 
 > 🔑 13 Private Repositories 
  > 
-**I'm a Night 🦉** 
 
-```text
-🌞 Morning                194 commits         ██░░░░░░░░░░░░░░░░░░░░░░░   09.19 % 
-🌆 Daytime                824 commits         ██████████░░░░░░░░░░░░░░░   39.05 % 
-🌃 Evening                558 commits         ███████░░░░░░░░░░░░░░░░░░   26.45 % 
-🌙 Night                  534 commits         ██████░░░░░░░░░░░░░░░░░░░   25.31 % 
-```
-📅 **I'm Most Productive on Tuesday** 
-
-```text
-Monday                   291 commits         ███░░░░░░░░░░░░░░░░░░░░░░   13.79 % 
-Tuesday                  442 commits         █████░░░░░░░░░░░░░░░░░░░░   20.95 % 
-Wednesday                244 commits         ███░░░░░░░░░░░░░░░░░░░░░░   11.56 % 
-Thursday                 347 commits         ████░░░░░░░░░░░░░░░░░░░░░   16.45 % 
-Friday                   318 commits         ████░░░░░░░░░░░░░░░░░░░░░   15.07 % 
-Saturday                 237 commits         ███░░░░░░░░░░░░░░░░░░░░░░   11.23 % 
-Sunday                   231 commits         ███░░░░░░░░░░░░░░░░░░░░░░   10.95 % 
-```
-
-
-📊 **This Week I Spent My Time On** 
-
-```text
-🕑︎ Time Zone: Asia/Taipei
-
-💬 Programming Languages: 
-Other                    8 hrs 21 mins       ███████████████████░░░░░░   74.81 % 
-Python                   2 hrs 11 mins       █████░░░░░░░░░░░░░░░░░░░░   19.60 % 
-Bash                     16 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   02.51 % 
-Image (svg)              10 mins             ░░░░░░░░░░░░░░░░░░░░░░░░░   01.64 % 
-Markdown                 9 mins              ░░░░░░░░░░░░░░░░░░░░░░░░░   01.35 % 
-```
-
-
- Last Updated on 2025/11/01 16:26:58 UTC
+ Last Updated on 2025/11/02 16:27:34 UTC
 <!--END_SECTION:waka-->
 
 <hr>

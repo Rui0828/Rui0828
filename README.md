@@ -54,7 +54,7 @@ pache.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.z
 <img align='right' src="https://i.giphy.com/cmCEsJZHYBPels360q.webp" width="300">
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-696%20hrs%202%20mins-blue)
+![Code Time](http://img.shields.io/badge/Code%20Time-696%20hrs%2015%20mins-blue)
 
 ![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-1.1%20million%20lines%20of%20code-blue)
 
@@ -97,15 +97,15 @@ Sunday                   246 commits         ███░░░░░░░░�
 🕑︎ Time Zone: Asia/Taipei
 
 💬 Programming Languages: 
-Other                    7 hrs 50 mins       █████████████████░░░░░░░░   67.88 % 
-Markdown                 1 hr 44 mins        ████░░░░░░░░░░░░░░░░░░░░░   15.11 % 
-Bash                     1 hr 13 mins        ███░░░░░░░░░░░░░░░░░░░░░░   10.65 % 
-Python                   26 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   03.90 % 
-YAML                     11 mins             ░░░░░░░░░░░░░░░░░░░░░░░░░   01.65 % 
+Other                    9 hrs 8 mins        ██████████████████░░░░░░░   71.75 % 
+Markdown                 1 hr 44 mins        ███░░░░░░░░░░░░░░░░░░░░░░   13.69 % 
+Bash                     1 hr 13 mins        ██░░░░░░░░░░░░░░░░░░░░░░░   09.64 % 
+Python                   20 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   02.70 % 
+YAML                     11 mins             ░░░░░░░░░░░░░░░░░░░░░░░░░   01.49 % 
 ```
 
 
- Last Updated on 2025/11/06 16:33:34 UTC
+ Last Updated on 2025/11/07 16:28:27 UTC
 <!--END_SECTION:waka-->
 
 <hr>

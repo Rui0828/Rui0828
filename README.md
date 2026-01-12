@@ -54,15 +54,15 @@ pache.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.z
 <img align='right' src="https://i.giphy.com/cmCEsJZHYBPels360q.webp" width="300">
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-797%20hrs%2030%20mins-blue?style=flat)
+![Code Time](http://img.shields.io/badge/Code%20Time-797%20hrs%2032%20mins-blue?style=flat)
 
 ![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-1.14%20million%20lines%20of%20code-blue?style=flat)
 
 **🐱 My GitHub Data** 
 
-> 📦 144.1 kB Used in GitHub's Storage 
+> 📦 143.9 kB Used in GitHub's Storage 
  > 
-> 🏆 10 Contributions in the Year 2026
+> 🏆 12 Contributions in the Year 2026
  > 
 > 💼 Opted to Hire
  > 
@@ -70,8 +70,42 @@ pache.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.z
  > 
 > 🔑 14 Private Repositories 
  > 
+**I'm a Night 🦉** 
 
- Last Updated on 2026/01/11 16:32:01 UTC
+```text
+🌞 Morning                197 commits         ██░░░░░░░░░░░░░░░░░░░░░░░   08.45 % 
+🌆 Daytime                902 commits         ██████████░░░░░░░░░░░░░░░   38.68 % 
+🌃 Evening                625 commits         ███████░░░░░░░░░░░░░░░░░░   26.80 % 
+🌙 Night                  608 commits         ███████░░░░░░░░░░░░░░░░░░   26.07 % 
+```
+📅 **I'm Most Productive on Tuesday** 
+
+```text
+Monday                   294 commits         ███░░░░░░░░░░░░░░░░░░░░░░   12.61 % 
+Tuesday                  512 commits         █████░░░░░░░░░░░░░░░░░░░░   21.96 % 
+Wednesday                263 commits         ███░░░░░░░░░░░░░░░░░░░░░░   11.28 % 
+Thursday                 366 commits         ████░░░░░░░░░░░░░░░░░░░░░   15.69 % 
+Friday                   363 commits         ████░░░░░░░░░░░░░░░░░░░░░   15.57 % 
+Saturday                 275 commits         ███░░░░░░░░░░░░░░░░░░░░░░   11.79 % 
+Sunday                   259 commits         ███░░░░░░░░░░░░░░░░░░░░░░   11.11 % 
+```
+
+
+📊 **This Week I Spent My Time On** 
+
+```text
+🕑︎ Time Zone: Asia/Taipei
+
+💬 Programming Languages: 
+YAML                     2 hrs 37 mins       █████████░░░░░░░░░░░░░░░░   35.65 % 
+Python                   1 hr 56 mins        ███████░░░░░░░░░░░░░░░░░░   26.35 % 
+CSS                      1 hr 2 mins         ████░░░░░░░░░░░░░░░░░░░░░   14.22 % 
+Other                    56 mins             ███░░░░░░░░░░░░░░░░░░░░░░   12.87 % 
+Bash                     25 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   05.80 % 
+```
+
+
+ Last Updated on 2026/01/12 04:28:48 UTC
 <!--END_SECTION:waka-->
 
 <hr>

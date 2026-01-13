@@ -20,16 +20,9 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
 
-      - name: Debug - List files
-        run: |
-          echo "=== Current directory ==="
-          ls -la
-          echo "=== Profile directory ==="
-          ls -la profile || echo "profile dir not found"
-
       - name: Push to output branch
         run: |
-          cd profile
+          cd profile-3d-contrib
           git init
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"

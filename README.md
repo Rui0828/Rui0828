@@ -90,24 +90,58 @@ class NLPResearcher:
 ## `> stats.display()`
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-797%20hrs%2030%20mins-blue?style=flat)
+![Code Time](http://img.shields.io/badge/Code%20Time-798%20hrs%2044%20mins-blue?style=flat)
 
 ![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-1.14%20million%20lines%20of%20code-blue?style=flat)
 
-**My GitHub Data**
+**🐱 My GitHub Data** 
 
-> 📦 144.1 kB Used in GitHub's Storage
- >
-> 🏆 10 Contributions in the Year 2026
- >
+> 📦 143.9 kB Used in GitHub's Storage 
+ > 
+> 🏆 13 Contributions in the Year 2026
+ > 
 > 💼 Opted to Hire
- >
-> 📜 19 Public Repositories
- >
-> 🔑 14 Private Repositories
- >
+ > 
+> 📜 19 Public Repositories 
+ > 
+> 🔑 14 Private Repositories 
+ > 
+**I'm a Night 🦉** 
 
- Last Updated on 2026/01/11 16:32:01 UTC
+```text
+🌞 Morning                197 commits         ██░░░░░░░░░░░░░░░░░░░░░░░   08.44 % 
+🌆 Daytime                903 commits         ██████████░░░░░░░░░░░░░░░   38.71 % 
+🌃 Evening                625 commits         ███████░░░░░░░░░░░░░░░░░░   26.79 % 
+🌙 Night                  608 commits         ███████░░░░░░░░░░░░░░░░░░   26.06 % 
+```
+📅 **I'm Most Productive on Tuesday** 
+
+```text
+Monday                   294 commits         ███░░░░░░░░░░░░░░░░░░░░░░   12.60 % 
+Tuesday                  513 commits         █████░░░░░░░░░░░░░░░░░░░░   21.99 % 
+Wednesday                263 commits         ███░░░░░░░░░░░░░░░░░░░░░░   11.27 % 
+Thursday                 366 commits         ████░░░░░░░░░░░░░░░░░░░░░   15.69 % 
+Friday                   363 commits         ████░░░░░░░░░░░░░░░░░░░░░   15.56 % 
+Saturday                 275 commits         ███░░░░░░░░░░░░░░░░░░░░░░   11.79 % 
+Sunday                   259 commits         ███░░░░░░░░░░░░░░░░░░░░░░   11.10 % 
+```
+
+
+📊 **This Week I Spent My Time On** 
+
+```text
+🕑︎ Time Zone: Asia/Taipei
+
+💬 Programming Languages: 
+Python                   1 hr 36 mins        ██████████████░░░░░░░░░░░   57.31 % 
+Other                    59 mins             █████████░░░░░░░░░░░░░░░░   35.29 % 
+Markdown                 5 mins              █░░░░░░░░░░░░░░░░░░░░░░░░   03.16 % 
+YAML                     3 mins              █░░░░░░░░░░░░░░░░░░░░░░░░   02.22 % 
+Git                      1 min               ░░░░░░░░░░░░░░░░░░░░░░░░░   01.18 % 
+```
+
+
+ Last Updated on 2026/01/13 08:58:14 UTC
 <!--END_SECTION:waka-->
 
 <p align="center">

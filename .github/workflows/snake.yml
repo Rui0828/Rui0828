@@ -2,11 +2,11 @@ name: Generate Snake Animation
 
 on:
     schedule:
-        - cron: '0 0 * * *' # 每天 UTC 00:00 執行
+        - cron: '30 16 * * *' # 每天 UTC 16:30 (台北 00:30) 執行，在 waka 更新後
     workflow_dispatch: # 支援手動觸發
-    push:
-        branches:
-            - main
+
+permissions:
+    contents: write
 
 jobs:
     generate:

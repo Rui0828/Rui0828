@@ -1,4 +1,4 @@
-![Header](https://capsule-render.vercel.app/api?type=waving&height=200&color=gradient&customColorList=12,9,5,3,1&text=Chen-Jui%2C%20Yu&fontSize=50&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=NLP%20Researcher%20%7C%20ML%20Engineer%20%7C%20Backend%20%26%20Infra&descSize=18&descAlignY=55&descAlign=50)
+![Header](https://capsule-render.vercel.app/api?type=waving&height=200&color=gradient&customColorList=12,9,5,3,1&text=Chen-Jui,%20Yu&fontSize=50&fontColor=ffffff&fontAlignY=35&desc=NLP%20Researcher%20%7C%20ML%20Engineer%20%7C%20Backend%20and%20Infra&descSize=18&descAlignY=55&descAlign=50)
 
 <p align="center">
     <a href="https://github.com/Rui0828">
@@ -39,6 +39,7 @@ class NLPResearcher:
         return "Table Retrieval & Cross-modal Understanding"
 ```
 
+<div align="center">
 <table>
 <tr>
 <td width="50%" valign="top">
@@ -53,13 +54,14 @@ class NLPResearcher:
 <td width="50%" valign="top">
 
 ### `// Interests`
-- 🛠️ Backend Development
-- 🏗️ Infrastructure & DevOps
-- 📐 System Design
+- Backend Development
+- Infrastructure & DevOps
+- System Design
 
 </td>
 </tr>
 </table>
+</div>
 
 <p align="center">
     <a href="https://nlpnchu.org"><img src="https://img.shields.io/badge/🔬_NCHU_NLP_Lab-FF3366?style=for-the-badge" /></a>
@@ -70,9 +72,8 @@ class NLPResearcher:
 
 ## `> tech_stack.load()`
 
-<p align="center">
-    <img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,sklearn,docker,linux,git,bash&perline=8&theme=dark" /><br>
-    <img src="https://skillicons.dev/icons?i=js,ts,html,css,c,cpp,mysql,redis,nginx&perline=9&theme=dark" />
+<p align="left">
+    <img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,sklearn,docker,linux,git,bash,js,ts,html,css,c,cpp,mysql,redis,nginx&perline=17&theme=dark" height="32" />
 </p>
 
 ---
@@ -88,6 +89,18 @@ class NLPResearcher:
 ---
 
 ## `> stats.display()`
+
+<picture>
+    <source
+        srcset="https://github-stats-alpha.vercel.app/api?username=rui0828&cc=0D1117&tc=00D9FF&ic=FF3366&bc=0D1117"
+        media="(prefers-color-scheme: dark)"
+    />
+    <source
+        srcset="https://github-stats-alpha.vercel.app/api?username=rui0828&ic=FF3366"
+        media="(prefers-color-scheme: light)"
+    />
+    <img align="right" src="https://github-stats-alpha.vercel.app/api?username=rui0828&cc=0D1117&tc=00D9FF&ic=FF3366&bc=0D1117" alt="GitHub stats" width="500" />
+</picture>
 
 <!--START_SECTION:waka-->
 ![Code Time](http://img.shields.io/badge/Code%20Time-798%20hrs%2044%20mins-blue?style=flat)
@@ -144,18 +157,5 @@ Git                      1 min               ░░░░░░░░░░░�
  Last Updated on 2026/01/13 08:58:14 UTC
 <!--END_SECTION:waka-->
 
-<p align="center">
-    <picture>
-        <source
-            srcset="https://github-stats-alpha.vercel.app/api?username=rui0828&cc=0D1117&tc=00D9FF&ic=FF3366&bc=0D1117"
-            media="(prefers-color-scheme: dark)"
-        />
-        <source
-            srcset="https://github-stats-alpha.vercel.app/api?username=rui0828&ic=FF3366"
-            media="(prefers-color-scheme: light)"
-        />
-        <img src="https://github-stats-alpha.vercel.app/api?username=rui0828&cc=0D1117&tc=00D9FF&ic=FF3366&bc=0D1117" alt="GitHub stats" />
-    </picture>
-</p>
 
 ![Footer](https://capsule-render.vercel.app/api?type=waving&height=100&color=gradient&customColorList=12,9,5,3,1&section=footer)

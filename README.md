@@ -1,10 +1,6 @@
 ![Header](https://capsule-render.vercel.app/api?type=waving&height=200&color=gradient&customColorList=12,9,5,3,1&text=Chen-Jui,%20Yu&fontSize=50&fontColor=ffffff&fontAlignY=35&desc=NLP%20Researcher%20%7C%20ML%20Engineer%20%7C%20Backend%20and%20Infra&descSize=18&descAlignY=55&descAlign=50)
 
-<p align="center">
-    <a href="https://github.com/Rui0828">
-        <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3000&pause=1000&color=00D9FF&center=true&vCenter=true&multiline=true&repeat=true&random=false&width=600&height=80&lines=%F0%9F%94%AC+Table+Retrieval+%7C+Multimodal+%7C+RL;%F0%9F%9B%A0%EF%B8%8F+Backend+%26+System+Design+Enthusiast" alt="Typing SVG" />
-    </a>
-</p>
+
 
 <p align="center">
     <a href="mailto:rui@rui0828.onmicrosoft.com">
@@ -20,6 +16,12 @@
         <img src="https://img.shields.io/badge/ORCID-00FF88?style=for-the-badge&logo=orcid&logoColor=black" />
     </a>
     <img src="https://komarev.com/ghpvc/?username=rui0828&style=for-the-badge&color=FF3366" />
+</p>
+
+<p align="center">
+    <a href="https://github.com/Rui0828">
+        <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3000&pause=1000&color=00D9FF&center=true&vCenter=true&multiline=true&repeat=true&random=false&width=600&height=80&lines=%F0%9F%94%AC+Table+Retrieval+%7C+Multimodal+%7C+RL;%F0%9F%9B%A0%EF%B8%8F+Backend+%26+System+Design+Enthusiast" alt="Typing SVG" />
+    </a>
 </p>
 
 ---
@@ -69,11 +71,8 @@ class NLPResearcher:
 </p>
 
 ---
-
-## `> tech_stack.load()`
-
 <p align="left">
-    <img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,sklearn,docker,linux,git,bash,js,ts,html,css,c,cpp,mysql,redis,nginx&perline=17&theme=dark" height="32" />
+    <img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,sklearn,docker,linux,git,bash,js,ts,html,css,c,cpp,mysql,redis,nginx&perline=17&theme=dark" height="25" />
 </p>
 
 ---
@@ -99,7 +98,7 @@ class NLPResearcher:
         srcset="https://github-stats-alpha.vercel.app/api?username=rui0828&ic=FF3366"
         media="(prefers-color-scheme: light)"
     />
-    <img align="right" src="https://github-stats-alpha.vercel.app/api?username=rui0828&cc=0D1117&tc=00D9FF&ic=FF3366&bc=0D1117" alt="GitHub stats" width="500" />
+    <img align="right" src="https://github-stats-alpha.vercel.app/api?username=rui0828&cc=0D1117&tc=00D9FF&ic=FF3366&bc=0D1117" alt="GitHub stats" width="200" />
 </picture>
 
 <!--START_SECTION:waka-->

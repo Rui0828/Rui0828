@@ -70,24 +70,12 @@ class NLPResearcher:
     <a href="https://github.com/NCHU-NLP-Lab"><img src="https://img.shields.io/badge/Lab_GitHub-00D9FF?style=for-the-badge&logo=github&logoColor=black" /></a>
 </p>
 
-<picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Rui0828/Rui0828/output/github-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Rui0828/Rui0828/output/github-snake.svg" />
-    <img alt="github-snake" src="https://raw.githubusercontent.com/Rui0828/Rui0828/output/github-snake-dark.svg" width="100%" />
-</picture>
-
 ## `> stats.display()`
 
-<picture>
-    <source
-        srcset="https://github-stats-alpha.vercel.app/api?username=rui0828&cc=0D1117&tc=00D9FF&ic=FF3366&bc=0D1117"
-        media="(prefers-color-scheme: dark)"
-    />
-    <source
-        srcset="https://github-stats-alpha.vercel.app/api?username=rui0828&ic=FF3366"
-        media="(prefers-color-scheme: light)"
-    />
-    <img align="right" src="https://github-stats-alpha.vercel.app/api?username=rui0828&cc=0D1117&tc=00D9FF&ic=FF3366&bc=0D1117" alt="GitHub stats" width="500" />
+<picture align="right">
+    <source media="(prefers-color-scheme: dark)" srcset="./profile/profile-night-rainbow.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="./profile/profile-gitblock.svg" />
+    <img src="./profile/profile-night-rainbow.svg" alt="3D Contrib" width="100%" />
 </picture>
 
 <!--START_SECTION:waka-->

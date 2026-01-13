@@ -59,7 +59,7 @@ class NLPResearcher:
 - Infrastructure & DevOps
 - System Design
 </td>
-<td valign="top" align="center" width="47%">
+<td valign="top" align="center" width="48%">
 <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=rui0828&theme=tokyonight" />
     <source media="(prefers-color-scheme: light)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=rui0828&theme=default" />

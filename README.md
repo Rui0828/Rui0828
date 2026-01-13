@@ -44,7 +44,7 @@ class NLPResearcher:
 <div align="center">
 <table>
 <tr>
-<td width="50%" valign="top">
+<td valign="top" >
 
 ### `// Research`
 - Table Retrieval & Table QA
@@ -52,14 +52,25 @@ class NLPResearcher:
 - Reinforcement Learning
 - Large Language Models
 
-</td>
-<td width="50%" valign="top">
+---
 
 ### `// Interests`
 - Backend Development
 - Infrastructure & DevOps
 - System Design
-
+</td>
+<td valign="top" align="center" width="35%">
+<picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=rui0828&theme=tokyonight" />
+    <source media="(prefers-color-scheme: light)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=rui0828&theme=default" />
+    <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=rui0828&theme=tokyonight" width="100%" />
+</picture>
+<br/>
+<picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=rui0828&theme=tokyonight&utcOffset=8" />
+    <source media="(prefers-color-scheme: light)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=rui0828&theme=default&utcOffset=8" />
+    <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=rui0828&theme=tokyonight&utcOffset=8" width="100%" />
+</picture>
 </td>
 </tr>
 </table>

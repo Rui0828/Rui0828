@@ -87,7 +87,7 @@ class NLPResearcher:
         srcset="https://github-stats-alpha.vercel.app/api?username=rui0828&ic=FF3366"
         media="(prefers-color-scheme: light)"
     />
-    <img align="right" src="https://github-stats-alpha.vercel.app/api?username=rui0828&cc=0D1117&tc=00D9FF&ic=FF3366&bc=0D1117" alt="GitHub stats" width="400" />
+    <img align="right" src="https://github-stats-alpha.vercel.app/api?username=rui0828&cc=0D1117&tc=00D9FF&ic=FF3366&bc=0D1117" alt="GitHub stats" width="500" />
 </picture>
 
 <!--START_SECTION:waka-->

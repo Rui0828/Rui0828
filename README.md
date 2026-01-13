@@ -72,10 +72,10 @@ class NLPResearcher:
 
 ## `> stats.display()`
 
-<picture align="right">
-    <source media="(prefers-color-scheme: dark)" srcset="./profile/profile-night-rainbow.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="./profile/profile-gitblock.svg" />
-    <img src="./profile/profile-night-rainbow.svg" alt="3D Contrib" width="100%" />
+<picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Rui0828/Rui0828/output/profile-night-rainbow.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Rui0828/Rui0828/output/profile-gitblock.svg" />
+    <img src="https://raw.githubusercontent.com/Rui0828/Rui0828/output/profile-night-rainbow.svg" alt="3D Contrib" width="100%" />
 </picture>
 
 <!--START_SECTION:waka-->

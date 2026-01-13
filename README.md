@@ -1,142 +1,127 @@
-<h1 align="center">Hi 👋, I'm Chen-Jui, Yu</h1>
-<h3 align="center">A Master's Student at Computer Science Engineering, NCHU, Taiwan</h3>
+![Header](https://capsule-render.vercel.app/api?type=waving&height=200&color=gradient&customColorList=12,9,5,3,1&text=Chen-Jui%2C%20Yu&fontSize=50&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=NLP%20Researcher%20%7C%20ML%20Engineer%20%7C%20Backend%20%26%20Infra&descSize=18&descAlignY=55&descAlign=50)
 
 <p align="center">
-    <a href="mailto:rui@rui0828.onmicrosoft.com" target="_blank"> 
-        <img src="img/gmail.png" alt="Gmail" style="height: 18px;" />
-    </a>
-    &nbsp;
-    <a href="https://www.linkedin.com/in/rui0828/" target="_blank"> 
-        <img src="img/linkedin.png" alt="LinkedIn" style="height: 20px;" />
-    </a>
-    &nbsp;
-    <a href="https://github.com/Rui0828" target="_blank"> 
-        <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExbDB0YTZoeWtnNW16M2FraXF2NDRvMHF2a3hzamYzc2pkYmZnc2VzcCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/du3J3cXyzhj75IOgvA/giphy.webp" alt="GitHub" style="height: 30px;" />
-    </a>
-    &nbsp;
-    <a href="https://scholar.google.com/citations?user=a_hkgY8AAAAJ&hl=en" target="_blank"> 
-        <img src="img/Google_Scholar.png" alt="Google Scholar" style="height: 20px;" />
-    </a>
-    &nbsp;
-    <a href="https://orcid.org/0009-0000-6679-3670" target="_blank"> 
-        <img src="img/orcid.png" alt="ORCID" style="height: 20px;" />
+    <a href="https://github.com/Rui0828">
+        <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3000&pause=1000&color=00D9FF&center=true&vCenter=true&multiline=true&repeat=true&random=false&width=600&height=80&lines=%F0%9F%94%AC+Table+Retrieval+%7C+Multimodal+%7C+RL;%F0%9F%9B%A0%EF%B8%8F+Backend+%26+System+Design+Enthusiast" alt="Typing SVG" />
     </a>
 </p>
 
 <p align="center">
-    <img src="https://komarev.com/ghpvc/?username=rui0828&label=Profile%20views&color=lightgrey&abbreviated=true&style=flat" alt="Profile Views" />
+    <a href="mailto:rui@rui0828.onmicrosoft.com">
+        <img src="https://img.shields.io/badge/Email-FF3366?style=for-the-badge&logo=gmail&logoColor=white" />
+    </a>
+    <a href="https://www.linkedin.com/in/rui0828/">
+        <img src="https://img.shields.io/badge/LinkedIn-00D9FF?style=for-the-badge&logo=linkedin&logoColor=black" />
+    </a>
+    <a href="https://scholar.google.com/citations?user=a_hkgY8AAAAJ&hl=en">
+        <img src="https://img.shields.io/badge/Scholar-9D00FF?style=for-the-badge&logo=google-scholar&logoColor=white" />
+    </a>
+    <a href="https://orcid.org/0009-0000-6679-3670">
+        <img src="https://img.shields.io/badge/ORCID-00FF88?style=for-the-badge&logo=orcid&logoColor=black" />
+    </a>
+    <img src="https://komarev.com/ghpvc/?username=rui0828&style=for-the-badge&color=FF3366" />
 </p>
 
-### 🔭 About Me
+---
 
-I am **Chen-Jui**, a dedicated and enthusiastic Master's student specializing in **Computer Science Engineering** at **NCHU**, Taiwan. My academic journey is deeply focused on **Natural Language Processing (NLP)** and **Machine Learning (ML)**. Currently, I am an active researcher at the **[NCHU NLP Lab](https://nlpnchu.org)**, where you can explore our projects and publications on our [GitHub](https://github.com/NCHU-NLP-Lab).
+## `> whoami`
 
-Beyond my technical expertise, I am passionate about developing scalable and efficient systems, exploring innovative solutions, and continuously learning new skills in **backend**, **frontend**, and **full-stack development**. Outside the lab, I enjoy collaborating with like-minded individuals, contributing to open-source projects, and keeping up with the latest technological advancements.
+```python
+class NLPResearcher:
+    def __init__(self):
+        self.name = "Chen-Jui, Yu"
+        self.role = "Master's Student @ NCHU, Taiwan"
+        self.lab = "NCHU NLP Lab"
+        self.research = ["Table Retrieval", "Table QA", "Multimodal", "RL"]
+        self.interests = ["Backend", "Infrastructure", "System Design"]
 
-### 🌟 Interests
-- **Research:** Exploring the intersection of NLP to bridge the gap between human language and machines.  
-- **Development:** Creating robust applications with a full-stack approach.  
-- **Learning:** Remaining curious and expanding my knowledge in AI, ML, and software engineering.
+    def current_focus(self):
+        return "Table Retrieval & Cross-modal Understanding"
+```
 
+<table>
+<tr>
+<td width="50%" valign="top">
 
-### 🔧 Languages and Tools
-<p align="left"> <a href="https://www.gnu.org/software/bash/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg" alt="bash" width="30" height="30"/> </a> <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="30" height="30"/> </a> <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="30" height="30"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="30" height="30"/> </a> <a href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="30" height="30"/> </a> <a href="https://www.figma.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="30" height="30"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="30" height="30"/> </a> <a href="https://hadoop.a
-pache.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/apache_hadoop/apache_hadoop-icon.svg" alt="hadoop" width="30" height="30"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="30" height="30"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="30" height="30"/> </a> <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="30" height="30"/> </a> <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="30" height="30"/> </a> <a href="https://pandas.pydata.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg" alt="pandas" width="30" height="30"/> </a> <a href="https://www.php.net" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="php" width="30" height="30"/> </a> <a href="https://postman.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="30" height="30"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="30" height="30"/> </a> <a href="https://pytorch.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg" alt="pytorch" width="30" height="30"/> </a> <a href="https://www.qt.io/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Qt_logo_2016.svg" alt="qt" width="30" height="30"/> </a> <a href="https://scikit-learn.org/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="scikit_learn" width="30" height="30"/> </a> <a href="https://www.selenium.dev" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/detain/svg-logos/780f25886640cef088af994181646db2f6b1a3f8/svg/selenium-logo.svg" alt="selenium" width="30" height="30"/> </a> <a href="https://www.tensorflow.org" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="tensorflow" width="30" height="30"/> </a> </p>
+### `// Research`
+- Table Retrieval & Table QA
+- Cross-modal / Multimodal Learning
+- Reinforcement Learning
+- Large Language Models
 
-<hr>
+</td>
+<td width="50%" valign="top">
 
-<p align="center"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=rui0828" alt="rui0828" /></a> </p>
+### `// Interests`
+- 🛠️ Backend Development
+- 🏗️ Infrastructure & DevOps
+- 📐 System Design
 
-<hr>
+</td>
+</tr>
+</table>
 
-## 👾 Personal Stats 👀 <sub>`Tracked since 2025/01/05`</sub>
+<p align="center">
+    <a href="https://nlpnchu.org"><img src="https://img.shields.io/badge/🔬_NCHU_NLP_Lab-FF3366?style=for-the-badge" /></a>
+    <a href="https://github.com/NCHU-NLP-Lab"><img src="https://img.shields.io/badge/Lab_GitHub-00D9FF?style=for-the-badge&logo=github&logoColor=black" /></a>
+</p>
 
-<img align='right' src="https://i.giphy.com/cmCEsJZHYBPels360q.webp" width="300">
+---
+
+## `> tech_stack.load()`
+
+<p align="center">
+    <img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,sklearn,docker,linux,git,bash&perline=8&theme=dark" /><br>
+    <img src="https://skillicons.dev/icons?i=js,ts,html,css,c,cpp,mysql,redis,nginx&perline=9&theme=dark" />
+</p>
+
+---
+
+## `> contribution_snake.play()`
+
+<picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Rui0828/Rui0828/output/github-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Rui0828/Rui0828/output/github-snake.svg" />
+    <img alt="github-snake" src="https://raw.githubusercontent.com/Rui0828/Rui0828/output/github-snake-dark.svg" width="100%" />
+</picture>
+
+---
+
+## `> stats.display()`
 
 <!--START_SECTION:waka-->
 ![Code Time](http://img.shields.io/badge/Code%20Time-797%20hrs%2030%20mins-blue?style=flat)
 
 ![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-1.14%20million%20lines%20of%20code-blue?style=flat)
 
-**🐱 My GitHub Data** 
+**My GitHub Data**
 
-> 📦 144.1 kB Used in GitHub's Storage 
- > 
+> 📦 144.1 kB Used in GitHub's Storage
+ >
 > 🏆 10 Contributions in the Year 2026
- > 
+ >
 > 💼 Opted to Hire
- > 
-> 📜 19 Public Repositories 
- > 
-> 🔑 14 Private Repositories 
- > 
+ >
+> 📜 19 Public Repositories
+ >
+> 🔑 14 Private Repositories
+ >
 
  Last Updated on 2026/01/11 16:32:01 UTC
 <!--END_SECTION:waka-->
 
-<hr>
-
-## 💼 Github Stats 📊
-
 <p align="center">
     <picture>
         <source
-            srcset="https://github-stats-alpha.vercel.app/api?username=rui0828&ic=ff95ca"
-            media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
-        />
-        <source 
-            srcset="https://github-stats-alpha.vercel.app/api?username=rui0828&cc=22272e&tc=ff95ca&ic=79dafa"
+            srcset="https://github-stats-alpha.vercel.app/api?username=rui0828&cc=0D1117&tc=00D9FF&ic=FF3366&bc=0D1117"
             media="(prefers-color-scheme: dark)"
         />
-        <img src="https://github-stats-alpha.vercel.app/api?username=rui0828&ic=ff95ca" alt="GitHub stats" />
+        <source
+            srcset="https://github-stats-alpha.vercel.app/api?username=rui0828&ic=FF3366"
+            media="(prefers-color-scheme: light)"
+        />
+        <img src="https://github-stats-alpha.vercel.app/api?username=rui0828&cc=0D1117&tc=00D9FF&ic=FF3366&bc=0D1117" alt="GitHub stats" />
     </picture>
-    &nbsp;
-    <picture>
-        <source
-            srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=rui0828&layout=compact&title_color=ff95ca"
-            media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
-        />
-        <source 
-            srcset="https://github-readme-stats.vercel.app/api/top-langs?username=rui0828&layout=compact&title_color=ff95ca&theme=dracula"
-            media="(prefers-color-scheme: dark)"
-        />
-        <img src="https://github-readme-stats.vercel.app/api/top-langs?username=rui0828&layout=compact&title_color=ff95ca" alt="GitHub streak stats" />&nbsp;
-    </picture>
-    <!-- <picture>
-        <source
-            srcset="https://github-readme-streak-stats.herokuapp.com/?user=rui0828&ring=ff95ca&fire=ff95ca&currStreakNum=9590FF&sideNums=ff95ca&currStreakLabel=9590FF&sideLabels=ff95ca" 
-            media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
-        />
-        <source 
-            srcset="https://github-readme-streak-stats.herokuapp.com/?user=rui0828&theme=dracula" 
-            media="(prefers-color-scheme: dark)"
-        />
-        <img src="https://github-readme-streak-stats.herokuapp.com/?user=rui0828&ring=ff95ca&fire=ff95ca& currStreakNum=9590FF&sideNums=ff95ca&currStreakLabel=9590FF&sideLabels=ff95ca"  alt="GitHub streak stats" />
-    </picture> -->
-    <!-- <picture>
-        <source
-            srcset="https://github-readme-stats.vercel.app/api?username=Rui0828&title_color=ff95ca&icon_color=9590ff&hide_title=true&rank_icon=default&show_icons=true"
-            media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
-        />
-        <source 
-            srcset="https://github-readme-stats.vercel.app/api?username=Rui0828&theme=omni&hide_title=true&rank_icon=default&show_icons=true"
-            media="(prefers-color-scheme: dark)"
-        />
-        <img src="https://github-readme-stats.vercel.app/api?username=Rui0828&title_color=ff95ca&icon_color=9590ff&hide_title=true&rank_icon=default&show_icons=true" alt="GitHub stats" />
-    </picture> -->
-    
 </p>
 
-<p align="center">
-    <picture>
-        <source
-            srcset="https://github-readme-activity-graph.vercel.app/graph?username=Rui0828&bg_color=ffffff&color=9590ff&title_color=ff95ca&line=ff95ca&point=9590ff"
-            media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
-        />
-        <source 
-            srcset="https://github-readme-activity-graph.vercel.app/graph?username=Rui0828&bg_color=282a36&color=f8f8f2&title_color=ff95ca&line=ff95ca&point=79dafa"
-            media="(prefers-color-scheme: dark)"
-        />
-        <img src="https://github-readme-activity-graph.vercel.app/graph?username=Rui0828&bg_color=ffffff&color=9590ff&title_color=ff95ca&line=ff95ca&point=9590ff" alt="GitHub stats" />
-    </picture>
-</p>
+![Footer](https://capsule-render.vercel.app/api?type=waving&height=100&color=gradient&customColorList=12,9,5,3,1&section=footer)

@@ -75,7 +75,7 @@ class NLPResearcher:
 <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Rui0828/Rui0828/output/profile-night-rainbow.svg" />
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Rui0828/Rui0828/output/profile-gitblock.svg" />
-    <img src="https://raw.githubusercontent.com/Rui0828/Rui0828/output/profile-night-rainbow.svg" alt="3D Contrib" width="100%" />
+    <img align="right" src="https://raw.githubusercontent.com/Rui0828/Rui0828/output/profile-night-rainbow.svg" alt="3D Contrib" width="50%" />
 </picture>
 
 <!--START_SECTION:waka-->

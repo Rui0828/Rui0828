@@ -90,7 +90,7 @@ class NLPResearcher:
 </picture>
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-831%20hrs%2045%20mins-blue?style=flat)
+![Code Time](http://img.shields.io/badge/Code%20Time-832%20hrs%2032%20mins-blue?style=flat)
 
 ![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-749.05%20thousand%20lines%20of%20code-blue?style=flat)
 
@@ -98,7 +98,7 @@ class NLPResearcher:
 
 > 📦 144.0 kB Used in GitHub's Storage 
  > 
-> 🏆 32 Contributions in the Year 2026
+> 🏆 33 Contributions in the Year 2026
  > 
 > 💼 Opted to Hire
  > 
@@ -133,15 +133,15 @@ Sunday                   259 commits         ███░░░░░░░░�
 🕑︎ Time Zone: Asia/Taipei
 
 💬 Programming Languages: 
-TeX                      10 hrs 2 mins       █████████████████████░░░░   84.35 % 
-Other                    45 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   06.36 % 
-Python                   38 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   05.40 % 
-BibTeX                   16 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   02.38 % 
-Markdown                 10 mins             ░░░░░░░░░░░░░░░░░░░░░░░░░   01.50 % 
+TeX                      1 hr 51 mins        ██████████████░░░░░░░░░░░   56.48 % 
+Python                   50 mins             ██████░░░░░░░░░░░░░░░░░░░   25.67 % 
+Markdown                 17 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   08.98 % 
+Other                    8 mins              █░░░░░░░░░░░░░░░░░░░░░░░░   04.40 % 
+Bash                     8 mins              █░░░░░░░░░░░░░░░░░░░░░░░░   04.37 % 
 ```
 
 
- Last Updated on 2026/01/29 16:38:56 UTC
+ Last Updated on 2026/01/30 16:35:04 UTC
 <!--END_SECTION:waka-->
 
 

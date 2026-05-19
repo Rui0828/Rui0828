@@ -90,13 +90,15 @@ class NLPResearcher:
 </picture>
 
 <!--START_SECTION:waka-->
+![Code Time](http://img.shields.io/badge/Code%20Time-986%20hrs%2047%20mins-blue?style=flat)
+
 ![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-1.22%20million%20lines%20of%20code-blue?style=flat)
 
 **🐱 My GitHub Data** 
 
 > 📦 161.8 kB Used in GitHub's Storage 
  > 
-> 🏆 390 Contributions in the Year 2026
+> 🏆 393 Contributions in the Year 2026
  > 
 > 💼 Opted to Hire
  > 
@@ -104,8 +106,42 @@ class NLPResearcher:
  > 
 > 🔑 16 Private Repositories 
  > 
+**I'm a Night 🦉** 
 
- Last Updated on 2026/05/18 17:57:33 UTC
+```text
+🌞 Morning                213 commits         ██░░░░░░░░░░░░░░░░░░░░░░░   08.53 % 
+🌆 Daytime                925 commits         █████████░░░░░░░░░░░░░░░░   37.04 % 
+🌃 Evening                708 commits         ███████░░░░░░░░░░░░░░░░░░   28.35 % 
+🌙 Night                  651 commits         ███████░░░░░░░░░░░░░░░░░░   26.07 % 
+```
+📅 **I'm Most Productive on Tuesday** 
+
+```text
+Monday                   310 commits         ███░░░░░░░░░░░░░░░░░░░░░░   12.41 % 
+Tuesday                  588 commits         ██████░░░░░░░░░░░░░░░░░░░   23.55 % 
+Wednesday                264 commits         ███░░░░░░░░░░░░░░░░░░░░░░   10.57 % 
+Thursday                 366 commits         ████░░░░░░░░░░░░░░░░░░░░░   14.66 % 
+Friday                   350 commits         ████░░░░░░░░░░░░░░░░░░░░░   14.02 % 
+Saturday                 316 commits         ███░░░░░░░░░░░░░░░░░░░░░░   12.66 % 
+Sunday                   303 commits         ███░░░░░░░░░░░░░░░░░░░░░░   12.13 % 
+```
+
+
+📊 **This Week I Spent My Time On** 
+
+```text
+🕑︎ Time Zone: Asia/Taipei
+
+💬 Programming Languages: 
+Other                    2 hrs 42 mins       ███████████████████████░░   90.16 % 
+HTML                     7 mins              █░░░░░░░░░░░░░░░░░░░░░░░░   04.44 % 
+Python                   7 mins              █░░░░░░░░░░░░░░░░░░░░░░░░   04.11 % 
+YAML                     1 min               ░░░░░░░░░░░░░░░░░░░░░░░░░   01.10 % 
+Markdown                 0 secs              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.18 % 
+```
+
+
+ Last Updated on 2026/05/19 18:02:32 UTC
 <!--END_SECTION:waka-->
 
 

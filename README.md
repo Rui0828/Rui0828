@@ -90,22 +90,58 @@ class NLPResearcher:
 </picture>
 
 <!--START_SECTION:waka-->
-![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-1.22%20million%20lines%20of%20code-blue?style=flat)
+![Code Time](http://img.shields.io/badge/Code%20Time-998%20hrs%2058%20mins-blue?style=flat)
+
+![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-1.23%20million%20lines%20of%20code-blue?style=flat)
 
 **🐱 My GitHub Data** 
 
-> 📦 161.8 kB Used in GitHub's Storage 
+> 📦 161.9 kB Used in GitHub's Storage 
  > 
-> 🏆 395 Contributions in the Year 2026
+> 🏆 426 Contributions in the Year 2026
  > 
 > 💼 Opted to Hire
  > 
 > 📜 19 Public Repositories 
  > 
-> 🔑 16 Private Repositories 
+> 🔑 17 Private Repositories 
  > 
+**I'm a Night 🦉** 
 
- Last Updated on 2026/05/23 16:56:14 UTC
+```text
+🌞 Morning                213 commits         ██░░░░░░░░░░░░░░░░░░░░░░░   08.43 % 
+🌆 Daytime                932 commits         █████████░░░░░░░░░░░░░░░░   36.88 % 
+🌃 Evening                731 commits         ███████░░░░░░░░░░░░░░░░░░   28.93 % 
+🌙 Night                  651 commits         ██████░░░░░░░░░░░░░░░░░░░   25.76 % 
+```
+📅 **I'm Most Productive on Tuesday** 
+
+```text
+Monday                   310 commits         ███░░░░░░░░░░░░░░░░░░░░░░   12.27 % 
+Tuesday                  588 commits         ██████░░░░░░░░░░░░░░░░░░░   23.27 % 
+Wednesday                264 commits         ███░░░░░░░░░░░░░░░░░░░░░░   10.45 % 
+Thursday                 366 commits         ████░░░░░░░░░░░░░░░░░░░░░   14.48 % 
+Friday                   350 commits         ███░░░░░░░░░░░░░░░░░░░░░░   13.85 % 
+Saturday                 316 commits         ███░░░░░░░░░░░░░░░░░░░░░░   12.50 % 
+Sunday                   333 commits         ███░░░░░░░░░░░░░░░░░░░░░░   13.18 % 
+```
+
+
+📊 **This Week I Spent My Time On** 
+
+```text
+🕑︎ Time Zone: Asia/Taipei
+
+💬 Programming Languages: 
+Markdown                 3 hrs 34 mins       █████████████░░░░░░░░░░░░   53.57 % 
+Other                    1 hr 21 mins        █████░░░░░░░░░░░░░░░░░░░░   20.39 % 
+Python                   43 mins             ███░░░░░░░░░░░░░░░░░░░░░░   10.97 % 
+Text                     24 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   06.05 % 
+JSON                     17 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   04.28 % 
+```
+
+
+ Last Updated on 2026/05/24 16:58:03 UTC
 <!--END_SECTION:waka-->
 
 

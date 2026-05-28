@@ -90,8 +90,6 @@ class NLPResearcher:
 </picture>
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-999%20hrs%201%20min-blue?style=flat)
-
 ![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-1.23%20million%20lines%20of%20code-blue?style=flat)
 
 **🐱 My GitHub Data** 
@@ -106,42 +104,8 @@ class NLPResearcher:
  > 
 > 🔑 17 Private Repositories 
  > 
-**I'm a Night 🦉** 
 
-```text
-🌞 Morning                213 commits         ██░░░░░░░░░░░░░░░░░░░░░░░   08.43 % 
-🌆 Daytime                932 commits         █████████░░░░░░░░░░░░░░░░   36.88 % 
-🌃 Evening                731 commits         ███████░░░░░░░░░░░░░░░░░░   28.93 % 
-🌙 Night                  651 commits         ██████░░░░░░░░░░░░░░░░░░░   25.76 % 
-```
-📅 **I'm Most Productive on Tuesday** 
-
-```text
-Monday                   310 commits         ███░░░░░░░░░░░░░░░░░░░░░░   12.27 % 
-Tuesday                  588 commits         ██████░░░░░░░░░░░░░░░░░░░   23.27 % 
-Wednesday                264 commits         ███░░░░░░░░░░░░░░░░░░░░░░   10.45 % 
-Thursday                 366 commits         ████░░░░░░░░░░░░░░░░░░░░░   14.48 % 
-Friday                   350 commits         ███░░░░░░░░░░░░░░░░░░░░░░   13.85 % 
-Saturday                 316 commits         ███░░░░░░░░░░░░░░░░░░░░░░   12.50 % 
-Sunday                   333 commits         ███░░░░░░░░░░░░░░░░░░░░░░   13.18 % 
-```
-
-
-📊 **This Week I Spent My Time On** 
-
-```text
-🕑︎ Time Zone: Asia/Taipei
-
-💬 Programming Languages: 
-Markdown                 3 hrs 11 mins       █████████████████░░░░░░░░   68.89 % 
-Other                    53 mins             █████░░░░░░░░░░░░░░░░░░░░   19.29 % 
-Python                   14 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   05.20 % 
-Text                     9 mins              █░░░░░░░░░░░░░░░░░░░░░░░░   03.47 % 
-JSON                     7 mins              █░░░░░░░░░░░░░░░░░░░░░░░░   02.61 % 
-```
-
-
- Last Updated on 2026/05/27 18:24:25 UTC
+ Last Updated on 2026/05/28 18:34:49 UTC
 <!--END_SECTION:waka-->
 
 

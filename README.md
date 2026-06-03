@@ -3,7 +3,7 @@
 
 
 <p align="center">
-    <a href="mailto:rui@rui0828.onmicrosoft.com">
+    <a href="mailto:chenjuiyu0828@gmail.com">
         <img src="https://img.shields.io/badge/Email-FF3366?style=for-the-badge&logo=gmail&logoColor=white" />
     </a>
     <a href="https://www.linkedin.com/in/rui0828/">

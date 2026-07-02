@@ -90,7 +90,7 @@ class NLPResearcher:
 </picture>
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-1%2C034%20hrs%208%20mins-blue?style=flat)
+![Code Time](http://img.shields.io/badge/Code%20Time-1%2C035%20hrs%2048%20mins-blue?style=flat)
 
 ![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-1.63%20million%20lines%20of%20code-blue?style=flat)
 
@@ -133,11 +133,12 @@ Sunday                   344 commits         ███░░░░░░░░�
 🕑︎ Time Zone: Asia/Taipei
 
 💬 Programming Languages: 
-Python                   1 min               █████████████████████████   100.00 % 
+Other                    1 hr 40 mins        █████████████████████████   98.20 % 
+Python                   1 min               ░░░░░░░░░░░░░░░░░░░░░░░░░   01.80 % 
 ```
 
 
- Last Updated on 2026/07/01 17:52:05 UTC
+ Last Updated on 2026/07/02 17:42:40 UTC
 <!--END_SECTION:waka-->
 
 

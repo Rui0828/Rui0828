@@ -90,13 +90,13 @@ class NLPResearcher:
 </picture>
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-1%2C052%20hrs%2016%20mins-blue?style=flat)
+![Code Time](http://img.shields.io/badge/Code%20Time-1%2C052%20hrs%2020%20mins-blue?style=flat)
 
 ![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-1.64%20million%20lines%20of%20code-blue?style=flat)
 
 **🐱 My GitHub Data** 
 
-> 📦 162.3 kB Used in GitHub's Storage 
+> 📦 162.2 kB Used in GitHub's Storage 
  > 
 > 🏆 510 Contributions in the Year 2026
  > 
@@ -133,11 +133,11 @@ Sunday                   344 commits         ███░░░░░░░░�
 🕑︎ Time Zone: Asia/Taipei
 
 💬 Programming Languages: 
-Other                    11 mins             █████████████████████████   100.00 % 
+Other                    15 mins             █████████████████████████   100.00 % 
 ```
 
 
- Last Updated on 2026/07/21 17:13:24 UTC
+ Last Updated on 2026/07/22 17:13:42 UTC
 <!--END_SECTION:waka-->
 
 

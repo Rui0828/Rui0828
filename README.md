@@ -90,10 +90,6 @@ class NLPResearcher:
 </picture>
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-701%20hrs%2030%20mins-blue?style=flat)
-
-![AI Code Time](http://img.shields.io/badge/AI%20Code%20Time-96%20hrs%2023%20mins-blue?style=flat)
-
 ![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-1.64%20million%20lines%20of%20code-blue?style=flat)
 
 **🐱 My GitHub Data** 
@@ -108,45 +104,8 @@ class NLPResearcher:
  > 
 > 🔑 18 Private Repositories 
  > 
-**I'm a Night 🦉** 
 
-```text
-🌞 Morning                226 commits         ██░░░░░░░░░░░░░░░░░░░░░░░   08.26 % 
-🌆 Daytime                1055 commits        ██████████░░░░░░░░░░░░░░░   38.56 % 
-🌃 Evening                802 commits         ███████░░░░░░░░░░░░░░░░░░   29.31 % 
-🌙 Night                  653 commits         ██████░░░░░░░░░░░░░░░░░░░   23.87 % 
-```
-📅 **I'm Most Productive on Tuesday** 
-
-```text
-Monday                   321 commits         ███░░░░░░░░░░░░░░░░░░░░░░   11.73 % 
-Tuesday                  615 commits         ██████░░░░░░░░░░░░░░░░░░░   22.48 % 
-Wednesday                304 commits         ███░░░░░░░░░░░░░░░░░░░░░░   11.11 % 
-Thursday                 394 commits         ████░░░░░░░░░░░░░░░░░░░░░   14.40 % 
-Friday                   425 commits         ████░░░░░░░░░░░░░░░░░░░░░   15.53 % 
-Saturday                 333 commits         ███░░░░░░░░░░░░░░░░░░░░░░   12.17 % 
-Sunday                   344 commits         ███░░░░░░░░░░░░░░░░░░░░░░   12.57 % 
-```
-
-
-📊 **This Week I Spent My Time On** 
-
-```text
-🕑︎ Time Zone: Asia/Taipei
-
-💬 Programming Languages: 
-Other                    6 mins              ██████████████████████░░░   88.94 % 
-Python                   0 secs              ███░░░░░░░░░░░░░░░░░░░░░░   11.06 % 
-```
-
-🤖 **AI Coding This Week** 
-
-```text
-No AI Coding Activity Tracked This Week
-```
-
-
- Last Updated on 2026/07/27 17:40:51 UTC
+ Last Updated on 2026/07/28 17:25:02 UTC
 <!--END_SECTION:waka-->
 
 

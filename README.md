@@ -135,14 +135,14 @@ Sunday                   344 commits         ███░░░░░░░░�
 🕑︎ Time Zone: Asia/Taipei
 
 💬 Programming Languages: 
-Other                    26 mins             ████████████████░░░░░░░░░   65.25 % 
-Markdown                 14 mins             █████████░░░░░░░░░░░░░░░░   34.75 % 
+Other                    24 mins             ████████████████░░░░░░░░░   62.79 % 
+Markdown                 14 mins             █████████░░░░░░░░░░░░░░░░   37.21 % 
 ```
 
 🤖 **AI Coding This Week** 
 
 ```text
-⏱ AI Coding Time: 6 mins (15.99%)
+⏱ AI Coding Time: 6 mins (17.12%)
 
 ✍️ 0 lines written by AI, 0 lines written by hand (0% AI-written)
 
@@ -160,7 +160,7 @@ Markdown                 14 mins             █████████░░�
 ```
 
 
- Last Updated on 2026/09/12 18:03:54 UTC
+ Last Updated on 2026/09/13 18:30:51 UTC
 <!--END_SECTION:waka-->
 
 

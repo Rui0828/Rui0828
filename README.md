@@ -90,9 +90,9 @@ class NLPResearcher:
 </picture>
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-701%20hrs%2059%20mins-blue?style=flat)
+![Code Time](http://img.shields.io/badge/Code%20Time-702%20hrs%2058%20mins-blue?style=flat)
 
-![AI Code Time](http://img.shields.io/badge/AI%20Code%20Time-96%20hrs%2042%20mins-blue?style=flat)
+![AI Code Time](http://img.shields.io/badge/AI%20Code%20Time-97%20hrs%2040%20mins-blue?style=flat)
 
 ![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-1.67%20million%20lines%20of%20code-blue?style=flat)
 
@@ -135,17 +135,17 @@ Sunday                   344 commits         ███░░░░░░░░�
 🕑︎ Time Zone: Asia/Taipei
 
 💬 Programming Languages: 
-Text                     58 mins             ████████░░░░░░░░░░░░░░░░░   33.77 % 
-Other                    53 mins             ████████░░░░░░░░░░░░░░░░░   30.56 % 
-Python                   44 mins             ██████░░░░░░░░░░░░░░░░░░░   25.63 % 
-Markdown                 14 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   08.17 % 
-SSH Config               3 mins              ░░░░░░░░░░░░░░░░░░░░░░░░░   01.87 % 
+Text                     58 mins             █████████░░░░░░░░░░░░░░░░   36.04 % 
+Python                   44 mins             ███████░░░░░░░░░░░░░░░░░░   27.35 % 
+Other                    42 mins             ██████░░░░░░░░░░░░░░░░░░░   25.89 % 
+Markdown                 14 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   08.72 % 
+SSH Config               3 mins              ░░░░░░░░░░░░░░░░░░░░░░░░░   01.99 % 
 ```
 
 🤖 **AI Coding This Week** 
 
 ```text
-⏱ AI Coding Time: 2 hrs 18 mins (79.46%)
+⏱ AI Coding Time: 2 hrs 18 mins (84.8%)
 
 ✍️ 2,038 lines written by AI, 0 lines written by hand (100.0% AI-written)
 
@@ -165,7 +165,7 @@ Opus                     2,038 lines         ███████████�
 ```
 
 
- Last Updated on 2026/09/28 21:33:54 UTC
+ Last Updated on 2026/09/29 20:26:42 UTC
 <!--END_SECTION:waka-->
 
 

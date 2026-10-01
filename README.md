@@ -135,37 +135,35 @@ Sunday                   344 commits         ███░░░░░░░░�
 🕑︎ Time Zone: Asia/Taipei
 
 💬 Programming Languages: 
-Text                     58 mins             █████████░░░░░░░░░░░░░░░░   36.04 % 
-Python                   44 mins             ███████░░░░░░░░░░░░░░░░░░   27.35 % 
-Other                    42 mins             ██████░░░░░░░░░░░░░░░░░░░   25.89 % 
-Markdown                 14 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   08.72 % 
-SSH Config               3 mins              ░░░░░░░░░░░░░░░░░░░░░░░░░   01.99 % 
+Python                   44 mins             ████████████░░░░░░░░░░░░░   47.98 % 
+Other                    34 mins             █████████░░░░░░░░░░░░░░░░   36.72 % 
+Markdown                 14 mins             ████░░░░░░░░░░░░░░░░░░░░░   15.30 % 
 ```
 
 🤖 **AI Coding This Week** 
 
 ```text
-⏱ AI Coding Time: 2 hrs 18 mins (84.8%)
+⏱ AI Coding Time: 58 mins (63.28%)
 
 ✍️ 2,038 lines written by AI, 0 lines written by hand (100.0% AI-written)
 
-🔤 762,548 Input Tokens, 174,773 Output Tokens
+🔤 581,800 Input Tokens, 135,425 Output Tokens
 
-💵 $11.94 Estimated AI Cost This Week
+💵 $9.24 Estimated AI Cost This Week
 
-🧠 4 AI Sessions, 41 AI Prompts
+🧠 1 AI Sessions, 11 AI Prompts
 
 Opus                     2,038 lines         █████████████████████████   100.00 % 
 
 🔎 AI Coding Insights:
 🤖 AI-Driven — 100.0% of written lines came from AI
-📄 Detailed Prompter — average 709 characters per prompt
-🔁 Iterative Prompter — average 10 prompts per session
+📝 Concise Prompter — average 272 characters per prompt
+🔁 Iterative Prompter — average 11 prompts per session
 🚀 High AI Trust — 0.0% of changed lines were hand-edited
 ```
 
 
- Last Updated on 2026/09/30 20:30:36 UTC
+ Last Updated on 2026/10/01 20:47:36 UTC
 <!--END_SECTION:waka-->
 
 

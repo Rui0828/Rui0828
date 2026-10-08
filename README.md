@@ -135,35 +135,33 @@ Sunday                   345 commits         ███░░░░░░░░�
 🕑︎ Time Zone: Asia/Taipei
 
 💬 Programming Languages: 
-Other                    29 mins             ███████████████████████░░   90.40 % 
-Markdown                 2 mins              ██░░░░░░░░░░░░░░░░░░░░░░░   08.00 % 
-Bash                     0 secs              ░░░░░░░░░░░░░░░░░░░░░░░░░   01.60 % 
+Other                    14 mins             █████████████████████░░░░   82.33 % 
+Markdown                 2 mins              ████░░░░░░░░░░░░░░░░░░░░░   14.72 % 
+Bash                     0 secs              █░░░░░░░░░░░░░░░░░░░░░░░░   02.95 % 
 ```
 
 🤖 **AI Coding This Week** 
 
 ```text
-⏱ AI Coding Time: 18 mins (56.31%)
+⏱ AI Coding Time: 15 mins (83.34%)
 
 ✍️ 0 lines written by AI, 1 lines written by hand (0.0% AI-written)
 
-🔤 483,190 Input Tokens, 3,875 Output Tokens
+🔤 0 Input Tokens, 0 Output Tokens
 
-💵 $2.75 Estimated AI Cost This Week
+💵 $0.00 Estimated AI Cost This Week
 
-🧠 3 AI Sessions, 16 AI Prompts
-
-Opus                     0 lines             ░░░░░░░░░░░░░░░░░░░░░░░░░   00.00 % 
+🧠 2 AI Sessions, 12 AI Prompts
 
 🔎 AI Coding Insights:
 🧑‍💻 Mostly Hands-On — 0.0% of written lines came from AI
-📚 Verbose Prompter — average 4,258 characters per prompt
-🔁 Iterative Prompter — average 5 prompts per session
+📚 Verbose Prompter — average 5,650 characters per prompt
+🔁 Iterative Prompter — average 6 prompts per session
 🔍 Hands-On Reviewer — 100.0% of changed lines were hand-edited
 ```
 
 
- Last Updated on 2026/10/07 20:59:58 UTC
+ Last Updated on 2026/10/08 21:01:06 UTC
 <!--END_SECTION:waka-->
 
 

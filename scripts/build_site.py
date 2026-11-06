@@ -36,13 +36,20 @@ SANS = "-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,
 MONO = "ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace"
 
 # Colour presets. Pick one with "theme" in site.json (or SITE_THEME=... for previews).
-# a1/a2/a3 drive the gradient (a1 -> a2 -> a3) and the venue colours
-# (conference / journal / workshop).
+# a1 is the main colour (hero, nav, links). Sections and venue chips have their
+# own fixed colours in _BASE. Gradients only ever run from one colour to
+# the text colour (near black in light mode, near white in dark mode).
 _BASE = {
     "light": dict(bg="#ffffff", surface="#f6f8fa", border="#d0d7de", text="#1f2328", muted="#59636e",
-                  faint="#eaeef2", chip_text="#ffffff", new="#dc2626"),
+                  faint="#eaeef2", chip_text="#ffffff", new="#dc2626", on="#ffffff",
+                  # one solid colour per section
+                  s_about="#2563eb", s_publications="#0f766e", s_activity="#b45309", s_contact="#7c3aed",
+                  # venue chips: conference / journal / workshop
+                  k_conf="#2563eb", k_journal="#c2410c", k_workshop="#0f766e"),
     "dark": dict(bg="#0d1117", surface="#151b23", border="#30363d", text="#f0f6fc", muted="#9198a1",
-                 faint="#21262d", chip_text="#0d1117", new="#f85149"),
+                 faint="#21262d", chip_text="#0d1117", new="#f85149", on="#0d1117",
+                 s_about="#60a5fa", s_publications="#2dd4bf", s_activity="#fbbf24", s_contact="#a78bfa",
+                 k_conf="#60a5fa", k_journal="#fb923c", k_workshop="#2dd4bf"),
 }
 PRESETS = {
     "aurora": {"light": ("#6366f1", "#ec4899", "#0891b2"), "dark": ("#818cf8", "#f472b6", "#22d3ee")},
@@ -57,11 +64,11 @@ PRESETS = {
     "mono":   {"light": ("#1f2328", "#57606a", "#0969da"), "dark": ("#f0f6fc", "#9198a1", "#4493f8", "#0d1117")},
 }
 THEME_NAME = os.getenv("SITE_THEME") or SITE.get("theme", "aurora")
-# "on" = text colour on top of the gradient (white unless the preset says otherwise)
-THEMES = {mode: {**_BASE[mode], "on": "#ffffff",
+# "on" = text colour on top of a gradient fill
+THEMES = {mode: {**_BASE[mode],
                  **dict(zip(("a1", "a2", "a3", "on"), PRESETS[THEME_NAME][mode]))}
           for mode in ("light", "dark")}
-KIND_COLOR = {"conference": "a1", "journal": "a2", "workshop": "a3", "unknown": "muted",
+KIND_COLOR = {"conference": "k_conf", "journal": "k_journal", "workshop": "k_workshop", "unknown": "muted",
               "preprint": "muted", "repository": "muted"}
 
 
@@ -114,10 +121,10 @@ def card(w, h, t, r=16, fill=None):
             f'fill="{fill or t["bg"]}" stroke="{t["border"]}"/>')
 
 
-def grad(t, gid="g"):
+def grad(t, gid="g", c=None):
+    """One colour fading into the text colour; never a multi-colour gradient."""
     return (f'<linearGradient id="{gid}" x1="0" y1="0" x2="1" y2="0">'
-            f'<stop offset="0" stop-color="{t["a1"]}"/><stop offset=".55" stop-color="{t["a2"]}"/>'
-            f'<stop offset="1" stop-color="{t["a3"]}"/></linearGradient>')
+            f'<stop offset="0" stop-color="{c or t["a1"]}"/><stop offset="1" stop-color="{t["text"]}"/></linearGradient>')
 
 
 # ---------------------------------------------------------------- data
@@ -183,7 +190,7 @@ def c_hero(t, avatar) -> str:
   <rect width="{W}" height="{h}" fill="{t["bg"]}"/>
   <rect width="{W}" height="{h}" fill="url(#dots)" opacity=".7"/>
   <circle class="blob1" cx="{ax-40}" cy="{ay-40}" r="110" fill="{t["a1"]}" opacity=".35" filter="url(#blur)"/>
-  <circle class="blob2" cx="{ax+60}" cy="{ay+60}" r="100" fill="{t["a2"]}" opacity=".3" filter="url(#blur)"/>
+  <circle class="blob2" cx="{ax+60}" cy="{ay+60}" r="100" fill="{t["a1"]}" opacity=".22" filter="url(#blur)"/>
 </g>
 <rect x=".5" y=".5" width="{W-1}" height="{h-1}" rx="20" fill="none" stroke="{t["border"]}"/>
 <text class="m" x="48" y="92" font-size="13" letter-spacing="2.5" fill="{t["a1"]}" font-weight="600">{esc(PROFILE["kicker"].upper())}</text>
@@ -245,14 +252,16 @@ def c_link(t, label) -> str:
     return svg(w, h, body, t)
 
 
-def c_section(t, num, title, meta="") -> str:
+def c_section(t, num, title, meta="", color=None) -> str:
     h = 64
     tw = text_width(title, 28, bold=True)
     x2 = W - (text_width(meta, 13, mono=True) + 20 if meta else 0)
-    body = (f'<defs>{grad(t)}</defs>'
-            f'<text class="m" x="0" y="42" font-size="15" font-weight="700" fill="url(#g)">{num}</text>'
+    c = color or t["a1"]
+    body = (f'<defs><linearGradient id="ln" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="{c}"/>'
+            f'<stop offset=".6" stop-color="{t["border"]}"/></linearGradient></defs>'
+            f'<text class="m" x="0" y="42" font-size="15" font-weight="700" fill="{c}">{num}</text>'
             f'<text x="38" y="44" font-size="28" font-weight="800" letter-spacing="-.5" fill="{t["text"]}">{esc(title)}</text>'
-            f'<line x1="{38 + tw + 20}" y1="35" x2="{x2}" y2="35" stroke="{t["border"]}"/>'
+            f'<rect x="{38 + tw + 20}" y="34" width="{x2 - (38 + tw + 20)}" height="2" rx="1" fill="url(#ln)"/>'
             + (f'<text class="m" x="{W}" y="40" font-size="13" text-anchor="end" fill="{t["muted"]}">{esc(meta)}</text>'
                if meta else ""))
     return svg(W, h, body, t)
@@ -270,7 +279,7 @@ def chip_row(t, label, items, y, color, filled=False) -> tuple[str, int]:
             w = text_width(it, 14.5, bold=True) + 36
             if x + w > W - 24 and x > x0:
                 x, y = x0, y + row_h
-            parts.append(f'<rect x="{x}" y="{y}" width="{w}" height="32" rx="16" fill="url(#g)"/>'
+            parts.append(f'<rect x="{x}" y="{y}" width="{w}" height="32" rx="16" fill="{t[color]}"/>'
                          f'<text x="{x+w/2}" y="{y+21}" font-size="14.5" font-weight="700" text-anchor="middle" fill="{t["on"]}">{esc(it)}</text>')
         else:
             parts.append(f'<rect x="{x}" y="{y}" width="{w}" height="32" rx="16" fill="{t["bg"]}" stroke="{t["border"]}"/>'
@@ -290,13 +299,14 @@ def c_about(t) -> str:
     y += 10
     parts.append(f'<line x1="24" y1="{y}" x2="{W-24}" y2="{y}" stroke="{t["faint"]}"/>')
     y += 20
-    for label, key, color in (("MAIN FOCUS", "focus", "a1"), ("RESEARCH", "research", "a1"), ("ALSO INTO", "interests", "a2")):
+    for label, key, color in (("MAIN FOCUS", "focus", "s_about"), ("RESEARCH", "research", "s_about"), ("ALSO INTO", "interests", "s_about")):
         if SITE.get(key):
             frag, y = chip_row(t, label, SITE[key], y, color, filled=(key == "focus"))
             parts.append(frag)
             y += 8
     h = int(y + 16)
-    return svg(W, h, f'<defs>{grad(t)}</defs>' + card(W, h, t, 16, t["surface"]) + "".join(parts), t)
+    bar = f'<rect x="0" y="18" width="3" height="{h-36}" rx="1.5" fill="{t["s_about"]}"/>'
+    return svg(W, h, card(W, h, t, 16, t["surface"]) + bar + "".join(parts), t)
 
 
 
@@ -364,7 +374,7 @@ def c_more(t, n) -> str:
     body = (f'<defs>{grad(t)}</defs>'
             f'<rect x=".75" y=".75" width="{W-1.5}" height="{h-1.5}" rx="12" fill="{t["surface"]}" '
             f'stroke="{t["border"]}" stroke-width="1.5" stroke-dasharray="6 6"/>'
-            f'<text x="{x0}" y="34" font-size="15" font-weight="700" fill="url(#g)">{esc(label)}</text>'
+            f'<text x="{x0}" y="34" font-size="15" font-weight="700" fill="{t["s_publications"]}">{esc(label)}</text>'
             f'<text x="{x0 + lw + 12}" y="34" font-size="15" fill="{t["border"]}">\u00b7</text>'
             f'<text x="{x0 + lw + 24}" y="34" font-size="13.5" font-weight="600" fill="{t["muted"]}">{esc(cta)}</text>')
     return svg(W, h, body, t)
@@ -373,11 +383,12 @@ def c_more(t, n) -> str:
 def c_contact(t) -> str:
     h = 150
     email = next((l["url"][7:] for l in SITE["links"] if l["url"].startswith("mailto:")), "")
-    body = (f'<defs>{grad(t)}<pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse">'
+    body = (f'<defs>{grad(t, c=t["s_contact"])}<pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse">'
             f'<circle cx="2" cy="2" r="1.1" fill="{t["border"]}"/></pattern></defs>'
             + card(W, h, t, 20, t["surface"])
             + f'<rect x="1" y="1" width="{W-2}" height="{h-2}" rx="19" fill="url(#dots)" opacity=".6"/>'
-            f'<text class="m" x="{W/2}" y="58" font-size="12" font-weight="700" letter-spacing="2.5" text-anchor="middle" fill="{t["muted"]}">EMAIL</text>'
+            f'<rect x="0" y="18" width="3" height="{h-36}" rx="1.5" fill="{t["s_contact"]}"/>'
+            f'<text class="m" x="{W/2}" y="58" font-size="12" font-weight="700" letter-spacing="2.5" text-anchor="middle" fill="{t["s_contact"]}">EMAIL</text>'
             f'<text x="{W/2}" y="102" font-size="32" font-weight="800" letter-spacing="-.5" text-anchor="middle" fill="url(#g)">{esc(email)}</text>')
     return svg(W, h, body, t)
 
@@ -423,7 +434,7 @@ def main():
     md.append('<p align="center">\n  ' + "&nbsp;\n  ".join(link_md) + "\n</p>\n")
 
     def section(num, anchor, title, meta=""):
-        write(f"sec-{anchor}", lambda t: c_section(t, num, title, meta))
+        write(f"sec-{anchor}", lambda t: c_section(t, num, title, meta, t[f"s_{anchor}"]))
         md.append(f'<a id="{anchor}"></a>\n\n{pic(f"sec-{anchor}", title, "100%")}\n')
 
     section("01", "about", "About")

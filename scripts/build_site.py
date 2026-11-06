@@ -50,22 +50,18 @@ def esc(s) -> str:
 
 
 # ---------------------------------------------------------------- text layout
+# Glyph widths (em) measured from the system UI font in a browser canvas, +5% for
+# Windows/Linux fallbacks which run a little wider.
+_W400 = {" ": 0.205, "!": 0.267, "\"": 0.403, "#": 0.604, "$": 0.604, "%": 0.808, "&": 0.669, "'": 0.254, "(": 0.322, ")": 0.322, "*": 0.4, "+": 0.604, ",": 0.215, "-": 0.429, ".": 0.215, "/": 0.279, "0": 0.606, "1": 0.443, "2": 0.566, "3": 0.592, "4": 0.604, "5": 0.585, "6": 0.617, "7": 0.547, "8": 0.6, "9": 0.617, ":": 0.215, ";": 0.215, "<": 0.604, "=": 0.604, ">": 0.604, "?": 0.489, "@": 0.875, "A": 0.635, "B": 0.604, "C": 0.686, "D": 0.679, "E": 0.552, "F": 0.528, "G": 0.707, "H": 0.699, "I": 0.225, "J": 0.495, "K": 0.601, "L": 0.524, "M": 0.831, "N": 0.699, "O": 0.731, "P": 0.578, "Q": 0.731, "R": 0.599, "S": 0.593, "T": 0.581, "U": 0.696, "V": 0.631, "W": 0.924, "X": 0.635, "Y": 0.612, "Z": 0.617, "[": 0.322, "\\": 0.279, "]": 0.322, "^": 0.604, "_": 0.527, "`": 0.5, "a": 0.502, "b": 0.554, "c": 0.501, "d": 0.554, "e": 0.512, "f": 0.304, "g": 0.549, "h": 0.539, "i": 0.206, "j": 0.205, "k": 0.485, "l": 0.204, "m": 0.803, "n": 0.527, "o": 0.531, "p": 0.549, "q": 0.549, "r": 0.308, "s": 0.465, "t": 0.301, "u": 0.527, "v": 0.483, "w": 0.715, "x": 0.468, "y": 0.486, "z": 0.468, "{": 0.322, "|": 0.216, "}": 0.322, "~": 0.604, "·": 0.215, "↗": 0.764, "é": 0.512, "’": 0.215, "–": 0.527}
+_W700 = {" ": 0.198, "!": 0.316, "\"": 0.456, "#": 0.639, "$": 0.647, "%": 0.89, "&": 0.702, "'": 0.27, "(": 0.382, ")": 0.382, "*": 0.449, "+": 0.647, ",": 0.241, "-": 0.441, ".": 0.241, "/": 0.303, "0": 0.656, "1": 0.48, "2": 0.603, "3": 0.63, "4": 0.647, "5": 0.625, "6": 0.652, "7": 0.572, "8": 0.649, "9": 0.652, ":": 0.241, ";": 0.241, "<": 0.647, "=": 0.647, ">": 0.647, "?": 0.534, "@": 0.888, "A": 0.692, "B": 0.64, "C": 0.712, "D": 0.7, "E": 0.573, "F": 0.548, "G": 0.727, "H": 0.729, "I": 0.265, "J": 0.558, "K": 0.653, "L": 0.543, "M": 0.861, "N": 0.714, "O": 0.752, "P": 0.618, "Q": 0.752, "R": 0.64, "S": 0.631, "T": 0.602, "U": 0.708, "V": 0.678, "W": 0.965, "X": 0.686, "Y": 0.665, "Z": 0.631, "[": 0.382, "\\": 0.303, "]": 0.382, "^": 0.647, "_": 0.576, "`": 0.5, "a": 0.547, "b": 0.597, "c": 0.545, "d": 0.596, "e": 0.555, "f": 0.356, "g": 0.593, "h": 0.584, "i": 0.241, "j": 0.24, "k": 0.538, "l": 0.242, "m": 0.863, "n": 0.576, "o": 0.573, "p": 0.593, "q": 0.593, "r": 0.364, "s": 0.515, "t": 0.355, "u": 0.576, "v": 0.528, "w": 0.79, "x": 0.528, "y": 0.539, "z": 0.505, "{": 0.382, "|": 0.242, "}": 0.382, "~": 0.647, "·": 0.241, "↗": 0.798, "é": 0.555, "’": 0.241, "–": 0.576}
+
+
 def text_width(s: str, size: float, bold=False, mono=False) -> float:
     if mono:
-        return len(s) * size * 0.61
-    w = 0.0
-    for ch in s:
-        if ch in "il.,:;'|!·":
-            w += 0.28
-        elif ch in " ftjr()-[]":
-            w += 0.34
-        elif ch.isupper() or ch in "mwMW@":
-            w += 0.70
-        elif ord(ch) > 0x2E80:  # CJK
-            w += 1.0
-        else:
-            w += 0.55
-    return w * size * (1.06 if bold else 1.0)
+        return len(s) * size * 0.602
+    table = _W700 if bold else _W400
+    em = sum(table.get(ch, 1.0 if ord(ch) > 0x2E80 else 0.6) for ch in s)
+    return em * size * 1.05
 
 
 def wrap(s: str, size: float, max_w: float, bold=False, max_lines=99) -> list[str]:
@@ -184,7 +180,7 @@ def c_hero(t, avatar) -> str:
 
 
 def c_pill(t, label, primary=False) -> str:
-    w = int(text_width(label, 14, bold=True) + 36)
+    w = int(text_width(label, 14, bold=True) + 40)
     h = 38
     if primary:
         body = (f'<defs>{grad(t)}</defs><rect x=".5" y=".5" width="{w-1}" height="{h-1}" rx="19" fill="url(#g)"/>'
@@ -193,13 +189,6 @@ def c_pill(t, label, primary=False) -> str:
         body = (f'<rect x=".5" y=".5" width="{w-1}" height="{h-1}" rx="19" fill="{t["bg"]}" stroke="{t["border"]}"/>'
                 f'<text x="{w/2}" y="24" font-size="14" font-weight="600" text-anchor="middle" fill="{t["text"]}">{esc(label)}</text>')
     return svg(w, h, body, t)
-
-
-def c_button(t, label) -> str:
-    w = int(text_width(label, 12, bold=True, mono=True) + 26)
-    body = (f'<rect x=".5" y=".5" width="{w-1}" height="25" rx="7" fill="{t["surface"]}" stroke="{t["border"]}"/>'
-            f'<text class="m" x="{w/2}" y="17" font-size="12" font-weight="600" text-anchor="middle" fill="{t["text"]}">{esc(label)}</text>')
-    return svg(w, 26, body, t)
 
 
 def c_section(t, num, title, meta="") -> str:
@@ -220,11 +209,11 @@ def chip_row(t, label, items, y, color, filled=False) -> tuple[str, int]:
     parts = [f'<text class="m" x="24" y="{y+21}" font-size="12" font-weight="700" letter-spacing="1.5" fill="{t[color]}">{esc(label)}</text>']
     x0, x, row_h = 170, 170, 40
     for it in items:
-        w = text_width(it, 14) + 28
+        w = 24 + text_width(it, 14) + 16  # dot+gap on the left, 16px on the right
         if x + w > W - 24 and x > x0:
             x, y = x0, y + row_h
         if filled:
-            w = text_width(it, 14.5, bold=True) + 32
+            w = text_width(it, 14.5, bold=True) + 36
             if x + w > W - 24 and x > x0:
                 x, y = x0, y + row_h
             parts.append(f'<rect x="{x}" y="{y}" width="{w}" height="32" rx="16" fill="url(#g)"/>'
@@ -256,17 +245,31 @@ def c_about(t) -> str:
     return svg(W, h, f'<defs>{grad(t)}</defs>' + card(W, h, t, 16, t["surface"]) + "".join(parts), t)
 
 
-def c_paper(t, p) -> str:
-    """Compact row: venue column on the left, title + authors on the right."""
+SIDE = 104  # width of the right-hand link segment of a paper card
+
+
+def paper_layout(p):
     venue = p.venue_label or P.short_venue(p.venue) or p.kind
     chip = f"{venue} {p.year}" if p.year else venue
+    rx = 196
+    new_w = 52 if getattr(p, "is_new", False) else 0
+    title_lines = wrap(p.title, 15.5, W - SIDE - rx - 16, bold=True, max_lines=2)
+    if new_w and text_width(title_lines[-1], 15.5, True) + new_w > W - SIDE - rx - 16:
+        title_lines = wrap(p.title, 15.5, W - SIDE - rx - 16 - new_w, bold=True, max_lines=2)
+    h = max(24 + len(title_lines) * 21 + 22, 74)
+    return chip, rx, title_lines, h
+
+
+def c_paper(t, p) -> str:
+    """Main (left) segment: venue column + title + authors. Links to the paper."""
+    chip, rx, title_lines, h = paper_layout(p)
+    w = W - SIDE
     color = t[KIND_COLOR[p.kind]]
-    lx, rx = 22, 196
-    title_lines = wrap(p.title, 15.5, W - rx - 24, bold=True, max_lines=2)
+    lx = 22
     authors = list(p.authors)
     if len(authors) > P.CONFIG["max_authors"]:
         authors = authors[:P.CONFIG["max_authors"]] + ["et al."]
-    spans, used, limit = [], 0.0, W - rx - 24
+    spans, used, limit = [], 0.0, w - rx - 16
     for i, a in enumerate(authors):
         piece = a + (", " if i < len(authors) - 1 else "")
         me = i == p.self_idx
@@ -276,29 +279,47 @@ def c_paper(t, p) -> str:
             break
         spans.append((piece, me))
         used += wpx
-    h = 24 + len(title_lines) * 21 + 22
-    h = max(h, 74)
     cw = text_width(chip, 11, bold=True, mono=True) + 16
     kind_label = {"conference": "Conference", "journal": "Journal", "workshop": "Workshop"}.get(p.kind, p.kind.title())
-    parts = [card(W, h, t, 12),
+    # card body with only the left corners rounded (the side segment closes it on the right)
+    r = 12
+    shape = (f'M{r} .5H{w}V{h-.5}H{r}A{r-.5} {r-.5} 0 0 1 .5 {h-r}V{r}A{r-.5} {r-.5} 0 0 1 {r} .5Z')
+    parts = [f'<path d="{shape}" fill="{t["bg"]}" stroke="{t["border"]}"/>',
+             f'<rect x="{w-1}" y="1" width="2" height="{h-2}" fill="{t["bg"]}"/>',  # hide the seam stroke
              f'<rect x="0" y="14" width="3" height="{h-28}" rx="1.5" fill="{color}"/>',
              f'<rect x="{lx}" y="16" width="{cw}" height="22" rx="5" fill="{color}"/>',
              f'<text class="m" x="{lx+cw/2}" y="31" font-size="11" font-weight="700" text-anchor="middle" fill="{t["chip_text"]}">{esc(chip)}</text>',
              f'<text class="m" x="{lx}" y="56" font-size="11" fill="{t["muted"]}">{esc(kind_label)} · {esc(fmt_date(p.date))}</text>']
-    if getattr(p, "is_new", False):
-        parts.append(f'<defs>{grad(t)}</defs><g transform="translate({W-58} 14)"><rect class="glow" width="44" height="20" rx="10" fill="url(#g)"/>'
-                     f'<text class="m" x="22" y="14" font-size="10.5" font-weight="800" letter-spacing="1" text-anchor="middle" fill="#fff">NEW</text></g>')
-    tmax = W - rx - (70 if getattr(p, "is_new", False) else 24)
-    title_lines = wrap(p.title, 15.5, tmax, bold=True, max_lines=2)
     for i, l in enumerate(title_lines):
         parts.append(f'<text x="{rx}" y="{32 + i*21}" font-size="15.5" font-weight="700" fill="{t["text"]}">{esc(l)}</text>')
+    if getattr(p, "is_new", False):
+        nx = rx + text_width(title_lines[-1], 15.5, True) + 10
+        ny = 32 + (len(title_lines) - 1) * 21 - 14
+        parts.append(f'<defs>{grad(t)}</defs><g transform="translate({nx:.1f} {ny})"><rect class="glow" width="42" height="18" rx="9" fill="url(#g)"/>'
+                     f'<text class="m" x="21" y="13" font-size="10" font-weight="800" letter-spacing="1" text-anchor="middle" fill="#fff">NEW</text></g>')
     ay = 32 + len(title_lines) * 21 + 2
     tsp = "".join(f'<tspan font-weight="{700 if me else 400}" fill="{t["text"] if me else t["muted"]}">{esc(s)}</tspan>'
                   for s, me in spans)
     parts.append(f'<text x="{rx}" y="{ay}" font-size="12.5">{tsp}</text>')
     style = (".glow{animation:glow 2.4s ease-in-out infinite}@keyframes glow{50%{opacity:.6}}"
              if getattr(p, "is_new", False) else "")
-    return svg(W, h, "".join(parts), t, style)
+    return svg(w, h, "".join(parts), t, style)
+
+
+def c_paper_side(t, p, label) -> str:
+    """Right segment of the card. Shows a link button (e.g. arXiv) or stays empty."""
+    _, _, _, h = paper_layout(p)
+    w, r = SIDE, 12
+    shape = f'M.5 .5H{w-r}A{r-.5} {r-.5} 0 0 1 {w-.5} {r}V{h-r}A{r-.5} {r-.5} 0 0 1 {w-r} {h-.5}H.5'
+    parts = [f'<rect x="0" y=".5" width="{w-r}" height="{h-1}" fill="{t["bg"]}"/>',
+             f'<path d="M{w-r} .5A{r-.5} {r-.5} 0 0 1 {w-.5} {r}V{h-r}A{r-.5} {r-.5} 0 0 1 {w-r} {h-.5}Z" fill="{t["bg"]}"/>',
+             f'<path d="{shape}" fill="none" stroke="{t["border"]}"/>']
+    if label:
+        bw = text_width(label, 12, bold=True, mono=True) + 28
+        bx, by = (w - bw) / 2 - 4, h / 2 - 13
+        parts.append(f'<rect x="{bx}" y="{by}" width="{bw}" height="26" rx="7" fill="{t["surface"]}" stroke="{t["border"]}"/>'
+                     f'<text class="m" x="{bx+bw/2}" y="{by+17}" font-size="12" font-weight="600" text-anchor="middle" fill="{t["text"]}">{esc(label)}</text>')
+    return svg(w, h, "".join(parts), t)
 
 
 def c_contact(t) -> str:
@@ -360,16 +381,16 @@ def main():
     n_new = sum(1 for p in papers if p.is_new)
     section("02", "publications", "Publications",
             f"{len(papers)} papers · {n_first} first-author · {n_cite} citations" + (f" · {n_new} new" if n_new else ""))
-    for label in ("arXiv ↗", "Code ↗"):
-        write("btn-" + label.split()[0].lower(), lambda t, l=label: c_button(t, l))
+    main_pct = f"{(W - SIDE) / W * 100:.3f}%"
+    side_pct = f"{SIDE / W * 100:.3f}%"
     for i, p in enumerate(papers):
-        write(f"paper-{i}", lambda t, p=p: c_paper(t, p))
         link = p.url or p.arxiv or "#publications"
-        btns = ([(p.arxiv, "arxiv")] if p.arxiv else []) + ([(p.code, "code")] if p.code else [])
-        md.append(f'<a href="{link}">{pic(f"paper-{i}", p.title, "100%")}</a>')
-        if btns:
-            md.append('<p align="right">' + " ".join(f'<a href="{u}">{pic("btn-" + b, b)}</a>' for u, b in btns) + "</p>")
-        md.append("")
+        side_url, side_label = (p.arxiv, "arXiv ↗") if p.arxiv else (p.code, "Code ↗") if p.code else (link, "")
+        write(f"paper-{i}", lambda t, p=p: c_paper(t, p))
+        write(f"paper-{i}-side", lambda t, p=p, l=side_label: c_paper_side(t, p, l))
+        # no whitespace between the two links, so the halves join seamlessly
+        md.append(f'<a href="{link}">{pic(f"paper-{i}", p.title, main_pct)}</a>'
+                  f'<a href="{side_url}">{pic(f"paper-{i}-side", side_label.split()[0] if side_label else "Open paper", side_pct)}</a>\n')
     md.append('<p align="right"><sub><i>Synced daily from OpenAlex, ORCID &amp; ACL Anthology · '
               'click a card to open the paper · conference / journal versions take priority over preprints</i></sub></p>\n')
 

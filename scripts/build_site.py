@@ -283,7 +283,7 @@ def c_link(t, label) -> str:
     return svg(w, h, body, t)
 
 
-def c_section(t, num, title, meta="", color=None) -> str:
+def c_section(t, num, title, meta="", color=None, pad=0) -> str:
     h = 50
     tw = text_width(title, 28, bold=True)
     x2 = W - (text_width(meta, 13, mono=True) + 20 if meta else 0)
@@ -295,7 +295,7 @@ def c_section(t, num, title, meta="", color=None) -> str:
             f'<rect x="{38 + tw + 20}" y="25" width="{x2 - (38 + tw + 20)}" height="2" rx="1" fill="url(#ln)"/>'
             + (f'<text class="m" x="{W}" y="31" font-size="13" text-anchor="end" fill="{t["muted"]}">{esc(meta)}</text>'
                if meta else ""))
-    return svg(W, h, body, t)
+    return svg(W, h + pad, f'<g transform="translate(0 {pad})">{body}</g>', t)
 
 
 def chip_row(t, label, items, y, color, filled=False) -> tuple[str, int]:
@@ -490,13 +490,16 @@ def main():
         link_md.append(f'<a href="{l["url"]}">{pic(slug, l["label"])}</a>')
     md.append('<p align="center">\n  ' + "&nbsp;\n  ".join(link_md) + "\n</p>\n")
 
+    # About..footer form one paragraph (apps put large gaps between paragraphs), so the
+    # space between sections is drawn at the top of each section header instead
     def section(num, anchor, title, meta=""):
-        write(f"sec-{anchor}", lambda t: c_section(t, num, title, meta, t[f"s_{anchor}"]))
+        pad = 0 if num == "01" else 28
+        write(f"sec-{anchor}", lambda t: c_section(t, num, title, meta, t[f"s_{anchor}"], pad))
         md.append(f'<a id="{anchor}"></a>{pic(f"sec-{anchor}", title, "100%")}')
 
     section("01", "about", "About")
     write("about", c_about)
-    md.append(pic("about", " ".join(PROFILE["bio"]) + " Currently: " + ", ".join(SITE.get("focus", [])), "100%") + "\n")
+    md.append(pic("about", " ".join(PROFILE["bio"]) + " Currently: " + ", ".join(SITE.get("focus", [])), "100%"))
 
     n_cite = sum(p.citations for p in papers)
     n_new = sum(1 for p in papers if p.is_new)
@@ -516,13 +519,13 @@ def main():
         more = SITE.get("more_url") or next((l["url"] for l in SITE["links"] if "scholar" in l["label"].lower()), "#publications")
         write("paper-more", lambda t: c_more(t, hidden, footer=True))
         cards.append(f'<a href="{more}">{pic("paper-more", f"{hidden} more publications on Google Scholar", "100%")}</a>')
-    md.append("\n".join(cards) + "\n")
+    md.append("\n".join(cards))
 
     section("03", "activity", "Activity")
     md.append(f'<picture><source media="(prefers-color-scheme: dark)" '
               f'srcset="https://raw.githubusercontent.com/{USER}/{USER}/output/profile-night-rainbow.svg" />'
               f'<img src="https://raw.githubusercontent.com/{USER}/{USER}/output/profile-gitblock.svg" '
-              f'alt="3D contribution graph" width="100%" /></picture>\n')
+              f'alt="3D contribution graph" width="100%" /></picture>')
 
     section("04", "contact", "Contact")
     write("contact", c_contact)

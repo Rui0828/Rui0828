@@ -49,6 +49,11 @@ PRESETS = {
     "ocean":  {"light": ("#2563eb", "#0891b2", "#059669"), "dark": ("#60a5fa", "#22d3ee", "#34d399")},
     "sunset": {"light": ("#ea580c", "#e11d48", "#7c3aed"), "dark": ("#fb923c", "#fb7185", "#a78bfa")},
     "forest": {"light": ("#059669", "#65a30d", "#0d9488"), "dark": ("#34d399", "#a3e635", "#2dd4bf")},
+    # single-hue presets: the gradient only moves between shades of one colour
+    "indigo": {"light": ("#3730a3", "#4f46e5", "#6366f1"), "dark": ("#a5b4fc", "#818cf8", "#6366f1", "#0d1117")},
+    "blue":   {"light": ("#1e40af", "#2563eb", "#3b82f6"), "dark": ("#93c5fd", "#60a5fa", "#3b82f6", "#0d1117")},
+    "teal":   {"light": ("#115e59", "#0f766e", "#0d9488"), "dark": ("#5eead4", "#2dd4bf", "#14b8a6", "#0d1117")},
+    "violet": {"light": ("#5b21b6", "#6d28d9", "#7c3aed"), "dark": ("#c4b5fd", "#a78bfa", "#8b5cf6", "#0d1117")},
     "mono":   {"light": ("#1f2328", "#57606a", "#0969da"), "dark": ("#f0f6fc", "#9198a1", "#4493f8", "#0d1117")},
 }
 THEME_NAME = os.getenv("SITE_THEME") or SITE.get("theme", "aurora")

@@ -326,6 +326,8 @@ def c_about(t) -> str:
 
 def paper_layout(p):
     venue = p.venue_label or P.short_venue(p.venue) or p.kind
+    if p.track:  # e.g. "ACL Demo 2026"
+        venue = f"{venue} {p.track}"
     chip = f"{venue} {p.year}" if p.year else venue
     rx = 196
     new_w = 52 if getattr(p, "is_new", False) else 0
@@ -355,6 +357,8 @@ def c_paper(t, p) -> str:
         used += wpx
     cw = text_width(chip, 11, bold=True, mono=True) + 16
     kind_label = {"conference": "Conference", "journal": "Journal", "workshop": "Workshop"}.get(p.kind, p.kind.title())
+    if p.track:
+        kind_label = f"{p.track} Track"
     parts = [card(w, h, t, 12),
              f'<rect x="0" y="14" width="3" height="{h-28}" rx="1.5" fill="{color}"/>',
              f'<rect x="{lx}" y="16" width="{cw}" height="22" rx="5" fill="{color}"/>',

@@ -39,7 +39,12 @@
       "Findings of the Association for Computational Linguistics: EMNLP": "EMNLP Findings",
       "Findings of the Association for Computational Linguistics: ACL": "ACL Findings",
       "Empirical Methods in Natural Language Processing": "EMNLP",
-      "Annual Meeting of the Association for Computational Linguistics": "ACL"
+      "Annual Meeting of the Association for Computational Linguistics": "ACL",
+      "North American Chapter of the Association for Computational Linguistics": "NAACL",
+      "North American Chapter of the ACL": "NAACL",
+      "European Chapter of the Association for Computational Linguistics": "EACL",
+      "International Conference on Computational Linguistics": "COLING",
+      "ACM Web Conference": "WWW"
     },
     "venue_overrides": {},
     "date_overrides": {},

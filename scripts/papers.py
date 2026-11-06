@@ -93,6 +93,17 @@ def classify(venue: str, source_type: str | None, work_type: str | None, doi: st
     return "unknown"
 
 
+def detect_track(venue: str, doi: str | None) -> str:
+    """Demo / industry tracks share the conference name; tell them apart from the main track."""
+    v = (venue or "").lower()
+    anth = (doi or "").lower().split("/")[-1] if (doi or "").startswith("10.18653/") else ""
+    if "demonstration" in v or re.search(r"-demos?\b", anth):
+        return "Demo"
+    if "industry" in v or re.search(r"-industry\b", anth):
+        return "Industry"
+    return ""
+
+
 def short_venue(venue: str) -> str:
     if not venue:
         return ""
@@ -121,6 +132,7 @@ class Paper:
     code: str | None = None
     date: str = ""  # YYYY-MM-DD when known; "YYYY-01-01" usually means year-only
     venue_label: str | None = None  # manual short label from site.json venue_overrides
+    track: str = ""  # "Demo" / "Industry" for non-main conference tracks
 
     @property
     def score(self):
@@ -321,6 +333,7 @@ def collect() -> list[Paper]:
     venues = {norm_title(t): v for t, v in CONFIG.get("venue_overrides", {}).items()}
     for p in final:
         p.venue_label = venues.get(norm_title(p.title))
+        p.track = "" if p.kind in ("workshop", "journal") else detect_track(p.venue, p.doi)
         enrich_acl(p)
         p.date = overrides.get(norm_title(p.title), p.date)
     final.sort(key=lambda p: (p.date or f"{p.year or 0}-00-00", RANK[p.kind], p.title.lower()), reverse=True)

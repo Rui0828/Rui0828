@@ -42,7 +42,8 @@ def _branch() -> str:
 
 RAW = f"https://raw.githubusercontent.com/{USER}/{USER}/{_branch()}/assets/site"
 W = 880
-TODAY = dt.date.today()
+# dates follow Taipei time: the daily Action runs at 00:30 there
+TODAY = dt.datetime.now(dt.timezone(dt.timedelta(hours=8))).date()
 SEEN_FILE = ROOT / "assets" / "seen.json"  # first time each paper appeared
 
 SANS = "-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif"
@@ -406,7 +407,8 @@ def note(t, y) -> str:
     """Footnote drawn inside the last publication card: a separate small image
     gets a full text line of height around it in browsers and apps."""
     return (f'<text x="{W}" y="{y}" font-size="13" font-style="italic" text-anchor="end" fill="{t["muted"]}">'
-            f'Synced daily from OpenAlex, ORCID &amp; ACL Anthology</text>')
+            f'Synced daily from OpenAlex, ORCID &amp; ACL Anthology · '
+            f'Updated {TODAY.strftime("%b")} {TODAY.day}, {TODAY.year}</text>')
 
 
 def c_contact(t) -> str:

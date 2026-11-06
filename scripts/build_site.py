@@ -336,7 +336,7 @@ def paper_layout(p):
     return chip, rx, title_lines, h
 
 
-def c_paper(t, p) -> str:
+def c_paper(t, p, footer=False) -> str:
     """Venue column + title + authors. The whole card links to the best version."""
     chip, rx, title_lines, h = paper_layout(p)
     w = W
@@ -378,10 +378,13 @@ def c_paper(t, p) -> str:
     parts.append(f'<text x="{rx}" y="{ay}" font-size="12.5">{tsp}</text>')
     style = (".glow{animation:glow 2.4s ease-in-out infinite}@keyframes glow{50%{opacity:.6}}"
              if getattr(p, "is_new", False) else "")
+    if footer:
+        parts.append(note(t, h + 26))
+        return svg(w, h + 36, "".join(parts), t, style)
     return svg(w, h + 12, "".join(parts), t, style)  # 12px gap below each card
 
 
-def c_more(t, n) -> str:
+def c_more(t, n, footer=False) -> str:
     """Last card when the list is capped: "+N more publications", links to Scholar."""
     h = 56
     label = f"+{n} more publication" + ("s" if n != 1 else "")
@@ -394,15 +397,16 @@ def c_more(t, n) -> str:
             f'<text x="{x0}" y="34" font-size="15" font-weight="700" fill="{t["s_publications"]}">{esc(label)}</text>'
             f'<text x="{x0 + lw + 12}" y="34" font-size="15" fill="{t["border"]}">\u00b7</text>'
             f'<text x="{x0 + lw + 24}" y="34" font-size="13.5" font-weight="600" fill="{t["muted"]}">{esc(cta)}</text>')
+    if footer:
+        return svg(W, h + 34, body + note(t, h + 24), t)
     return svg(W, h, body, t)
 
 
-def c_note(t) -> str:
-    """Footnote under the publication list (an image, so apps can't blow it up)."""
-    h = 20
-    body = (f'<text x="{W}" y="13" font-size="13" font-style="italic" text-anchor="end" fill="{t["muted"]}">'
+def note(t, y) -> str:
+    """Footnote drawn inside the last publication card: a separate small image
+    gets a full text line of height around it in browsers and apps."""
+    return (f'<text x="{W}" y="{y}" font-size="13" font-style="italic" text-anchor="end" fill="{t["muted"]}">'
             f'Synced daily from OpenAlex, ORCID &amp; ACL Anthology</text>')
-    return svg(W, h, body, t)
 
 
 def c_contact(t) -> str:
@@ -477,14 +481,13 @@ def main():
         # dedup already kept the venue version when one exists; a preprint only
         # shows up here (and gets linked) when there is no venue version yet
         link = p.url or "#publications"
-        write(f"paper-{i}", lambda t, p=p: c_paper(t, p))
+        last = i == len(shown) - 1 and hidden <= 0
+        write(f"paper-{i}", lambda t, p=p, last=last: c_paper(t, p, footer=last))
         cards.append(f'<a href="{link}">{pic(f"paper-{i}", p.title, "100%")}</a>')
     if hidden > 0:
         more = SITE.get("more_url") or next((l["url"] for l in SITE["links"] if "scholar" in l["label"].lower()), "#publications")
-        write("paper-more", lambda t: c_more(t, hidden))
+        write("paper-more", lambda t: c_more(t, hidden, footer=True))
         cards.append(f'<a href="{more}">{pic("paper-more", f"{hidden} more publications on Google Scholar", "100%")}</a>')
-    write("paper-note", c_note)
-    cards.append(pic("paper-note", "Synced daily from OpenAlex, ORCID and ACL Anthology", "100%"))
     md.append("\n".join(cards) + "\n")
 
     section("03", "activity", "Activity")

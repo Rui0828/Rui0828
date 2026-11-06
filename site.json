@@ -3,13 +3,13 @@
     "name": "Chen-Jui Yu",
     "github": "Rui0828",
     "kicker": "Ph.D. Student · Computer Science · NYCU",
-    "headline": "Table Embedding · Table Retrieval · Table QA",
+    "headline": "Tables · Multimodal Learning · Reinforcement Learning · LLMs",
     "bio": [
       "Ph.D. student in Computer Science at National Yang Ming Chiao Tung University (NYCU), Taiwan."
     ]
   },
 
-  "focus": ["Table Embedding", "Table Retrieval", "Table QA"],
+  "focus": ["Table Embedding / Retrieval / QA"],
   "research": ["Cross-modal / Multimodal Learning", "Reinforcement Learning", "Large Language Models"],
   "interests": ["Backend Development", "Infrastructure & DevOps", "System Design"],
 

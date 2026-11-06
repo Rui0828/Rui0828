@@ -312,7 +312,7 @@ def c_about(t) -> str:
     y += 10
     parts.append(f'<line x1="24" y1="{y}" x2="{W-24}" y2="{y}" stroke="{t["faint"]}"/>')
     y += 20
-    for label, key, color in (("MAIN FOCUS", "focus", "s_about"), ("RESEARCH", "research", "s_about"), ("ALSO INTO", "interests", "s_about")):
+    for label, key, color in (("CURRENTLY", "focus", "s_about"), ("RESEARCH", "research", "s_about"), ("ALSO INTO", "interests", "s_about")):
         if SITE.get(key):
             frag, y = chip_row(t, label, SITE[key], y, color, filled=(key == "focus"))
             parts.append(frag)
@@ -456,7 +456,7 @@ def main():
 
     section("01", "about", "About")
     write("about", c_about)
-    md.append(pic("about", " ".join(PROFILE["bio"]) + " Main focus: " + ", ".join(SITE.get("focus", [])), "100%") + "\n")
+    md.append(pic("about", " ".join(PROFILE["bio"]) + " Currently: " + ", ".join(SITE.get("focus", [])), "100%") + "\n")
 
     n_cite = sum(p.citations for p in papers)
     n_new = sum(1 for p in papers if p.is_new)

@@ -1,0 +1,66 @@
+{
+  "profile": {
+    "name": "Chen-Jui Yu",
+    "github": "Rui0828",
+    "kicker": "Ph.D. Student · Computer Science · NYCU",
+    "tagline": "I build retrieval systems that read tables, pick tools, and speak low-resource languages.",
+    "bio": [
+      "Ph.D. student in Computer Science at National Yang Ming Chiao Tung University.",
+      "My research is on table retrieval & table QA, tool retrieval for LLM agents,",
+      "and NLP for Taiwan's indigenous languages. I also love backend & infra work."
+    ],
+    "status": "Currently: table & tool retrieval for LLMs"
+  },
+
+  "links": [
+    { "label": "Email",          "url": "mailto:chenjuiyu0828@gmail.com" },
+    { "label": "Google Scholar", "url": "https://scholar.google.com/citations?user=a_hkgY8AAAAJ&hl=en" },
+    { "label": "ORCID",          "url": "https://orcid.org/0009-0000-6679-3670" },
+    { "label": "LinkedIn",       "url": "https://www.linkedin.com/in/rui0828/" }
+  ],
+
+  "research": [
+    { "title": "Table Retrieval & QA",   "text": "Header-aware representations and LLM-made supervision for finding the right table." },
+    { "title": "Tool Retrieval",         "text": "Training-free ways for LLM agents to pick the right tool from thousands." },
+    { "title": "Low-Resource NLP",       "text": "Translation and dialogue for Taiwan's indigenous languages with LLMs." },
+    { "title": "Systems & Infra",        "text": "Backend, self-hosted LLM serving, and the plumbing that makes research ship." }
+  ],
+
+  "projects": [
+    "Learning-From-Mistakes-Prompting",
+    "indigenous-dialogue-drs",
+    "Nginx-Ollama",
+    "Single-Image-Reflection-Removal-2024"
+  ],
+
+  "contact": {
+    "title": "Let's talk research.",
+    "text": "Questions about my papers, collaborations, or anything retrieval — reach out."
+  },
+
+  "news": [],
+
+  "new_days": 90,
+
+  "papers": {
+    "orcid": "0009-0000-6679-3670",
+    "self_names": ["Chen-Jui Yu", "Chen-Jui, Yu", "Chenjui Yu", "Yu Chen-Jui"],
+    "max_authors": 8,
+    "venue_aliases": {
+      "ACM Transactions on Asian and Low-Resource Language Information Processing": "TALLIP",
+      "International Conference on Natural Language Generation": "INLG",
+      "International Natural Language Generation Conference": "INLG",
+      "Technologies for Machine Translation of Low-Resource Languages": "LoResMT",
+      "Research on Agent Language Models": "REALM",
+      "International World Wide Web Conference": "WWW",
+      "The Web Conference": "WWW",
+      "Findings of the Association for Computational Linguistics: EMNLP": "EMNLP Findings",
+      "Findings of the Association for Computational Linguistics: ACL": "ACL Findings",
+      "Empirical Methods in Natural Language Processing": "EMNLP",
+      "Annual Meeting of the Association for Computational Linguistics": "ACL"
+    },
+    "exclude_titles": [],
+    "date_overrides": {},
+    "extra": []
+  }
+}

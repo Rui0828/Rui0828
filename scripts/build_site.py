@@ -245,31 +245,30 @@ def c_about(t) -> str:
     return svg(W, h, f'<defs>{grad(t)}</defs>' + card(W, h, t, 16, t["surface"]) + "".join(parts), t)
 
 
-SIDE = 104  # width of the right-hand link segment of a paper card
 
 
 def paper_layout(p):
     venue = p.venue_label or P.short_venue(p.venue) or p.kind
     chip = f"{venue} {p.year}" if p.year else venue
     rx = 196
-    new_w = 52 if getattr(p, "is_new", False) else 0
-    title_lines = wrap(p.title, 15.5, W - SIDE - rx - 16, bold=True, max_lines=2)
-    if new_w and text_width(title_lines[-1], 15.5, True) + new_w > W - SIDE - rx - 16:
-        title_lines = wrap(p.title, 15.5, W - SIDE - rx - 16 - new_w, bold=True, max_lines=2)
+    new_w = 58 if getattr(p, "is_new", False) else 0
+    title_lines = wrap(p.title, 15.5, W - rx - 24, bold=True, max_lines=2)
+    if new_w and text_width(title_lines[-1], 15.5, True) + new_w > W - rx - 24:
+        title_lines = wrap(p.title, 15.5, W - rx - 24 - new_w, bold=True, max_lines=2)
     h = max(24 + len(title_lines) * 21 + 22, 74)
     return chip, rx, title_lines, h
 
 
 def c_paper(t, p) -> str:
-    """Main (left) segment: venue column + title + authors. Links to the paper."""
+    """Venue column + title + authors. The whole card links to the best version."""
     chip, rx, title_lines, h = paper_layout(p)
-    w = W - SIDE
+    w = W
     color = t[KIND_COLOR[p.kind]]
     lx = 22
     authors = list(p.authors)
     if len(authors) > P.CONFIG["max_authors"]:
         authors = authors[:P.CONFIG["max_authors"]] + ["et al."]
-    spans, used, limit = [], 0.0, w - rx - 16
+    spans, used, limit = [], 0.0, w - rx - 24
     for i, a in enumerate(authors):
         piece = a + (", " if i < len(authors) - 1 else "")
         me = i == p.self_idx
@@ -281,11 +280,7 @@ def c_paper(t, p) -> str:
         used += wpx
     cw = text_width(chip, 11, bold=True, mono=True) + 16
     kind_label = {"conference": "Conference", "journal": "Journal", "workshop": "Workshop"}.get(p.kind, p.kind.title())
-    # card body with only the left corners rounded (the side segment closes it on the right)
-    r = 12
-    shape = (f'M{r} .5H{w}V{h-.5}H{r}A{r-.5} {r-.5} 0 0 1 .5 {h-r}V{r}A{r-.5} {r-.5} 0 0 1 {r} .5Z')
-    parts = [f'<path d="{shape}" fill="{t["bg"]}" stroke="{t["border"]}"/>',
-             f'<rect x="{w-1}" y="1" width="2" height="{h-2}" fill="{t["bg"]}"/>',  # hide the seam stroke
+    parts = [card(w, h, t, 12),
              f'<rect x="0" y="14" width="3" height="{h-28}" rx="1.5" fill="{color}"/>',
              f'<rect x="{lx}" y="16" width="{cw}" height="22" rx="5" fill="{color}"/>',
              f'<text class="m" x="{lx+cw/2}" y="31" font-size="11" font-weight="700" text-anchor="middle" fill="{t["chip_text"]}">{esc(chip)}</text>',
@@ -293,7 +288,7 @@ def c_paper(t, p) -> str:
     for i, l in enumerate(title_lines):
         parts.append(f'<text x="{rx}" y="{32 + i*21}" font-size="15.5" font-weight="700" fill="{t["text"]}">{esc(l)}</text>')
     if getattr(p, "is_new", False):
-        nx = rx + text_width(title_lines[-1], 15.5, True) + 10
+        nx = rx + text_width(title_lines[-1], 15.5, True) + 14
         ny = 32 + (len(title_lines) - 1) * 21 - 14
         parts.append(f'<defs>{grad(t)}</defs><g transform="translate({nx:.1f} {ny})"><rect class="glow" width="42" height="18" rx="9" fill="url(#g)"/>'
                      f'<text class="m" x="21" y="13" font-size="10" font-weight="800" letter-spacing="1" text-anchor="middle" fill="#fff">NEW</text></g>')
@@ -304,22 +299,6 @@ def c_paper(t, p) -> str:
     style = (".glow{animation:glow 2.4s ease-in-out infinite}@keyframes glow{50%{opacity:.6}}"
              if getattr(p, "is_new", False) else "")
     return svg(w, h, "".join(parts), t, style)
-
-
-def c_paper_side(t, p, label) -> str:
-    """Right segment of the card. Shows a link button (e.g. arXiv) or stays empty."""
-    _, _, _, h = paper_layout(p)
-    w, r = SIDE, 12
-    shape = f'M.5 .5H{w-r}A{r-.5} {r-.5} 0 0 1 {w-.5} {r}V{h-r}A{r-.5} {r-.5} 0 0 1 {w-r} {h-.5}H.5'
-    parts = [f'<rect x="0" y=".5" width="{w-r}" height="{h-1}" fill="{t["bg"]}"/>',
-             f'<path d="M{w-r} .5A{r-.5} {r-.5} 0 0 1 {w-.5} {r}V{h-r}A{r-.5} {r-.5} 0 0 1 {w-r} {h-.5}Z" fill="{t["bg"]}"/>',
-             f'<path d="{shape}" fill="none" stroke="{t["border"]}"/>']
-    if label:
-        bw = text_width(label, 12, bold=True, mono=True) + 28
-        bx, by = (w - bw) / 2 - 4, h / 2 - 13
-        parts.append(f'<rect x="{bx}" y="{by}" width="{bw}" height="26" rx="7" fill="{t["surface"]}" stroke="{t["border"]}"/>'
-                     f'<text class="m" x="{bx+bw/2}" y="{by+17}" font-size="12" font-weight="600" text-anchor="middle" fill="{t["text"]}">{esc(label)}</text>')
-    return svg(w, h, "".join(parts), t)
 
 
 def c_contact(t) -> str:
@@ -381,18 +360,14 @@ def main():
     n_new = sum(1 for p in papers if p.is_new)
     section("02", "publications", "Publications",
             f"{len(papers)} papers · {n_first} first-author · {n_cite} citations" + (f" · {n_new} new" if n_new else ""))
-    main_pct = f"{(W - SIDE) / W * 100:.3f}%"
-    side_pct = f"{SIDE / W * 100:.3f}%"
     for i, p in enumerate(papers):
-        link = p.url or p.arxiv or "#publications"
-        side_url, side_label = (p.arxiv, "arXiv ↗") if p.arxiv else (p.code, "Code ↗") if p.code else (link, "")
+        # dedup already kept the venue version when one exists; a preprint only
+        # shows up here (and gets linked) when there is no venue version yet
+        link = p.url or "#publications"
         write(f"paper-{i}", lambda t, p=p: c_paper(t, p))
-        write(f"paper-{i}-side", lambda t, p=p, l=side_label: c_paper_side(t, p, l))
-        # no whitespace between the two links, so the halves join seamlessly
-        md.append(f'<a href="{link}">{pic(f"paper-{i}", p.title, main_pct)}</a>'
-                  f'<a href="{side_url}">{pic(f"paper-{i}-side", side_label.split()[0] if side_label else "Open paper", side_pct)}</a>\n')
+        md.append(f'<a href="{link}">{pic(f"paper-{i}", p.title, "100%")}</a>\n')
     md.append('<p align="right"><sub><i>Synced daily from OpenAlex, ORCID &amp; ACL Anthology · '
-              'click a card to open the paper · conference / journal versions take priority over preprints</i></sub></p>\n')
+              'links go to the conference / journal version, or the preprint if there is none yet</i></sub></p>\n')
 
     section("03", "activity", "Activity")
     md.append(f'<picture><source media="(prefers-color-scheme: dark)" '

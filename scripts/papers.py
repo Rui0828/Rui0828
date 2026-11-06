@@ -158,7 +158,8 @@ def from_openalex() -> list[Paper]:
         out.append(Paper(
             title=w["title"].strip(), year=w.get("publication_year"), venue=venue,
             kind=classify(venue, src.get("type"), w.get("type"), doi), doi=doi,
-            url=f"https://doi.org/{doi}" if doi else loc.get("landing_page_url"),
+            url=(f"https://arxiv.org/abs/{doi.split('arxiv.', 1)[-1]}" if doi and doi.startswith("10.48550/")
+                 else f"https://doi.org/{doi}" if doi else loc.get("landing_page_url")),
             authors=authors, self_idx=self_idx, abstract=abstract,
             citations=w.get("cited_by_count") or 0, source="openalex",
             date=w.get("publication_date") or ""))

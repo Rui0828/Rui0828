@@ -247,6 +247,29 @@ def dedup(papers: list[Paper]) -> list[Paper]:
     return result
 
 
+ACL_EVENT_CACHE = ROOT / "assets" / "acl-events.json"  # workshop volume -> host conference
+HOST_CONFS = ["acl", "emnlp", "naacl", "eacl", "coling", "aacl", "lrec-coling", "ijcnlp"]
+
+
+def acl_host(volume: str, year: int | None) -> str | None:
+    """Which main conference a workshop volume (e.g. 2024.loresmt-1) was co-located with."""
+    cache = json.loads(ACL_EVENT_CACHE.read_text()) if ACL_EVENT_CACHE.exists() else {}
+    if volume in cache:
+        return cache[volume]
+    host = None
+    for conf in HOST_CONFS:
+        try:
+            req = urllib.request.Request(f"https://aclanthology.org/events/{conf}-{year}/", headers={"User-Agent": UA})
+            if volume in urllib.request.urlopen(req, timeout=20).read().decode():
+                host = conf.split("-")[0].upper()
+                break
+        except Exception:
+            continue
+    cache[volume] = host
+    ACL_EVENT_CACHE.write_text(json.dumps(dict(sorted(cache.items())), indent=1) + "\n")
+    return host
+
+
 MONTHS = {m: i + 1 for i, m in enumerate("jan feb mar apr may jun jul aug sep oct nov dec".split())}
 
 
@@ -267,6 +290,11 @@ def enrich_acl(p: Paper) -> None:
         names = [re.sub(r"[{}]", "", " ".join(n.split())) for n in names]
         p.authors = [CONFIG["self_names"][0] if is_self(n) else n for n in names]
         p.self_idx = next((i for i, n in enumerate(p.authors) if is_self(n)), p.self_idx)
+    if p.kind == "workshop" and not p.venue_label:
+        volume = anth_id.split("/")[-1].rsplit(".", 1)[0]  # 2024.loresmt-1.15 -> 2024.loresmt-1
+        host = acl_host(volume, p.year)
+        if host:
+            p.venue_label = f"{short_venue(p.venue)} @ {host}"
     if p.date and not p.date.endswith("-01-01"):
         return
     m = re.search(r"month\s*=\s*\{?\"?([a-z]{3})", bib, re.I)
@@ -292,9 +320,9 @@ def collect() -> list[Paper]:
     overrides = {norm_title(t): d for t, d in CONFIG.get("date_overrides", {}).items()}
     venues = {norm_title(t): v for t, v in CONFIG.get("venue_overrides", {}).items()}
     for p in final:
+        p.venue_label = venues.get(norm_title(p.title))
         enrich_acl(p)
         p.date = overrides.get(norm_title(p.title), p.date)
-        p.venue_label = venues.get(norm_title(p.title))
     final.sort(key=lambda p: (p.date or f"{p.year or 0}-00-00", RANK[p.kind], p.title.lower()), reverse=True)
     return final
 

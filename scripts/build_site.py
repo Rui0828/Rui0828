@@ -64,11 +64,12 @@ def text_width(s: str, size: float, bold=False, mono=False) -> float:
     return em * size * 1.05
 
 
-def wrap(s: str, size: float, max_w: float, bold=False, max_lines=99) -> list[str]:
+def wrap(s: str, size: float, max_w: float, bold=False, max_lines=99, first_indent=0.0) -> list[str]:
     lines, cur = [], ""
     for word in s.split():
         trial = f"{cur} {word}".strip()
-        if text_width(trial, size, bold) <= max_w or not cur:
+        limit = max_w - (first_indent if not lines else 0)
+        if text_width(trial, size, bold) <= limit or not cur:
             cur = trial
         else:
             lines.append(cur)
@@ -251,10 +252,8 @@ def paper_layout(p):
     venue = p.venue_label or P.short_venue(p.venue) or p.kind
     chip = f"{venue} {p.year}" if p.year else venue
     rx = 196
-    new_w = 58 if getattr(p, "is_new", False) else 0
-    title_lines = wrap(p.title, 15.5, W - rx - 24, bold=True, max_lines=2)
-    if new_w and text_width(title_lines[-1], 15.5, True) + new_w > W - rx - 24:
-        title_lines = wrap(p.title, 15.5, W - rx - 24 - new_w, bold=True, max_lines=2)
+    new_w = 52 if getattr(p, "is_new", False) else 0
+    title_lines = wrap(p.title, 15.5, W - rx - 24, bold=True, max_lines=2, first_indent=new_w)
     h = max(24 + len(title_lines) * 21 + 22, 74)
     return chip, rx, title_lines, h
 
@@ -285,11 +284,12 @@ def c_paper(t, p) -> str:
              f'<rect x="{lx}" y="16" width="{cw}" height="22" rx="5" fill="{color}"/>',
              f'<text class="m" x="{lx+cw/2}" y="31" font-size="11" font-weight="700" text-anchor="middle" fill="{t["chip_text"]}">{esc(chip)}</text>',
              f'<text class="m" x="{lx}" y="56" font-size="11" fill="{t["muted"]}">{esc(kind_label)} · {esc(fmt_date(p.date))}</text>']
+    is_new = getattr(p, "is_new", False)
     for i, l in enumerate(title_lines):
-        parts.append(f'<text x="{rx}" y="{32 + i*21}" font-size="15.5" font-weight="700" fill="{t["text"]}">{esc(l)}</text>')
-    if getattr(p, "is_new", False):
-        nx = rx + text_width(title_lines[-1], 15.5, True) + 14
-        ny = 32 + (len(title_lines) - 1) * 21 - 14
+        x = rx + (52 if is_new and i == 0 else 0)
+        parts.append(f'<text x="{x}" y="{32 + i*21}" font-size="15.5" font-weight="700" fill="{t["text"]}">{esc(l)}</text>')
+    if is_new:
+        nx, ny = rx, 32 - 14
         parts.append(f'<defs>{grad(t)}</defs><g transform="translate({nx:.1f} {ny})"><rect class="glow" width="42" height="18" rx="9" fill="url(#g)"/>'
                      f'<text class="m" x="21" y="13" font-size="10" font-weight="800" letter-spacing="1" text-anchor="middle" fill="#fff">NEW</text></g>')
     ay = 32 + len(title_lines) * 21 + 2

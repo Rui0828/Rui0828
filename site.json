@@ -39,9 +39,7 @@
       "Empirical Methods in Natural Language Processing": "EMNLP",
       "Annual Meeting of the Association for Computational Linguistics": "ACL"
     },
-    "venue_overrides": {
-      "ToolFuse: Documentation-Intent Fusion for Training-Free Tool Retrieval": "REALM @ EMNLP"
-    },
+    "venue_overrides": {},
     "date_overrides": {},
     "exclude_titles": [],
     "extra": []

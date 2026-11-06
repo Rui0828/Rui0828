@@ -20,6 +20,7 @@
     { "label": "LinkedIn",       "url": "https://www.linkedin.com/in/rui0828/" }
   ],
 
+  "theme": "teal",
   "new_days": 90,
   "max_papers": 6,
 

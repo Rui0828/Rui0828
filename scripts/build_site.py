@@ -355,11 +355,10 @@ def main():
     write("about", c_about)
     md.append(pic("about", " ".join(PROFILE["bio"]) + " Main focus: " + ", ".join(SITE.get("focus", [])), "100%") + "\n")
 
-    n_first = sum(1 for p in papers if p.self_idx == 0)
     n_cite = sum(p.citations for p in papers)
     n_new = sum(1 for p in papers if p.is_new)
     section("02", "publications", "Publications",
-            f"{len(papers)} papers · {n_first} first-author · {n_cite} citations" + (f" · {n_new} new" if n_new else ""))
+            f"{len(papers)} papers · {n_cite} citations" + (f" · {n_new} new" if n_new else ""))
     for i, p in enumerate(papers):
         # dedup already kept the venue version when one exists; a preprint only
         # shows up here (and gets linked) when there is no venue version yet

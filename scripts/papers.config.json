@@ -1,0 +1,23 @@
+{
+  "orcid": "0009-0000-6679-3670",
+  "self_names": ["Chen-Jui Yu", "Chen-Jui, Yu", "Chenjui Yu", "Yu Chen-Jui"],
+  "max_authors": 8,
+
+  "venue_aliases": {
+    "ACM Transactions on Asian and Low-Resource Language Information Processing": "TALLIP",
+    "International Conference on Natural Language Generation": "INLG",
+    "International Natural Language Generation Conference": "INLG",
+    "Technologies for Machine Translation of Low-Resource Languages": "LoResMT",
+    "Research on Agent Language Models": "REALM",
+    "International World Wide Web Conference": "WWW",
+    "The Web Conference": "WWW",
+    "Findings of the Association for Computational Linguistics: EMNLP": "EMNLP Findings",
+    "Findings of the Association for Computational Linguistics: ACL": "ACL Findings",
+    "Empirical Methods in Natural Language Processing": "EMNLP",
+    "Annual Meeting of the Association for Computational Linguistics": "ACL"
+  },
+
+  "exclude_titles": [],
+
+  "extra": []
+}

@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="1200" height="360" role="img" aria-label="Chen-Jui Yu — Ph.D. Student, Computer Science @ NYCU">
+  <defs>
+    <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#FF3366"><animate attributeName="stop-color" values="#FF3366;#9D00FF;#00D9FF;#FF3366" dur="8s" repeatCount="indefinite"/></stop>
+      <stop offset="50%" stop-color="#9D00FF"><animate attributeName="stop-color" values="#9D00FF;#00D9FF;#FF3366;#9D00FF" dur="8s" repeatCount="indefinite"/></stop>
+      <stop offset="100%" stop-color="#00D9FF"><animate attributeName="stop-color" values="#00D9FF;#FF3366;#9D00FF;#00D9FF" dur="8s" repeatCount="indefinite"/></stop>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="38%" r="60%">
+      <stop offset="0%" stop-color="#9D00FF" stop-opacity=".35"/>
+      <stop offset="60%" stop-color="#0d1117" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0d1117" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#0d1117" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="bloom" x="-20%" y="-50%" width="140%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="card"><rect width="1200" height="360" rx="18"/></clipPath>
+    <style>
+      .mono { font-family: 'Fira Code','JetBrains Mono',SFMono-Regular,Menlo,Consolas,monospace; }
+      .name { font: 800 84px 'Segoe UI','Inter',system-ui,-apple-system,sans-serif; letter-spacing: 6px; }
+      .ghost-a { animation: glitchA 4s infinite steps(1); }
+      .ghost-b { animation: glitchB 4s infinite steps(1); }
+      @keyframes glitchA { 0%,86%,100% { transform: translate(0,0); opacity: 0 } 88% { transform: translate(-6px,2px); opacity: .8 } 91% { transform: translate(4px,-2px); opacity: .8 } 94% { transform: translate(-2px,0); opacity: .6 } }
+      @keyframes glitchB { 0%,86%,100% { transform: translate(0,0); opacity: 0 } 88% { transform: translate(6px,-2px); opacity: .8 } 91% { transform: translate(-4px,2px); opacity: .8 } 94% { transform: translate(2px,0); opacity: .6 } }
+      .grid { animation: scroll 2.4s linear infinite; }
+      @keyframes scroll { from { transform: translateY(0) } to { transform: translateY(40px) } }
+      .node { animation: pulse 3s ease-in-out infinite; }
+      @keyframes pulse { 0%,100% { opacity: .25 } 50% { opacity: 1 } }
+      .edge { stroke-dasharray: 4 6; animation: flow 6s linear infinite; }
+      @keyframes flow { to { stroke-dashoffset: -100 } }
+      .cursor { animation: blink 1s steps(1) infinite; }
+      @keyframes blink { 50% { opacity: 0 } }
+      .scan { animation: scan 6s linear infinite; }
+      @keyframes scan { from { transform: translateY(-40px) } to { transform: translateY(400px) } }
+      @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+    </style>
+  </defs>
+
+  <g clip-path="url(#card)">
+    <rect width="1200" height="360" fill="#0d1117"/>
+    <rect width="1200" height="360" fill="url(#glow)"/>
+
+    <!-- retro perspective grid -->
+    <g transform="translate(600 250)" stroke="#9D00FF" stroke-opacity=".35" stroke-width="1">
+      <g class="grid">
+        <line x1="-900" y1="-40" x2="900" y2="-40"/><line x1="-900" y1="0" x2="900" y2="0"/>
+        <line x1="-900" y1="40" x2="900" y2="40"/><line x1="-900" y1="80" x2="900" y2="80"/>
+        <line x1="-900" y1="120" x2="900" y2="120"/>
+      </g>
+      <g stroke="#00D9FF" stroke-opacity=".25">
+        <line x1="0" y1="0" x2="0" y2="120"/>
+        <line x1="-60" y1="0" x2="-240" y2="120"/><line x1="60" y1="0" x2="240" y2="120"/>
+        <line x1="-120" y1="0" x2="-480" y2="120"/><line x1="120" y1="0" x2="480" y2="120"/>
+        <line x1="-180" y1="0" x2="-720" y2="120"/><line x1="180" y1="0" x2="720" y2="120"/>
+        <line x1="-240" y1="0" x2="-960" y2="120"/><line x1="240" y1="0" x2="960" y2="120"/>
+      </g>
+    </g>
+    <rect y="200" width="1200" height="60" fill="url(#fade)"/>
+
+    <!-- knowledge-graph constellation -->
+    <g stroke="url(#neon)" stroke-width="1.2" fill="none" opacity=".7">
+      <path class="edge" d="M70 70 L170 40 L250 110 L150 160 Z M250 110 L330 60"/>
+      <path class="edge" d="M1130 60 L1040 100 L960 50 L1060 160 L1040 100 M960 50 L880 90"/>
+    </g>
+    <g fill="#00D9FF">
+      <circle class="node" cx="70" cy="70" r="4"/>
+      <circle class="node" cx="170" cy="40" r="3" style="animation-delay:.6s" fill="#FF3366"/>
+      <circle class="node" cx="250" cy="110" r="5" style="animation-delay:1.2s" fill="#9D00FF"/>
+      <circle class="node" cx="150" cy="160" r="3" style="animation-delay:1.8s"/>
+      <circle class="node" cx="330" cy="60" r="3" style="animation-delay:2.4s" fill="#FF3366"/>
+      <circle class="node" cx="1130" cy="60" r="4" style="animation-delay:.3s" fill="#FF3366"/>
+      <circle class="node" cx="1040" cy="100" r="5" style="animation-delay:.9s" fill="#9D00FF"/>
+      <circle class="node" cx="960" cy="50" r="3" style="animation-delay:1.5s"/>
+      <circle class="node" cx="1060" cy="160" r="3" style="animation-delay:2.1s" fill="#FF3366"/>
+      <circle class="node" cx="880" cy="90" r="3" style="animation-delay:2.7s"/>
+    </g>
+
+    <!-- name with glitch ghosts -->
+    <g text-anchor="middle">
+      <text class="mono" x="600" y="64" font-size="15" fill="#8b949e" letter-spacing="4">// HELLO, WORLD — I AM</text>
+      <text class="name ghost-a" x="600" y="150" fill="#FF3366">CHEN-JUI YU</text>
+      <text class="name ghost-b" x="600" y="150" fill="#00D9FF">CHEN-JUI YU</text>
+      <text class="name" x="600" y="150" fill="url(#neon)" filter="url(#bloom)">CHEN-JUI YU</text>
+      <text class="mono" x="600" y="196" font-size="20" fill="#e6edf3" letter-spacing="2">Ph.D. Student · Computer Science @ <tspan fill="#00D9FF" font-weight="700">NYCU</tspan></text>
+    </g>
+
+    <!-- terminal line -->
+    <g transform="translate(330 232)">
+      <rect width="540" height="40" rx="8" fill="#161b22" stroke="#30363d"/>
+      <circle cx="18" cy="20" r="5" fill="#FF5F56"/><circle cx="34" cy="20" r="5" fill="#FFBD2E"/><circle cx="50" cy="20" r="5" fill="#27C93F"/>
+      <clipPath id="typed"><rect x="70" y="0" height="40" width="0">
+        <animate attributeName="width" values="0;365;365;0" keyTimes="0;.45;.9;1" dur="7s" repeatCount="indefinite"/>
+      </rect></clipPath>
+      <text class="mono" x="72" y="26" font-size="15" fill="#7ee787" clip-path="url(#typed)">$ retrieve --tables --tools --knowledge</text>
+      <rect x="72" y="11" width="9" height="19" fill="#FF3366"><animate attributeName="x" values="72;440;440;72" keyTimes="0;.45;.9;1" dur="7s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;0" dur="1s" calcMode="discrete" repeatCount="indefinite"/></rect>
+    </g>
+
+    <!-- scanline -->
+    <rect class="scan" x="0" y="0" width="1200" height="2" fill="#00D9FF" opacity=".12"/>
+    <rect width="1199" height="359" x=".5" y=".5" rx="18" fill="none" stroke="url(#neon)" stroke-width="1.5" opacity=".6"/>
+  </g>
+</svg>

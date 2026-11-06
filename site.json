@@ -3,14 +3,14 @@
     "name": "Chen-Jui Yu",
     "github": "Rui0828",
     "kicker": "Ph.D. Student · Computer Science · NYCU",
-    "tagline": "I build retrieval systems that read tables, pick tools, and speak low-resource languages.",
+    "headline": "Table Retrieval · Table QA · Multimodal · RL",
     "bio": [
-      "Ph.D. student in Computer Science at National Yang Ming Chiao Tung University.",
-      "My research is on table retrieval & table QA, tool retrieval for LLM agents,",
-      "and NLP for Taiwan's indigenous languages. I also love backend & infra work."
-    ],
-    "status": "Currently: table & tool retrieval for LLMs"
+      "Ph.D. student in Computer Science at National Yang Ming Chiao Tung University (NYCU), Taiwan."
+    ]
   },
+
+  "research": ["Table Retrieval", "Table QA", "Cross-modal / Multimodal Learning", "Reinforcement Learning", "Large Language Models"],
+  "interests": ["Backend Development", "Infrastructure & DevOps", "System Design"],
 
   "links": [
     { "label": "Email",          "url": "mailto:chenjuiyu0828@gmail.com" },
@@ -18,27 +18,6 @@
     { "label": "ORCID",          "url": "https://orcid.org/0009-0000-6679-3670" },
     { "label": "LinkedIn",       "url": "https://www.linkedin.com/in/rui0828/" }
   ],
-
-  "research": [
-    { "title": "Table Retrieval & QA",   "text": "Header-aware representations and LLM-made supervision for finding the right table." },
-    { "title": "Tool Retrieval",         "text": "Training-free ways for LLM agents to pick the right tool from thousands." },
-    { "title": "Low-Resource NLP",       "text": "Translation and dialogue for Taiwan's indigenous languages with LLMs." },
-    { "title": "Systems & Infra",        "text": "Backend, self-hosted LLM serving, and the plumbing that makes research ship." }
-  ],
-
-  "projects": [
-    "Learning-From-Mistakes-Prompting",
-    "indigenous-dialogue-drs",
-    "Nginx-Ollama",
-    "Single-Image-Reflection-Removal-2024"
-  ],
-
-  "contact": {
-    "title": "Let's talk research.",
-    "text": "Questions about my papers, collaborations, or anything retrieval — reach out."
-  },
-
-  "news": [],
 
   "new_days": 90,
 
@@ -59,8 +38,11 @@
       "Empirical Methods in Natural Language Processing": "EMNLP",
       "Annual Meeting of the Association for Computational Linguistics": "ACL"
     },
-    "exclude_titles": [],
+    "venue_overrides": {
+      "ToolFuse: Documentation-Intent Fusion for Training-Free Tool Retrieval": "REALM @ EMNLP"
+    },
     "date_overrides": {},
+    "exclude_titles": [],
     "extra": []
   }
 }

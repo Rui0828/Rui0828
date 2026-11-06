@@ -120,11 +120,13 @@ class Paper:
     arxiv: str | None = None
     code: str | None = None
     date: str = ""  # YYYY-MM-DD when known; "YYYY-01-01" usually means year-only
+    venue_label: str | None = None  # manual short label from site.json venue_overrides
 
     @property
     def score(self):
         publisher_doi = bool(self.doi) and not self.doi.startswith(("10.48550/", "10.5281/"))
-        return (RANK[self.kind], publisher_doi, bool(self.venue), self.year or 0)
+        # tie-break: OpenAlex records carry authors/abstracts/dates, prefer them
+        return (RANK[self.kind], publisher_doi, bool(self.venue), self.year or 0, self.source == "openalex")
 
 
 def from_openalex() -> list[Paper]:
@@ -233,14 +235,44 @@ def dedup(papers: list[Paper]) -> list[Paper]:
         best.citations = max(p.citations for p in c)
         best.code = next((p.code for p in c if p.code), None)
         if not best.date or best.date.endswith("-01-01"):
-            same_year = [p.date for p in c if p.date and p.year == best.year and not p.date.endswith("-01-01")]
-            best.date = max(same_year, default=best.date)
+            same_year = [p.date for p in c if p.date and p.year == best.year and not p.date.endswith("-01-01")
+                         and p.kind not in ("preprint", "repository")]  # preprint dates are not publication dates
+            best.date = min(same_year, default=best.date)
         if best.kind != "preprint":
             arx = next((p for p in c if p.kind == "preprint" and p.doi and p.doi.startswith("10.48550/")), None)
             if arx:
                 best.arxiv = "https://arxiv.org/abs/" + arx.doi.split("arxiv.", 1)[-1]
         result.append(best)
     return result
+
+
+MONTHS = {m: i + 1 for i, m in enumerate("jan feb mar apr may jun jul aug sep oct nov dec".split())}
+
+
+def enrich_acl(p: Paper) -> None:
+    """ACL Anthology papers often come back year-only; read the month from the official .bib."""
+    if not (p.doi and p.doi.startswith("10.18653/")):
+        return
+    anth_id = p.doi.split("/")[-1]
+    try:
+        req = urllib.request.Request(f"https://aclanthology.org/{anth_id}.bib", headers={"User-Agent": UA})
+        bib = urllib.request.urlopen(req, timeout=20).read().decode()
+    except Exception as e:
+        print(f"  anthology {anth_id} failed: {e}", file=sys.stderr)
+        return
+    am = re.search(r'\n\s*author\s*=\s*"(.*?)",\n', bib, re.S)
+    if am:  # official author list, "Last, First and Last, First"
+        names = [" ".join(reversed([x.strip() for x in n.split(",", 1)])) for n in re.split(r"\s+and\s+", am.group(1))]
+        names = [re.sub(r"[{}]", "", " ".join(n.split())) for n in names]
+        p.authors = [CONFIG["self_names"][0] if is_self(n) else n for n in names]
+        p.self_idx = next((i for i, n in enumerate(p.authors) if is_self(n)), p.self_idx)
+    if p.date and not p.date.endswith("-01-01"):
+        return
+    m = re.search(r"month\s*=\s*\{?\"?([a-z]{3})", bib, re.I)
+    if m and m.group(1).lower() in MONTHS:
+        p.date = f"{p.year}-{MONTHS[m.group(1).lower()]:02d}-01"
+        if p.date.endswith("-01-01"):  # a real January: keep it distinguishable from "year only"
+            p.date = f"{p.year}-01-02"
 
 
 # ---------------------------------------------------------------- public
@@ -257,8 +289,11 @@ def collect() -> list[Paper]:
     excluded = {norm_title(t) for t in CONFIG.get("exclude_titles", [])}
     final = dedup([p for p in papers if norm_title(p.title) not in excluded])
     overrides = {norm_title(t): d for t, d in CONFIG.get("date_overrides", {}).items()}
+    venues = {norm_title(t): v for t, v in CONFIG.get("venue_overrides", {}).items()}
     for p in final:
+        enrich_acl(p)
         p.date = overrides.get(norm_title(p.title), p.date)
+        p.venue_label = venues.get(norm_title(p.title))
     final.sort(key=lambda p: (p.date or f"{p.year or 0}-00-00", RANK[p.kind], p.title.lower()), reverse=True)
     return final
 

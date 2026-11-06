@@ -21,6 +21,7 @@
   ],
 
   "new_days": 90,
+  "max_papers": 6,
 
   "papers": {
     "orcid": "0009-0000-6679-3670",

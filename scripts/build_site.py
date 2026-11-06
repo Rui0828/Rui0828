@@ -349,6 +349,22 @@ def c_paper(t, p) -> str:
     return svg(w, h, "".join(parts), t, style)
 
 
+def c_more(t, n) -> str:
+    """Last card when the list is capped: "+N more publications", links to Scholar."""
+    h = 56
+    label = f"+{n} more publication" + ("s" if n != 1 else "")
+    cta = "View all on Google Scholar \u2197"
+    lw, cw = text_width(label, 15, bold=True), text_width(cta, 13.5, bold=True)
+    x0 = (W - (lw + 24 + cw)) / 2
+    body = (f'<defs>{grad(t)}</defs>'
+            f'<rect x=".75" y=".75" width="{W-1.5}" height="{h-1.5}" rx="12" fill="{t["surface"]}" '
+            f'stroke="{t["border"]}" stroke-width="1.5" stroke-dasharray="6 6"/>'
+            f'<text x="{x0}" y="34" font-size="15" font-weight="700" fill="url(#g)">{esc(label)}</text>'
+            f'<text x="{x0 + lw + 12}" y="34" font-size="15" fill="{t["border"]}">\u00b7</text>'
+            f'<text x="{x0 + lw + 24}" y="34" font-size="13.5" font-weight="600" fill="{t["muted"]}">{esc(cta)}</text>')
+    return svg(W, h, body, t)
+
+
 def c_contact(t) -> str:
     h = 150
     email = next((l["url"][7:] for l in SITE["links"] if l["url"].startswith("mailto:")), "")
@@ -413,12 +429,18 @@ def main():
     n_new = sum(1 for p in papers if p.is_new)
     section("02", "publications", "Publications",
             f"{len(papers)} papers · {n_cite} citations" + (f" · {n_new} new" if n_new else ""))
-    for i, p in enumerate(papers):
+    cap = SITE.get("max_papers") or len(papers)
+    shown, hidden = papers[:cap], len(papers) - cap
+    for i, p in enumerate(shown):
         # dedup already kept the venue version when one exists; a preprint only
         # shows up here (and gets linked) when there is no venue version yet
         link = p.url or "#publications"
         write(f"paper-{i}", lambda t, p=p: c_paper(t, p))
         md.append(f'<a href="{link}">{pic(f"paper-{i}", p.title, "100%")}</a>\n')
+    if hidden > 0:
+        more = SITE.get("more_url") or next((l["url"] for l in SITE["links"] if "scholar" in l["label"].lower()), "#publications")
+        write("paper-more", lambda t: c_more(t, hidden))
+        md.append(f'<a href="{more}">{pic("paper-more", f"{hidden} more publications on Google Scholar", "100%")}</a>\n')
     md.append('<p align="right"><sub><i>Synced daily from OpenAlex, ORCID &amp; ACL Anthology · '
               'links go to the conference / journal version, or the preprint if there is none yet</i></sub></p>\n')
 

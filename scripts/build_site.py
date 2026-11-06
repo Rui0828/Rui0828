@@ -40,9 +40,9 @@ MONO = "ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace"
 # (conference / journal / workshop).
 _BASE = {
     "light": dict(bg="#ffffff", surface="#f6f8fa", border="#d0d7de", text="#1f2328", muted="#59636e",
-                  faint="#eaeef2", chip_text="#ffffff"),
+                  faint="#eaeef2", chip_text="#ffffff", new="#dc2626"),
     "dark": dict(bg="#0d1117", surface="#151b23", border="#30363d", text="#f0f6fc", muted="#9198a1",
-                 faint="#21262d", chip_text="#0d1117"),
+                 faint="#21262d", chip_text="#0d1117", new="#f85149"),
 }
 PRESETS = {
     "aurora": {"light": ("#6366f1", "#ec4899", "#0891b2"), "dark": ("#818cf8", "#f472b6", "#22d3ee")},
@@ -343,8 +343,8 @@ def c_paper(t, p) -> str:
         parts.append(f'<text x="{x}" y="{32 + i*21}" font-size="15.5" font-weight="700" fill="{t["text"]}">{esc(l)}</text>')
     if is_new:
         nx, ny = rx, 32 - 14
-        parts.append(f'<defs>{grad(t)}</defs><g transform="translate({nx:.1f} {ny})"><rect class="glow" width="42" height="18" rx="9" fill="url(#g)"/>'
-                     f'<text class="m" x="21" y="13" font-size="10" font-weight="800" letter-spacing="1" text-anchor="middle" fill="{t["on"]}">NEW</text></g>')
+        parts.append(f'<defs>{grad(t)}</defs><g transform="translate({nx:.1f} {ny})"><rect class="glow" width="42" height="18" rx="9" fill="{t["new"]}"/>'
+                     f'<text class="m" x="21" y="13" font-size="10" font-weight="800" letter-spacing="1" text-anchor="middle" fill="#ffffff">NEW</text></g>')
     ay = 32 + len(title_lines) * 21 + 2
     tsp = "".join(f'<tspan font-weight="{700 if me else 400}" fill="{t["text"] if me else t["muted"]}">{esc(s)}</tspan>'
                   for s, me in spans)

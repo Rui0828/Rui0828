@@ -215,7 +215,7 @@ def c_section(t, num, title, meta="") -> str:
     return svg(W, h, body, t)
 
 
-def chip_row(t, label, items, y, color) -> tuple[str, int]:
+def chip_row(t, label, items, y, color, filled=False) -> tuple[str, int]:
     """Label on the left, wrapping chips on the right. Returns (svg, next_y)."""
     parts = [f'<text class="m" x="24" y="{y+21}" font-size="12" font-weight="700" letter-spacing="1.5" fill="{t[color]}">{esc(label)}</text>']
     x0, x, row_h = 170, 170, 40
@@ -223,9 +223,16 @@ def chip_row(t, label, items, y, color) -> tuple[str, int]:
         w = text_width(it, 14) + 28
         if x + w > W - 24 and x > x0:
             x, y = x0, y + row_h
-        parts.append(f'<rect x="{x}" y="{y}" width="{w}" height="32" rx="16" fill="{t["bg"]}" stroke="{t["border"]}"/>'
-                     f'<circle cx="{x+14}" cy="{y+16}" r="3" fill="{t[color]}"/>'
-                     f'<text x="{x+24}" y="{y+21}" font-size="14" fill="{t["text"]}">{esc(it)}</text>')
+        if filled:
+            w = text_width(it, 14.5, bold=True) + 32
+            if x + w > W - 24 and x > x0:
+                x, y = x0, y + row_h
+            parts.append(f'<rect x="{x}" y="{y}" width="{w}" height="32" rx="16" fill="url(#g)"/>'
+                         f'<text x="{x+w/2}" y="{y+21}" font-size="14.5" font-weight="700" text-anchor="middle" fill="#fff">{esc(it)}</text>')
+        else:
+            parts.append(f'<rect x="{x}" y="{y}" width="{w}" height="32" rx="16" fill="{t["bg"]}" stroke="{t["border"]}"/>'
+                         f'<circle cx="{x+14}" cy="{y+16}" r="3" fill="{t[color]}"/>'
+                         f'<text x="{x+24}" y="{y+21}" font-size="14" fill="{t["text"]}">{esc(it)}</text>')
         x += w + 8
     return "".join(parts), y + row_h
 
@@ -240,13 +247,13 @@ def c_about(t) -> str:
     y += 10
     parts.append(f'<line x1="24" y1="{y}" x2="{W-24}" y2="{y}" stroke="{t["faint"]}"/>')
     y += 20
-    for label, key, color in (("RESEARCH", "research", "a1"), ("ALSO INTO", "interests", "a2")):
+    for label, key, color in (("MAIN FOCUS", "focus", "a1"), ("RESEARCH", "research", "a1"), ("ALSO INTO", "interests", "a2")):
         if SITE.get(key):
-            frag, y = chip_row(t, label, SITE[key], y, color)
+            frag, y = chip_row(t, label, SITE[key], y, color, filled=(key == "focus"))
             parts.append(frag)
             y += 8
     h = int(y + 16)
-    return svg(W, h, card(W, h, t, 16, t["surface"]) + "".join(parts), t)
+    return svg(W, h, f'<defs>{grad(t)}</defs>' + card(W, h, t, 16, t["surface"]) + "".join(parts), t)
 
 
 def c_paper(t, p) -> str:
@@ -346,7 +353,7 @@ def main():
 
     section("01", "about", "About")
     write("about", c_about)
-    md.append(pic("about", " ".join(PROFILE["bio"]) + " Research: " + ", ".join(SITE.get("research", [])), "100%") + "\n")
+    md.append(pic("about", " ".join(PROFILE["bio"]) + " Main focus: " + ", ".join(SITE.get("focus", [])), "100%") + "\n")
 
     n_first = sum(1 for p in papers if p.self_idx == 0)
     n_cite = sum(p.citations for p in papers)

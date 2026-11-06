@@ -14,7 +14,7 @@
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Rui0828/Rui0828/main/assets/site/sec-about-dark.svg" /><img src="https://raw.githubusercontent.com/Rui0828/Rui0828/main/assets/site/sec-about-light.svg" alt="About" width="100%" /></picture>
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Rui0828/Rui0828/main/assets/site/about-dark.svg" /><img src="https://raw.githubusercontent.com/Rui0828/Rui0828/main/assets/site/about-light.svg" alt="Ph.D. student in Computer Science at National Yang Ming Chiao Tung University (NYCU), Taiwan. Research: Table Retrieval, Table QA, Cross-modal / Multimodal Learning, Reinforcement Learning, Large Language Models" width="100%" /></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Rui0828/Rui0828/main/assets/site/about-dark.svg" /><img src="https://raw.githubusercontent.com/Rui0828/Rui0828/main/assets/site/about-light.svg" alt="Ph.D. student in Computer Science at National Yang Ming Chiao Tung University (NYCU), Taiwan. Main focus: Table Embedding, Table Retrieval, Table QA" width="100%" /></picture>
 
 <a id="publications"></a>
 

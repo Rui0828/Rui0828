@@ -11,6 +11,7 @@ from __future__ import annotations
 
 import base64
 import datetime as dt
+import hashlib
 import json
 import os
 import re
@@ -45,6 +46,8 @@ W = 880
 # dates follow Taipei time: the daily Action runs at 00:30 there
 TODAY = dt.datetime.now(dt.timezone(dt.timedelta(hours=8))).date()
 SEEN_FILE = ROOT / "assets" / "seen.json"  # first time each paper appeared
+UPDATED_FILE = ROOT / "assets" / "updated.json"  # content fingerprint + date it last changed
+UPDATED = TODAY
 
 SANS = "-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif"
 MONO = "ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace"
@@ -168,6 +171,20 @@ def fmt_date(d: str) -> str:
     if d.endswith("-01-01"):
         return y
     return ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"][int(m) - 1] + " " + y
+
+
+def mark_updated(papers) -> None:
+    """UPDATED = the day the content last changed (papers or site.json), not the build day."""
+    global UPDATED
+    data = [(p.title, p.venue_label or p.venue, p.kind, p.track, p.date, p.authors, p.citations, p.url, p.is_new)
+            for p in papers]
+    fp = hashlib.sha256(json.dumps([SITE, data], sort_keys=True, ensure_ascii=False).encode()).hexdigest()
+    old = json.loads(UPDATED_FILE.read_text()) if UPDATED_FILE.exists() else {}
+    if old.get("hash") == fp:
+        UPDATED = dt.date.fromisoformat(old["date"])
+    else:
+        UPDATED = TODAY
+        UPDATED_FILE.write_text(json.dumps({"hash": fp, "date": TODAY.isoformat()}, indent=1) + "\n")
 
 
 def mark_new(papers) -> None:
@@ -408,7 +425,7 @@ def note(t, y) -> str:
     gets a full text line of height around it in browsers and apps."""
     return (f'<text x="{W}" y="{y}" font-size="13" font-style="italic" text-anchor="end" fill="{t["muted"]}">'
             f'Synced daily from OpenAlex, ORCID &amp; ACL Anthology · '
-            f'Updated {TODAY.strftime("%b")} {TODAY.day}, {TODAY.year}</text>')
+            f'Updated {UPDATED.strftime("%b")} {UPDATED.day}, {UPDATED.year}</text>')
 
 
 def c_contact(t) -> str:
@@ -445,6 +462,7 @@ def main():
     if not papers:
         sys.exit("No papers fetched; refusing to build an empty site.")
     mark_new(papers)
+    mark_updated(papers)
     avatar = avatar_data_uri()
     md = []
 

@@ -27,7 +27,20 @@ OUT = Path(os.getenv("SITE_OUT") or ROOT / "assets" / "site")
 SITE = json.loads((ROOT / "site.json").read_text())
 PROFILE = SITE["profile"]
 USER = PROFILE["github"]
-RAW = f"https://raw.githubusercontent.com/{USER}/{USER}/main/assets/site"
+def _branch() -> str:
+    """Branch the images are served from: the one being built, so a preview branch renders too."""
+    b = os.getenv("SITE_BRANCH") or os.getenv("GITHUB_REF_NAME")
+    if not b:
+        try:
+            import subprocess
+            b = subprocess.run(["git", "rev-parse", "--abbrev-ref", "HEAD"], cwd=ROOT,
+                               capture_output=True, text=True).stdout.strip()
+        except Exception:
+            b = ""
+    return b if b and b != "HEAD" else "main"
+
+
+RAW = f"https://raw.githubusercontent.com/{USER}/{USER}/{_branch()}/assets/site"
 W = 880
 TODAY = dt.date.today()
 SEEN_FILE = ROOT / "assets" / "seen.json"  # first time each paper appeared

@@ -23,7 +23,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import papers as P  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
-OUT = ROOT / "assets" / "site"
+OUT = Path(os.getenv("SITE_OUT") or ROOT / "assets" / "site")
 SITE = json.loads((ROOT / "site.json").read_text())
 PROFILE = SITE["profile"]
 USER = PROFILE["github"]
@@ -35,12 +35,27 @@ SEEN_FILE = ROOT / "assets" / "seen.json"  # first time each paper appeared
 SANS = "-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif"
 MONO = "ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace"
 
-THEMES = {
+# Colour presets. Pick one with "theme" in site.json (or SITE_THEME=... for previews).
+# a1/a2/a3 drive the gradient (a1 -> a2 -> a3) and the venue colours
+# (conference / journal / workshop).
+_BASE = {
     "light": dict(bg="#ffffff", surface="#f6f8fa", border="#d0d7de", text="#1f2328", muted="#59636e",
-                  faint="#eaeef2", a1="#6366f1", a2="#ec4899", a3="#0891b2", chip_text="#ffffff"),
+                  faint="#eaeef2", chip_text="#ffffff"),
     "dark": dict(bg="#0d1117", surface="#151b23", border="#30363d", text="#f0f6fc", muted="#9198a1",
-                 faint="#21262d", a1="#818cf8", a2="#f472b6", a3="#22d3ee", chip_text="#0d1117"),
+                 faint="#21262d", chip_text="#0d1117"),
 }
+PRESETS = {
+    "aurora": {"light": ("#6366f1", "#ec4899", "#0891b2"), "dark": ("#818cf8", "#f472b6", "#22d3ee")},
+    "ocean":  {"light": ("#2563eb", "#0891b2", "#059669"), "dark": ("#60a5fa", "#22d3ee", "#34d399")},
+    "sunset": {"light": ("#ea580c", "#e11d48", "#7c3aed"), "dark": ("#fb923c", "#fb7185", "#a78bfa")},
+    "forest": {"light": ("#059669", "#65a30d", "#0d9488"), "dark": ("#34d399", "#a3e635", "#2dd4bf")},
+    "mono":   {"light": ("#1f2328", "#57606a", "#0969da"), "dark": ("#f0f6fc", "#9198a1", "#4493f8", "#0d1117")},
+}
+THEME_NAME = os.getenv("SITE_THEME") or SITE.get("theme", "aurora")
+# "on" = text colour on top of the gradient (white unless the preset says otherwise)
+THEMES = {mode: {**_BASE[mode], "on": "#ffffff",
+                 **dict(zip(("a1", "a2", "a3", "on"), PRESETS[THEME_NAME][mode]))}
+          for mode in ("light", "dark")}
 KIND_COLOR = {"conference": "a1", "journal": "a2", "workshop": "a3", "unknown": "muted",
               "preprint": "muted", "repository": "muted"}
 
@@ -185,10 +200,43 @@ def c_pill(t, label, primary=False) -> str:
     h = 38
     if primary:
         body = (f'<defs>{grad(t)}</defs><rect x=".5" y=".5" width="{w-1}" height="{h-1}" rx="19" fill="url(#g)"/>'
-                f'<text x="{w/2}" y="24" font-size="14" font-weight="700" text-anchor="middle" fill="#fff">{esc(label)}</text>')
+                f'<text x="{w/2}" y="24" font-size="14" font-weight="700" text-anchor="middle" fill="{t["on"]}">{esc(label)}</text>')
     else:
         body = (f'<rect x=".5" y=".5" width="{w-1}" height="{h-1}" rx="19" fill="{t["bg"]}" stroke="{t["border"]}"/>'
                 f'<text x="{w/2}" y="24" font-size="14" font-weight="600" text-anchor="middle" fill="{t["text"]}">{esc(label)}</text>')
+    return svg(w, h, body, t)
+
+
+def _icon(kind: str, c: str) -> str:
+    """16x16 line icons for the link pills (drawn at 0,0)."""
+    st = f'fill="none" stroke="{c}" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"'
+    if kind == "email":
+        return f'<rect x="1.5" y="3.5" width="13" height="10" rx="2" {st}/><path d="M2 5l6 4.5L14 5" {st}/>'
+    if kind == "google-scholar":
+        return (f'<path d="M8 2.5L1 6.5l7 4 7-4z" {st}/><path d="M4 8.3v3.2c0 1 1.8 2 4 2s4-1 4-2V8.3" {st}/>'
+                f'<path d="M15 6.5v4" {st}/>')
+    if kind == "orcid":
+        return (f'<circle cx="8" cy="8" r="6.8" {st}/><path d="M5.6 7v4.4" {st}/><circle cx="5.6" cy="5" r=".9" fill="{c}"/>'
+                f'<path d="M8.2 5.6v5.8h1.5a2.9 2.9 0 0 0 0-5.8z" {st}/>')
+    if kind == "linkedin":
+        return (f'<rect x="1.5" y="1.5" width="13" height="13" rx="2.5" {st}/><path d="M5 7v4.5M5 4.8v.1" {st}/>'
+                f'<path d="M8 11.5V7m0 2.2c0-1.3.9-2.2 2-2.2s1.8.8 1.8 2v2.5" {st}/>')
+    if kind == "github":
+        return (f'<path d="M6 13.5c-3 .9-3-1.5-4.2-1.8M10 15v-2.3c0-.7.1-1.2-.3-1.6 2-.2 4-1 4-4.4a3.4 3.4 0 0 0-.9-2.4 '
+                f'3.2 3.2 0 0 0-.1-2.4s-.8-.2-2.5.9a8.6 8.6 0 0 0-4.5 0C4.1 1.7 3.3 1.9 3.3 1.9a3.2 3.2 0 0 0-.1 2.4 '
+                f'3.4 3.4 0 0 0-.9 2.4c0 3.4 2 4.2 4 4.4-.4.4-.4.9-.3 1.6V15" {st}/>')
+    return f'<path d="M5 11l6-6M6 5h5v5" {st}/>'
+
+
+def c_link(t, label) -> str:
+    """Outline pill with an icon, for the profile links under the hero."""
+    kind = re.sub(r"[^a-z0-9]+", "-", label.lower()).strip("-")
+    tw = text_width(label, 14, bold=True)
+    w, h = int(18 + 16 + 9 + tw + 20), 40
+    body = (f'<defs>{grad(t)}</defs>'
+            f'<rect x=".75" y=".75" width="{w-1.5}" height="{h-1.5}" rx="20" fill="{t["bg"]}" stroke="url(#g)" stroke-width="1.5"/>'
+            f'<g transform="translate(18 12)">{_icon(kind, t["a1"])}</g>'
+            f'<text x="{18+16+9}" y="25" font-size="14" font-weight="600" fill="{t["text"]}">{esc(label)}</text>')
     return svg(w, h, body, t)
 
 
@@ -218,7 +266,7 @@ def chip_row(t, label, items, y, color, filled=False) -> tuple[str, int]:
             if x + w > W - 24 and x > x0:
                 x, y = x0, y + row_h
             parts.append(f'<rect x="{x}" y="{y}" width="{w}" height="32" rx="16" fill="url(#g)"/>'
-                         f'<text x="{x+w/2}" y="{y+21}" font-size="14.5" font-weight="700" text-anchor="middle" fill="#fff">{esc(it)}</text>')
+                         f'<text x="{x+w/2}" y="{y+21}" font-size="14.5" font-weight="700" text-anchor="middle" fill="{t["on"]}">{esc(it)}</text>')
         else:
             parts.append(f'<rect x="{x}" y="{y}" width="{w}" height="32" rx="16" fill="{t["bg"]}" stroke="{t["border"]}"/>'
                          f'<circle cx="{x+14}" cy="{y+16}" r="3" fill="{t[color]}"/>'
@@ -291,7 +339,7 @@ def c_paper(t, p) -> str:
     if is_new:
         nx, ny = rx, 32 - 14
         parts.append(f'<defs>{grad(t)}</defs><g transform="translate({nx:.1f} {ny})"><rect class="glow" width="42" height="18" rx="9" fill="url(#g)"/>'
-                     f'<text class="m" x="21" y="13" font-size="10" font-weight="800" letter-spacing="1" text-anchor="middle" fill="#fff">NEW</text></g>')
+                     f'<text class="m" x="21" y="13" font-size="10" font-weight="800" letter-spacing="1" text-anchor="middle" fill="{t["on"]}">NEW</text></g>')
     ay = 32 + len(title_lines) * 21 + 2
     tsp = "".join(f'<tspan font-weight="{700 if me else 400}" fill="{t["text"] if me else t["muted"]}">{esc(s)}</tspan>'
                   for s, me in spans)
@@ -346,6 +394,12 @@ def main():
 
     write("hero", lambda t: c_hero(t, avatar))
     md.append(f'<p align="center">{pic("hero", PROFILE["name"] + ", " + PROFILE["kicker"], "100%")}</p>\n')
+    link_md = []
+    for l in SITE["links"]:
+        slug = "link-" + re.sub(r"[^a-z0-9]+", "-", l["label"].lower()).strip("-")
+        write(slug, lambda t, l=l: c_link(t, l["label"]))
+        link_md.append(f'<a href="{l["url"]}">{pic(slug, l["label"])}</a>')
+    md.append('<p align="center">\n  ' + "&nbsp;\n  ".join(link_md) + "\n</p>\n")
 
     def section(num, anchor, title, meta=""):
         write(f"sec-{anchor}", lambda t: c_section(t, num, title, meta))
@@ -378,12 +432,6 @@ def main():
     write("contact", c_contact)
     mail = next((l["url"] for l in SITE["links"] if l["url"].startswith("mailto:")), "#contact")
     md.append(f'<a href="{mail}">{pic("contact", "Email", "100%")}</a>\n')
-    link_md = []
-    for l in SITE["links"]:
-        slug = "link-" + re.sub(r"[^a-z0-9]+", "-", l["label"].lower())
-        write(slug, lambda t, l=l: c_pill(t, l["label"]))
-        link_md.append(f'<a href="{l["url"]}">{pic(slug, l["label"])}</a>')
-    md.append('<p align="center">\n  ' + "\n  ".join(link_md) + "\n</p>\n")
     md.append(f'<p align="center"><sub>© {PROFILE["name"]} · generated by '
               f'<a href="scripts/build_site.py">scripts/build_site.py</a>, rebuilt daily by GitHub Actions</sub></p>\n')
 

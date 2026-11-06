@@ -17,16 +17,10 @@
   <a href="https://www.linkedin.com/in/rui0828/"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Rui0828/Rui0828/mobile-fix/assets/site/link-linkedin-dark.svg" /><img src="https://raw.githubusercontent.com/Rui0828/Rui0828/mobile-fix/assets/site/link-linkedin-light.svg" alt="LinkedIn" /></picture></a>
 </p>
 
-<a id="about"></a>
-
-<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Rui0828/Rui0828/mobile-fix/assets/site/sec-about-dark.svg" /><img src="https://raw.githubusercontent.com/Rui0828/Rui0828/mobile-fix/assets/site/sec-about-light.svg" alt="About" width="100%" /></picture>
-
+<a id="about"></a><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Rui0828/Rui0828/mobile-fix/assets/site/sec-about-dark.svg" /><img src="https://raw.githubusercontent.com/Rui0828/Rui0828/mobile-fix/assets/site/sec-about-light.svg" alt="About" width="100%" /></picture>
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Rui0828/Rui0828/mobile-fix/assets/site/about-dark.svg" /><img src="https://raw.githubusercontent.com/Rui0828/Rui0828/mobile-fix/assets/site/about-light.svg" alt="Ph.D. student in Computer Science at National Yang Ming Chiao Tung University (NYCU), Taiwan. Currently: Table Embedding / Retrieval / QA" width="100%" /></picture>
 
-<a id="publications"></a>
-
-<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Rui0828/Rui0828/mobile-fix/assets/site/sec-publications-dark.svg" /><img src="https://raw.githubusercontent.com/Rui0828/Rui0828/mobile-fix/assets/site/sec-publications-light.svg" alt="Publications" width="100%" /></picture>
-
+<a id="publications"></a><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Rui0828/Rui0828/mobile-fix/assets/site/sec-publications-dark.svg" /><img src="https://raw.githubusercontent.com/Rui0828/Rui0828/mobile-fix/assets/site/sec-publications-light.svg" alt="Publications" width="100%" /></picture>
 <a href="https://doi.org/10.18653/2026.realm-1.99"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Rui0828/Rui0828/mobile-fix/assets/site/paper-0-dark.svg" /><img src="https://raw.githubusercontent.com/Rui0828/Rui0828/mobile-fix/assets/site/paper-0-light.svg" alt="ToolFuse: Documentation-Intent Fusion for Training-Free Tool Retrieval" width="100%" /></picture></a>
 <a href="https://doi.org/10.1145/3845610"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Rui0828/Rui0828/mobile-fix/assets/site/paper-1-dark.svg" /><img src="https://raw.githubusercontent.com/Rui0828/Rui0828/mobile-fix/assets/site/paper-1-light.svg" alt="An LLM-Assisted Framework for Response Selection in Low-Resource Language Dialogue: A Case Study on Taiwan Indigenous Languages" width="100%" /></picture></a>
 <a href="https://doi.org/10.1145/3774904.3792962"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Rui0828/Rui0828/mobile-fix/assets/site/paper-2-dark.svg" /><img src="https://raw.githubusercontent.com/Rui0828/Rui0828/mobile-fix/assets/site/paper-2-light.svg" alt="STAR: Semantic Table Representation with Header-Aware Clustering and Adaptive Weighted Fusion" width="100%" /></picture></a>
@@ -35,16 +29,10 @@
 <a href="https://doi.org/10.18653/v1/2024.loresmt-1.15"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Rui0828/Rui0828/mobile-fix/assets/site/paper-5-dark.svg" /><img src="https://raw.githubusercontent.com/Rui0828/Rui0828/mobile-fix/assets/site/paper-5-light.svg" alt="Learning-From-Mistakes Prompting for Indigenous Language Translation" width="100%" /></picture></a>
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Rui0828/Rui0828/mobile-fix/assets/site/paper-note-dark.svg" /><img src="https://raw.githubusercontent.com/Rui0828/Rui0828/mobile-fix/assets/site/paper-note-light.svg" alt="Synced daily from OpenAlex, ORCID and ACL Anthology" width="100%" /></picture>
 
-<a id="activity"></a>
-
-<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Rui0828/Rui0828/mobile-fix/assets/site/sec-activity-dark.svg" /><img src="https://raw.githubusercontent.com/Rui0828/Rui0828/mobile-fix/assets/site/sec-activity-light.svg" alt="Activity" width="100%" /></picture>
-
+<a id="activity"></a><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Rui0828/Rui0828/mobile-fix/assets/site/sec-activity-dark.svg" /><img src="https://raw.githubusercontent.com/Rui0828/Rui0828/mobile-fix/assets/site/sec-activity-light.svg" alt="Activity" width="100%" /></picture>
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Rui0828/Rui0828/output/profile-night-rainbow.svg" /><img src="https://raw.githubusercontent.com/Rui0828/Rui0828/output/profile-gitblock.svg" alt="3D contribution graph" width="100%" /></picture>
 
-<a id="contact"></a>
-
-<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Rui0828/Rui0828/mobile-fix/assets/site/sec-contact-dark.svg" /><img src="https://raw.githubusercontent.com/Rui0828/Rui0828/mobile-fix/assets/site/sec-contact-light.svg" alt="Contact" width="100%" /></picture>
-
+<a id="contact"></a><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Rui0828/Rui0828/mobile-fix/assets/site/sec-contact-dark.svg" /><img src="https://raw.githubusercontent.com/Rui0828/Rui0828/mobile-fix/assets/site/sec-contact-light.svg" alt="Contact" width="100%" /></picture>
 <a href="mailto:chenjuiyu0828@gmail.com"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Rui0828/Rui0828/mobile-fix/assets/site/contact-dark.svg" /><img src="https://raw.githubusercontent.com/Rui0828/Rui0828/mobile-fix/assets/site/contact-light.svg" alt="Email" width="100%" /></picture></a>
 
 <p align="center"><sub>© Chen-Jui Yu · generated by <a href="scripts/build_site.py">scripts/build_site.py</a>, rebuilt daily by GitHub Actions</sub></p>

@@ -123,7 +123,7 @@ def wrap(s: str, size: float, max_w: float, bold=False, max_lines=99, first_inde
 
 
 def svg(w: int, h: int, body: str, t: dict, extra_style="") -> str:
-    return (f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}">'
+    return (f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" preserveAspectRatio="none">'
             f'<style>text{{font-family:{SANS}}} .m{{font-family:{MONO}}}'
             f'@media (prefers-reduced-motion:reduce){{*{{animation:none!important}}}}{extra_style}</style>'
             f'{body}</svg>')
@@ -266,16 +266,16 @@ def c_link(t, label) -> str:
 
 
 def c_section(t, num, title, meta="", color=None) -> str:
-    h = 64
+    h = 50
     tw = text_width(title, 28, bold=True)
     x2 = W - (text_width(meta, 13, mono=True) + 20 if meta else 0)
     c = color or t["a1"]
     body = (f'<defs><linearGradient id="ln" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="{c}"/>'
             f'<stop offset=".6" stop-color="{t["border"]}"/></linearGradient></defs>'
-            f'<text class="m" x="0" y="42" font-size="15" font-weight="700" fill="{c}">{num}</text>'
-            f'<text x="38" y="44" font-size="28" font-weight="800" letter-spacing="-.5" fill="{t["text"]}">{esc(title)}</text>'
-            f'<rect x="{38 + tw + 20}" y="34" width="{x2 - (38 + tw + 20)}" height="2" rx="1" fill="url(#ln)"/>'
-            + (f'<text class="m" x="{W}" y="40" font-size="13" text-anchor="end" fill="{t["muted"]}">{esc(meta)}</text>'
+            f'<text class="m" x="0" y="33" font-size="15" font-weight="700" fill="{c}">{num}</text>'
+            f'<text x="38" y="35" font-size="28" font-weight="800" letter-spacing="-.5" fill="{t["text"]}">{esc(title)}</text>'
+            f'<rect x="{38 + tw + 20}" y="25" width="{x2 - (38 + tw + 20)}" height="2" rx="1" fill="url(#ln)"/>'
+            + (f'<text class="m" x="{W}" y="31" font-size="13" text-anchor="end" fill="{t["muted"]}">{esc(meta)}</text>'
                if meta else ""))
     return svg(W, h, body, t)
 
@@ -399,8 +399,8 @@ def c_more(t, n) -> str:
 
 def c_note(t) -> str:
     """Footnote under the publication list (an image, so apps can't blow it up)."""
-    h = 28
-    body = (f'<text x="{W}" y="18" font-size="13" font-style="italic" text-anchor="end" fill="{t["muted"]}">'
+    h = 20
+    body = (f'<text x="{W}" y="13" font-size="13" font-style="italic" text-anchor="end" fill="{t["muted"]}">'
             f'Synced daily from OpenAlex, ORCID &amp; ACL Anthology</text>')
     return svg(W, h, body, t)
 
@@ -460,7 +460,7 @@ def main():
 
     def section(num, anchor, title, meta=""):
         write(f"sec-{anchor}", lambda t: c_section(t, num, title, meta, t[f"s_{anchor}"]))
-        md.append(f'<a id="{anchor}"></a>\n\n{pic(f"sec-{anchor}", title, "100%")}\n')
+        md.append(f'<a id="{anchor}"></a>{pic(f"sec-{anchor}", title, "100%")}')
 
     section("01", "about", "About")
     write("about", c_about)

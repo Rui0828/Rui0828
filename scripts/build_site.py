@@ -398,7 +398,7 @@ def c_paper(t, p, footer=False) -> str:
              if getattr(p, "is_new", False) else "")
     if footer:
         parts.append(note(t, h + 26))
-        return svg(w, h + 36, "".join(parts), t, style)
+        return svg(w, h + 54, "".join(parts), t, style)
     return svg(w, h + 12, "".join(parts), t, style)  # 12px gap below each card
 
 
@@ -430,7 +430,7 @@ def c_other(t, p, footer=False) -> str:
         style = ".glow{animation:glow 2.4s ease-in-out infinite}@keyframes glow{50%{opacity:.6}}"
     if footer:
         parts.append(note(t, h + 26))
-        return svg(W, h + 36, "".join(parts), t, style)
+        return svg(W, h + 54, "".join(parts), t, style)
     return svg(W, h + 12, "".join(parts), t, style)
 
 
@@ -448,16 +448,16 @@ def c_more(t, n, footer=False) -> str:
             f'<text x="{x0 + lw + 12}" y="34" font-size="15" fill="{t["border"]}">\u00b7</text>'
             f'<text x="{x0 + lw + 24}" y="34" font-size="13.5" font-weight="600" fill="{t["muted"]}">{esc(cta)}</text>')
     if footer:
-        return svg(W, h + 34, body + note(t, h + 24), t)
+        return svg(W, h + 52, body + note(t, h + 24), t)
     return svg(W, h, body, t)
 
 
 def note(t, y) -> str:
     """Footnote drawn inside the last publication card: a separate small image
     gets a full text line of height around it in browsers and apps."""
-    return (f'<text x="{W}" y="{y}" font-size="13" font-style="italic" text-anchor="end" fill="{t["muted"]}">'
-            f'Publications &amp; Other Works synced from OpenAlex, ORCID, ACL Anthology &amp; DataCite · '
-            f'Last updated {UPDATED.strftime("%b")} {UPDATED.day}, {UPDATED.year}</text>')
+    attrs = f'x="{W}" font-size="13" font-style="italic" text-anchor="end" fill="{t["muted"]}"'
+    return (f'<text {attrs} y="{y}">Publications &amp; Other Works synced from OpenAlex, ORCID, ACL Anthology &amp; DataCite</text>'
+            f'<text {attrs} y="{y + 18}">Last updated {UPDATED.strftime("%b")} {UPDATED.day}, {UPDATED.year}</text>')
 
 
 def c_contact(t) -> str:

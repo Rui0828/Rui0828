@@ -60,12 +60,12 @@ _BASE = {
     "light": dict(bg="#ffffff", surface="#f6f8fa", border="#d0d7de", text="#1f2328", muted="#59636e",
                   faint="#eaeef2", chip_text="#ffffff", new="#dc2626", on="#ffffff",
                   # one solid colour per section
-                  s_about="#2563eb", s_publications="#0f766e", s_activity="#b45309", s_contact="#7c3aed",
+                  s_about="#2563eb", s_publications="#0f766e", s_other="#64748b", s_activity="#b45309", s_contact="#7c3aed",
                   # venue chips: conference / journal / workshop
                   k_conf="#2563eb", k_journal="#c2410c", k_workshop="#0f766e"),
     "dark": dict(bg="#0d1117", surface="#151b23", border="#30363d", text="#f0f6fc", muted="#9198a1",
                  faint="#21262d", chip_text="#0d1117", new="#f85149", on="#0d1117",
-                 s_about="#60a5fa", s_publications="#2dd4bf", s_activity="#fbbf24", s_contact="#a78bfa",
+                 s_about="#60a5fa", s_publications="#2dd4bf", s_other="#94a3b8", s_activity="#fbbf24", s_contact="#a78bfa",
                  k_conf="#60a5fa", k_journal="#fb923c", k_workshop="#2dd4bf"),
 }
 PRESETS = {
@@ -85,7 +85,7 @@ THEME_NAME = os.getenv("SITE_THEME") or SITE.get("theme", "aurora")
 THEMES = {mode: {**_BASE[mode],
                  **dict(zip(("a1", "a2", "a3", "on"), PRESETS[THEME_NAME][mode]))}
           for mode in ("light", "dark")}
-KIND_COLOR = {"conference": "k_conf", "journal": "k_journal", "workshop": "k_workshop", "unknown": "muted",
+KIND_COLOR = {"other": "s_other", "conference": "k_conf", "journal": "k_journal", "workshop": "k_workshop", "unknown": "muted",
               "preprint": "muted", "repository": "muted"}
 
 
@@ -402,6 +402,35 @@ def c_paper(t, p, footer=False) -> str:
     return svg(w, h + 12, "".join(parts), t, style)  # 12px gap below each card
 
 
+def c_other(t, p) -> str:
+    """Compact card for non-paper works: event chip, official type, title. No authors:
+    these records list presenters, not the full author list."""
+    meta = f"{p.work_type} · {fmt_date(p.date)}"
+    chip = p.event or "Other"
+    # left column grows with long official type names so it never runs into the title
+    rx = max(196, 22 + max(text_width(meta, 11, mono=True), text_width(chip, 11, bold=True, mono=True) + 16) + 28)
+    is_new = getattr(p, "is_new", False)
+    lines = wrap(p.title, 15, W - rx - 24, bold=True, max_lines=2, first_indent=52 if is_new else 0)
+    h = max(26 + len(lines) * 20 + 8, 66)
+    c = t["s_other"]
+    cw = text_width(chip, 11, bold=True, mono=True) + 16
+    parts = [card(W, h, t, 12),
+             f'<rect x="0" y="14" width="3" height="{h-28}" rx="1.5" fill="{c}"/>',
+             f'<rect x="22.5" y="16.5" width="{cw-1}" height="21" rx="5" fill="none" stroke="{c}"/>',
+             f'<text class="m" x="{22+cw/2}" y="31" font-size="11" font-weight="700" text-anchor="middle" fill="{c}">{esc(chip)}</text>',
+             f'<text class="m" x="22" y="56" font-size="11" fill="{t["muted"]}">{esc(meta)}</text>']
+    top = (h - len(lines) * 20) / 2 + 14
+    for i, l in enumerate(lines):
+        x = rx + (52 if is_new and i == 0 else 0)
+        parts.append(f'<text x="{x}" y="{top + i*20:.1f}" font-size="15" font-weight="700" fill="{t["text"]}">{esc(l)}</text>')
+    style = ""
+    if is_new:
+        parts.append(f'<g transform="translate({rx} {top - 14:.1f})"><rect class="glow" width="42" height="18" rx="9" fill="{t["new"]}"/>'
+                     f'<text class="m" x="21" y="13" font-size="10" font-weight="800" letter-spacing="1" text-anchor="middle" fill="#ffffff">NEW</text></g>')
+        style = ".glow{animation:glow 2.4s ease-in-out infinite}@keyframes glow{50%{opacity:.6}}"
+    return svg(W, h + 12, "".join(parts), t, style)
+
+
 def c_more(t, n, footer=False) -> str:
     """Last card when the list is capped: "+N more publications", links to Scholar."""
     h = 56
@@ -492,18 +521,23 @@ def main():
 
     # About..footer form one paragraph (apps put large gaps between paragraphs), so the
     # space between sections is drawn at the top of each section header instead
-    def section(num, anchor, title, meta=""):
+    counter = iter(range(1, 10))
+
+    def section(anchor, title, meta=""):
+        num = f"{next(counter):02d}"
         pad = 0 if num == "01" else 28
         write(f"sec-{anchor}", lambda t: c_section(t, num, title, meta, t[f"s_{anchor}"], pad))
         md.append(f'<a id="{anchor}"></a>{pic(f"sec-{anchor}", title, "100%")}')
 
-    section("01", "about", "About")
+    section("about", "About")
     write("about", c_about)
     md.append(pic("about", " ".join(PROFILE["bio"]) + " Currently: " + ", ".join(SITE.get("focus", [])), "100%"))
 
+    others = [p for p in papers if p.kind == "other"]  # talks, posters, datasets... (DataCite types)
+    papers = [p for p in papers if p.kind != "other"]
     n_cite = sum(p.citations for p in papers)
     n_new = sum(1 for p in papers if p.is_new)
-    section("02", "publications", "Publications",
+    section("publications", "Publications",
             f"{len(papers)} papers · {n_cite} citations" + (f" · {n_new} new" if n_new else ""))
     cap = SITE.get("max_papers") or len(papers)
     shown, hidden = papers[:cap], len(papers) - cap
@@ -521,13 +555,21 @@ def main():
         cards.append(f'<a href="{more}">{pic("paper-more", f"{hidden} more publications on Google Scholar", "100%")}</a>')
     md.append("\n".join(cards))
 
-    section("03", "activity", "Activity")
+    if others:
+        section("other", "Other Works", f"{len(others)} item" + ("s" if len(others) != 1 else ""))
+        rows = []
+        for i, p in enumerate(others):
+            write(f"other-{i}", lambda t, p=p: c_other(t, p))
+            rows.append(f'<a href="{p.url or "#other"}">{pic(f"other-{i}", p.title, "100%")}</a>')
+        md.append("\n".join(rows))
+
+    section("activity", "Activity")
     md.append(f'<picture><source media="(prefers-color-scheme: dark)" '
               f'srcset="https://raw.githubusercontent.com/{USER}/{USER}/output/profile-night-rainbow.svg" />'
               f'<img src="https://raw.githubusercontent.com/{USER}/{USER}/output/profile-gitblock.svg" '
               f'alt="3D contribution graph" width="100%" /></picture>')
 
-    section("04", "contact", "Contact")
+    section("contact", "Contact")
     write("contact", c_contact)
     mail = next((l["url"] for l in SITE["links"] if l["url"].startswith("mailto:")), "#contact")
     md.append(f'<a href="{mail}">{pic("contact", "Email", "100%")}</a>')  # footer joins this block

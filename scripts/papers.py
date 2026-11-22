@@ -36,7 +36,7 @@ ROOT = Path(__file__).resolve().parent.parent
 CONFIG = json.loads((ROOT / "site.json").read_text())["papers"]
 UA = "Rui0828-profile-papers/1.0 (+https://github.com/Rui0828/Rui0828)"
 
-RANK = {"journal": 4, "conference": 4, "workshop": 4, "unknown": 2, "preprint": 1, "repository": 0}
+RANK = {"journal": 4, "conference": 4, "workshop": 4, "unknown": 2, "preprint": 1, "repository": 0, "other": 0}
 
 
 # ---------------------------------------------------------------- helpers
@@ -133,6 +133,8 @@ class Paper:
     date: str = ""  # YYYY-MM-DD when known; "YYYY-01-01" usually means year-only
     venue_label: str | None = None  # manual short label from site.json venue_overrides
     track: str = ""  # "Demo" / "Industry" for non-main conference tracks
+    work_type: str = ""  # official DataCite type for non-paper works, e.g. "Conference talk"
+    event: str = ""  # where a non-paper work was presented, e.g. "EMNLP 2026"
 
     @property
     def score(self):
@@ -317,6 +319,39 @@ def enrich_acl(p: Paper) -> None:
 
 
 # ---------------------------------------------------------------- public
+PAPER_TYPES = {"Text", "JournalArticle", "ConferencePaper", "ConferenceProceeding", "Preprint",
+               "Book", "BookChapter", "Report", "Dissertation"}
+
+
+def enrich_datacite(p: Paper) -> None:
+    """Records that are not papers (talk videos, posters, datasets, software) carry a
+    DataCite DOI with an official type. Those become "other" works, labelled with that type."""
+    if p.kind not in ("repository", "unknown") or not p.doi or p.doi.startswith("10.48550/"):
+        return
+    try:
+        a = get_json(f"https://api.datacite.org/dois/{urllib.parse.quote(p.doi, safe='/')}")["data"]["attributes"]
+    except Exception:
+        return  # not a DataCite DOI (or unreachable): leave the record as it is
+    types = a.get("types") or {}
+    if types.get("resourceTypeGeneral") in PAPER_TYPES:
+        return
+    p.kind = "other"
+    p.work_type = types.get("resourceType") or types.get("resourceTypeGeneral") or "Other"
+    p.event = a.get("publisher") or ""
+    landing = a.get("url") or ""
+    if "underline.io/" in landing:
+        # Underline lecture pages carry the event in a Google Scholar meta tag
+        try:
+            req = urllib.request.Request(landing, headers={"User-Agent": UA})
+            html = urllib.request.urlopen(req, timeout=20).read().decode("utf-8", "ignore")
+            m = re.search(r'name="citation_conference_title" content="([^"]+)"', html)
+            p.event = m.group(1) if m else "Underline"
+        except Exception:
+            p.event = "Underline"
+    if not p.date and a.get("dates"):
+        p.date = a["dates"][0]["date"][:10]
+
+
 def collect() -> list[Paper]:
     """All papers, deduped, newest first (by full publication date)."""
     papers: list[Paper] = []
@@ -335,6 +370,7 @@ def collect() -> list[Paper]:
         p.venue_label = venues.get(norm_title(p.title))
         p.track = "" if p.kind in ("workshop", "journal") else detect_track(p.venue, p.doi)
         enrich_acl(p)
+        enrich_datacite(p)
         p.date = overrides.get(norm_title(p.title), p.date)
     final.sort(key=lambda p: (p.date or f"{p.year or 0}-00-00", RANK[p.kind], p.title.lower()), reverse=True)
     return final

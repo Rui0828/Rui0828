@@ -402,7 +402,7 @@ def c_paper(t, p, footer=False) -> str:
     return svg(w, h + 12, "".join(parts), t, style)  # 12px gap below each card
 
 
-def c_other(t, p) -> str:
+def c_other(t, p, footer=False) -> str:
     """Compact card for non-paper works: event chip, official type, title. No authors:
     these records list presenters, not the full author list."""
     meta = f"{p.work_type} · {fmt_date(p.date)}"
@@ -428,6 +428,9 @@ def c_other(t, p) -> str:
         parts.append(f'<g transform="translate({rx} {top - 14:.1f})"><rect class="glow" width="42" height="18" rx="9" fill="{t["new"]}"/>'
                      f'<text class="m" x="21" y="13" font-size="10" font-weight="800" letter-spacing="1" text-anchor="middle" fill="#ffffff">NEW</text></g>')
         style = ".glow{animation:glow 2.4s ease-in-out infinite}@keyframes glow{50%{opacity:.6}}"
+    if footer:
+        parts.append(note(t, h + 26))
+        return svg(W, h + 36, "".join(parts), t, style)
     return svg(W, h + 12, "".join(parts), t, style)
 
 
@@ -453,8 +456,8 @@ def note(t, y) -> str:
     """Footnote drawn inside the last publication card: a separate small image
     gets a full text line of height around it in browsers and apps."""
     return (f'<text x="{W}" y="{y}" font-size="13" font-style="italic" text-anchor="end" fill="{t["muted"]}">'
-            f'Synced daily from OpenAlex, ORCID &amp; ACL Anthology · '
-            f'Updated {UPDATED.strftime("%b")} {UPDATED.day}, {UPDATED.year}</text>')
+            f'Synced from OpenAlex, ORCID, ACL Anthology &amp; DataCite · '
+            f'Last updated {UPDATED.strftime("%b")} {UPDATED.day}, {UPDATED.year}</text>')
 
 
 def c_contact(t) -> str:
@@ -535,6 +538,7 @@ def main():
 
     others = [p for p in papers if p.kind == "other"]  # talks, posters, datasets... (DataCite types)
     papers = [p for p in papers if p.kind != "other"]
+    # the "Synced from …" note sits under the last automatically synced item
     n_cite = sum(p.citations for p in papers)
     n_new = sum(1 for p in papers if p.is_new)
     section("publications", "Publications",
@@ -546,12 +550,12 @@ def main():
         # dedup already kept the venue version when one exists; a preprint only
         # shows up here (and gets linked) when there is no venue version yet
         link = p.url or "#publications"
-        last = i == len(shown) - 1 and hidden <= 0
+        last = i == len(shown) - 1 and hidden <= 0 and not others
         write(f"paper-{i}", lambda t, p=p, last=last: c_paper(t, p, footer=last))
         cards.append(f'<a href="{link}">{pic(f"paper-{i}", p.title, "100%")}</a>')
     if hidden > 0:
         more = SITE.get("more_url") or next((l["url"] for l in SITE["links"] if "scholar" in l["label"].lower()), "#publications")
-        write("paper-more", lambda t: c_more(t, hidden, footer=True))
+        write("paper-more", lambda t: c_more(t, hidden, footer=not others))
         cards.append(f'<a href="{more}">{pic("paper-more", f"{hidden} more publications on Google Scholar", "100%")}</a>')
     md.append("\n".join(cards))
 
@@ -559,7 +563,7 @@ def main():
         section("other", "Other Works", f"{len(others)} item" + ("s" if len(others) != 1 else ""))
         rows = []
         for i, p in enumerate(others):
-            write(f"other-{i}", lambda t, p=p: c_other(t, p))
+            write(f"other-{i}", lambda t, p=p, last=i == len(others) - 1: c_other(t, p, footer=last))
             rows.append(f'<a href="{p.url or "#other"}">{pic(f"other-{i}", p.title, "100%")}</a>')
         md.append("\n".join(rows))
 

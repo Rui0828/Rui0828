@@ -456,7 +456,7 @@ def note(t, y) -> str:
     """Footnote drawn inside the last publication card: a separate small image
     gets a full text line of height around it in browsers and apps."""
     return (f'<text x="{W}" y="{y}" font-size="13" font-style="italic" text-anchor="end" fill="{t["muted"]}">'
-            f'Synced from OpenAlex, ORCID, ACL Anthology &amp; DataCite · '
+            f'Publications &amp; Other Works synced from OpenAlex, ORCID, ACL Anthology &amp; DataCite · '
             f'Last updated {UPDATED.strftime("%b")} {UPDATED.day}, {UPDATED.year}</text>')
 
 
